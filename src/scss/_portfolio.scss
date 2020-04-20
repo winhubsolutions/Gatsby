@@ -37,10 +37,10 @@
             transition: width 0.3s linear;
         }
         &.active,&:hover{
-            color: #5e2ced;
+            color: #f13c31;
             &:before{
                 width: 100%;
-                background:#5e2ced;
+                background:#f13c31;
                 right: auto;
                 left: 0;
             }
@@ -179,7 +179,7 @@
         transition: color 0.2s linear;
         color: #282835;
         &:hover{
-            color: #5e2ced;
+            color: #f13c31;
         }
     }
     .links{
@@ -197,14 +197,14 @@
                 width: 0;
                 height: 1px;
                 bottom: 0;
-                background: #5e2ced;
+                background: #f13c31;
                 position: absolute;
                 left: auto;
                 right: 0;
                 transition: width 0.3s linear;
             }
             &:hover{
-                color: #5e2ced;
+                color: #f13c31;
                 &:before{
                     width: 100%;
                     right: auto;
@@ -295,7 +295,7 @@
         transition: color 0.2s linear;
         cursor: pointer;
         &:hover{
-            color: #5e2ced;
+            color: #f13c31;
         }
     }
     .owl-prev{

@@ -36,7 +36,7 @@
         }
         .active{
             a{
-                color: #5e2ced;
+                color: #f13c31;
             }
         }
     }
@@ -70,7 +70,7 @@
                 display: inline-block;
                 transition: all 0.3s linear;
                 &:hover{
-                    background: #5e2ced;
+                    background: #f13c31;
                     color: #fff;
                 }
             }
@@ -88,7 +88,7 @@
             color: #282835;
             margin-bottom: 5px;
             &:hover{
-                color: #5e2ced;
+                color: #f13c31;
             }
         }
         
@@ -142,12 +142,12 @@
             display: block;
             transition: all 0.2s linear;
             &:hover{
-                border-color: #5e2ced;
-                color: #5e2ced;
+                border-color: #f13c31;
+                color: #f13c31;
             }
             &.current{
-                background: #5e2ced;
-                border-color: #5e2ced;
+                background: #f13c31;
+                border-color: #f13c31;
                 color: #fff;
             }
         } 
@@ -187,8 +187,8 @@
                     cursor: pointer;
                     &:hover{
                             color: #fff;
-                            background: #5e2ced;
-                            border-color: #5e2ced;
+                            background: #f13c31;
+                            border-color: #f13c31;
                         }
                     }
                 a{
@@ -207,8 +207,8 @@
                     cursor: pointer;
                     &:hover{
                         color: #fff;
-                        background: #5e2ced;
-                        border-color: #5e2ced;
+                        background: #f13c31;
+                        border-color: #f13c31;
                     }
                 }
             }
@@ -255,7 +255,7 @@
         float: right;
         text-align: right;
         .star-rating{
-            color: #5e2ced;
+            color: #f13c31;
             line-height: 12px;
             &:before{
                 content: "\e60a\e60a\e60a\e60a";
@@ -285,14 +285,14 @@
     }
     .stock{
         font: 400 16px $pop;
-        color: #5e2ced;
+        color: #f13c31;
         vertical-align: middle;
         padding-top: 20px;
         display: inline-block;
         &:before{
             content: "\e64c";
             font-family: 'themify';
-            color: #5e2ced;
+            color: #f13c31;
             padding-right: 10px;
         }
     }
@@ -321,7 +321,7 @@
             border-radius: 15px;
             padding: 0px 15px 0px 0px;
             &:hover{
-                color: #5e2ced;
+                color: #f13c31;
             }
         }
         .ar_top{
@@ -358,9 +358,9 @@
         .cart_btn,.wish_list{
             transition: all 0.2s linear;
             &:hover{
-                background: #5e2ced;
+                background: #f13c31;
                 color: #fff;
-                border-color: #5e2ced;
+                border-color: #f13c31;
             }
         }
     }
@@ -374,7 +374,7 @@
             a{
                 color: #677294;
                 &:hover{
-                    color: #5e2ced;
+                    color: #f13c31;
                 }
             }
             span{
@@ -401,7 +401,7 @@
                     padding-right: 10px;
                     transition: all 0.2s linear;
                     &:hover{
-                        color: #5e2ced;
+                        color: #f13c31;
                     }
                 }
             }
@@ -432,7 +432,7 @@
                 border: 0px;
                 border-radius: 0px;
                 &.active{
-                    background:#5e2ced;
+                    background:#f13c31;
                     color: #fff;
                 }
             }
@@ -484,7 +484,7 @@
                     font-size: 12px;
                     color: #c9ccd1;
                     &:nth-child(1),&:nth-child(2),&:nth-child(3){
-                        color: #5e2ced;
+                        color: #f13c31;
                     }
                 }
             }
@@ -533,7 +533,7 @@
             font-size: 12px;
             color: #c9ccd1;
             &:nth-child(4),&:nth-child(2),&:nth-child(3){
-                color: #5e2ced;
+                color: #f13c31;
             }
         }
     }
@@ -613,7 +613,7 @@ input[type=number]::-webkit-inner-spin-button {
             a{
                 color: #677294;
                 &:hover{
-                    color: #5e2ced;
+                    color: #f13c31;
                 }
                 i{
                     font-size: 22px;
@@ -642,7 +642,7 @@ input[type=number]::-webkit-inner-spin-button {
                 line-height: 12px;
                 cursor: pointer;
                 &:hover{
-                    color: #5e2ced;
+                    color: #f13c31;
                 }
             }
             .ar_top{
@@ -667,9 +667,9 @@ input[type=number]::-webkit-inner-spin-button {
     .cart_btn{
         font: 400 14px $pop;
         color: #fff;
-        border: 1px solid #5e2ced;
+        border: 1px solid #f13c31;
         margin: 0px;
-        background: #5e2ced;
+        background: #f13c31;
         padding: 15px 33px;
         border-radius: 4px;
         &.cart_btn_two{
@@ -702,9 +702,9 @@ input[type=number]::-webkit-inner-spin-button {
             border-radius: 4px;
             transition: all 0.2s linear;
             &:hover{
-                background: #5e2ced;
+                background: #f13c31;
                 color: #fff !important;
-                border-color: #5e2ced;
+                border-color: #f13c31;
             }
         }
     }
@@ -777,7 +777,7 @@ input[type=number]::-webkit-inner-spin-button {
         cursor: pointer;
         transition: all 0.2s linear;
         &:hover{
-            background: #5e2ced;
+            background: #f13c31;
             color: #fff;
         }
     }
@@ -785,18 +785,18 @@ input[type=number]::-webkit-inner-spin-button {
 .checkout_button{
     font: 500 15px/30px $pop;
     color: #fff;
-    background: #5e2ced;
+    background: #f13c31;
     border-radius: 0px;
     display: block;
     text-align: center;
     padding: 10px 0px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border: 1px solid #5e2ced;
+    border: 1px solid #f13c31;
     transition: all 0.2s linear;
     &:hover{
         background: transparent;
-        color: #5e2ced;
+        color: #f13c31;
     }
 }
 
@@ -807,12 +807,12 @@ input[type=number]::-webkit-inner-spin-button {
     color: #3d3f45;
     padding-bottom: 20px;
     i{
-        color: #5e2ced;
+        color: #f13c31;
         padding-right: 8px;
         font-size: 14px;
     }
     a{
-        color: #5e2ced;
+        color: #f13c31;
         font-weight: 300;
         &.collapsed{
             color: #9ca3b9;
@@ -949,15 +949,15 @@ input[type=number]::-webkit-inner-spin-button {
         .login_btn{
             float: right;
             font: 400 16px/48px $pop;
-            background: #5e2ced;
-            border: 1px solid #5e2ced;
+            background: #f13c31;
+            border: 1px solid #f13c31;
             color: #fff;
             border-radius: 4px;
             padding: 0px 38px;
             transition: all 0.2s linear;
             &:hover{
                 background: transparent;
-                color: #5e2ced;
+                color: #f13c31;
             }
         }
         .coupon_form{
@@ -998,7 +998,7 @@ input[type=number]::-webkit-inner-spin-button {
                         color: #282835;
                     }
                     &.total{
-                        color: #5e2ced;
+                        color: #f13c31;
                         font-size: 20px;
                     }
                     & + td{
@@ -1060,7 +1060,7 @@ input[type=number]::-webkit-inner-spin-button {
                             opacity: 1;
                         }
                         &:before{
-                            border-color: #5e2ced;
+                            border-color: #f13c31;
                         }
                     }
                 }
@@ -1093,7 +1093,7 @@ input[type=number]::-webkit-inner-spin-button {
                         top: 4px;
                         left: 3px;
                         border-radius: 50%;
-                        background: #5e2ced;
+                        background: #f13c31;
                         opacity: 0;
                     }
                 }
@@ -1119,7 +1119,7 @@ input[type=number]::-webkit-inner-spin-button {
                         opacity: 1;
                     }
                     &:before{
-                        border-color: #5e2ced;
+                        border-color: #f13c31;
                     }
                 }
             }
@@ -1151,7 +1151,7 @@ input[type=number]::-webkit-inner-spin-button {
                 display: block;
                 width: 5px;
                 height: 7px;
-                border: solid #5e2ced;
+                border: solid #f13c31;
                 border-width: 0 2px 2px 0;
                 -webkit-transform: rotate(45deg);
                 -ms-transform: rotate(45deg);
@@ -1165,8 +1165,8 @@ input[type=number]::-webkit-inner-spin-button {
     }
     .button{
         width: 100%;
-        background: #5e2ced;
-        border: 1px solid #5e2ced;
+        background: #f13c31;
+        border: 1px solid #f13c31;
         font: 500 16px/50px $pop;
         color: #fff;
         cursor: pointer;
@@ -1174,7 +1174,7 @@ input[type=number]::-webkit-inner-spin-button {
         transition: all 0.2s linear;
         &:hover{
             background: transparent;
-            color: #5e2ced;
+            color: #f13c31;
         }
     }
 }
@@ -1211,7 +1211,7 @@ input[type=number]::-webkit-inner-spin-button {
                 width: 20px;
                 height: 20px;
                 border-radius: 50%;
-                background: #5e2ced;
+                background: #f13c31;
                 border: 0px;
                 margin-left: 0;
                 top: -7px;
@@ -1255,12 +1255,12 @@ input[type=number]::-webkit-inner-spin-button {
                         position: absolute;
                         bottom: 0;
                         left: 0;
-                        background: #5e2ced;
+                        background: #f13c31;
                         opacity: 0;
                         transition: all 0.3s linear;
                     }
                     &:hover {
-                        color: #5e2ced;
+                        color: #f13c31;
                         &:before {
                             opacity: 1;
                         }
@@ -1398,12 +1398,12 @@ input[type=number]::-webkit-inner-spin-button {
                         left: 0;
                         width: 100%;
                         height: 1px;
-                        background: #5e2ced;
+                        background: #f13c31;
                         opacity: 0;
                         transition: opacity 0.2s linear;
                     }
                     &:hover{
-                        color: #5e2ced;
+                        color: #f13c31;
                         &:before{
                             opacity: 1;
                         }

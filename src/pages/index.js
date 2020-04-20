@@ -8,6 +8,18 @@ import SEO from "../components/seo"
 import {Col,Row,Container} from 'react-bootstrap'
 import process from "../images/process_2.png"
 import { ThemeProvider } from "../components/ThemeContext"
+import Loadable from "react-loadable"
+
+import AllTechnology from "../components/alltechnology"
+
+const loader=()=>(<div>Loading...</div>)
+
+
+
+const MyLoadableCarousel = Loadable({
+  loader: () => import("../components/servicescarousel"),
+  loading: loader,
+})
 const IndexPage = () => (
   <ThemeProvider>
   <Layout>
@@ -44,10 +56,10 @@ const IndexPage = () => (
           The Best Professional Web Designing, Web Development, Mobile Application Development
             <br /> & SEO (Digital Marketing) Company in Telangana
           </p>
-          <Link href="#" className="seo_btn seo_btn_one btn_hover">
+          <Link to="/contact" className="seo_btn seo_btn_one btn_hover">
             Get Started
           </Link>
-          <Link href="#" className="seo_btn seo_btn_two btn_hover">
+          <Link to="/aboutus" className="seo_btn seo_btn_two btn_hover">
             Learn More
           </Link>
         </div>
@@ -90,118 +102,11 @@ const IndexPage = () => (
 </Row>
 </div>
 </section>
-<section className="seo_service_area sec_pad">
-  <div className="container">
-    <div
-      className="seo_sec_title text-center mb_70 wow fadeInUp"
-      data-wow-delay="0.3s"
-    >
-      <h2>What We Do & We Do It With Passion</h2>
-      <p>
-      win hub solutions is one of The Best Professional Web Designing, Web Development, Mobile Application Development & SEO (Digital Marketing) Company in Telangana.
-        <br />
-      </p>
-    </div>
-    <div className="row seo_service_info">
-      <div className="col-lg-4 col-md-6">
-        <div className="seo_service_item">
-          <img src="../img/seo/icon1.png" alt=''/>
-          <Link href="#">
-            <h4>Web Development</h4>
-          </Link>
-          <p>
-          We specialize in developing custom software applications specifically for custom programming, database design, client-server and internet / intranet software development.
-          </p>
-          <Link href="#">
-            <i className="arrow_right" />
-          </Link>
-        </div>
-      </div>
-      <div className="col-lg-4 col-md-6">
-        <div className="seo_service_item">
-          <img src="../img/seo/icon2.png" alt="" />
-          <Link href="#">
-            <h4>Digital Marketing</h4>
-          </Link>
-          <p>
-          We have experienced team of search engine optimizers & digital marketing experts 
-          who can handle any type of business oriented website and target perfect users inorder to improve your online business.
-          </p>
-          <Link href="#">
-            <i className="arrow_right" />
-          </Link>
-        </div>
-      </div>
-      <div className="col-lg-4 col-md-6">
-        <div className="seo_service_item">
-          <img src="img/seo/icon5.png" alt="" />
-          <Link href="#">
-            <h4>E-Commerce Development</h4>
-          </Link>
-          <p>
-          Winhub Solutions, one of Hyderabad’s leading web design & web development companies, 
-          has gained considerable experience in the design & development of e-commerce websites with all the latest features in both B2B and B2C models.</p>
-          <Link href="#">
-            <i className="arrow_right" />
-          </Link>
-        </div>
-      </div>
-      <div className="col-lg-4 col-md-6">
-        <div className="seo_service_item">
-          <img src="img/seo/icon5.png" alt="" />
-          <Link href="#">
-            <h4>Web Design</h4>
-          </Link>
-          <p>
-          Winhub solutions is one of the Best Web Designing Company in Hyderabad with specialized web designers,having experienced and expertise team of web designers with latest web skills who can provide you fully Customized website, 
-          </p>
-          <Link href="#">
-            <i className="arrow_right" />
-          </Link>
-        </div>
-      </div>
-      <div className="col-lg-4 col-md-6">
-        <div className="seo_service_item">
-          <img src="img/seo/icon5.png" alt="" />
-          <Link href="#">
-            <h4>UI/UX Design</h4>
-          </Link>
-          <p>
-          We make websites, User Interface and identity. We believe that beauty designing makes the work look more Fame for the business. </p>
-          <Link href="#">
-            <i className="arrow_right" />
-          </Link>
-        </div>
-      </div>
-      <div className="col-lg-4 col-md-6">
-        <div className="seo_service_item">
-          <img src="img/seo/icon5.png" alt="" />
-          <Link href="#">
-            <h4>MOBILE APP DEVELOPMENT</h4>
-          </Link>
-          <p>
-          Having a mobile app for the business has become a must in today’s world. We build hybrid mobile apps that run across Android, iOS, windows and other platforms
-
-</p>
-          <Link href="#">
-            <i className="arrow_right" />
-          </Link>
-        </div>
-      </div>
-      <div className="col-lg-12 text-center mt_40">
-        <Link href="#" className="seo_btn seo_btn_one btn_hover">
-          All Features
-        </Link>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
 </div>
 
-    
+<MyLoadableCarousel/>
+
+    <AllTechnology/>
   </Layout>
   </ThemeProvider>
 )

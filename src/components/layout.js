@@ -18,6 +18,8 @@ import "../vendors/scroll/jquery.mCustomScrollbar.min.css"
 import "../vendors/magnify-pop/magnific-popup.css"
 import styled from "@emotion/styled"
 import { css } from '@emotion/core'
+import '../components/layout.css'
+
 const themes = {
   light: {
     foreground: "inherit",
@@ -27,7 +29,7 @@ const themes = {
     foreground: "#ffffff",
     background: "#222222",
     back:"#2e2edb",
-    button:"#5e2ced",
+    button:"#f13c31",
     button1:"#00c99c",
 
   },
@@ -44,7 +46,7 @@ const ThemedLayout = styled.div`
     color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
   }  
   
-  & section,h3{
+  & section,h3,.service_item{
     background-color: ${props => themes[props.theme.name].background};
     color: ${props => themes[props.theme.name].foreground};
   }
@@ -62,6 +64,9 @@ const ThemedLayout = styled.div`
  &
  .f_widget.about-widget .f_list li a,.footer_nine_top .f_widget .f-title{
   color: ${props => themes[props.theme.name].foreground};
+ }
+ .pos_features_content .h_features_item p{
+  color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
  }
  &
  .navbar-expand-lg{
@@ -95,6 +100,12 @@ const ThemedLayout = styled.div`
 
 
  }
+ & .icon-block .icon-box svg g{
+
+  fill: ${props => themes[props.theme.name].foreground};
+}
+
+
  
 
 `
@@ -119,10 +130,10 @@ const Layout = ({ children }) => {
           <Header siteTitle={data.site.siteMetadata.title} theme={theme} />
      
         <main>{children}</main>
-      
+        
       <Footer/>
     
-
+    
     </ThemedLayout>
       )}
     </ThemeContext.Consumer>

@@ -3,8 +3,9 @@ import { Link } from "gatsby"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import banner from "../../img/home4/banner_img.png"
+import banner from "../../img/home4/Ecom_banner.svg"
 import bannerbg from "../../img/home4/banner_bg.png"
+import EcomTechnology from "../../components/ecomtech"
 const Ecom = () => (
   <Layout>
     <SEO title="Page two" />
@@ -59,6 +60,7 @@ const Ecom = () => (
           data-wow-delay="0.3s"
           src={banner}         
            alt
+           width={800}height={800}
           style={{
             visibility: "visible",
             animationDelay: "0.3s",
@@ -67,77 +69,10 @@ const Ecom = () => (
         />
       </div>
     </div>
-    <div className="partner_logo">
-      <div
-        className="p_logo_item wow fadeInLeft"
-        data-wow-delay="0.2s"
-        style={{
-          visibility: "hidden",
-          animationDelay: "0.2s",
-          animationName: "none"
-        }}
-      >
-        <a href="#">
-          <img src="img/home3/logo_01.png" alt />
-        </a>
-      </div>
-      <div
-        className="p_logo_item wow fadeInLeft"
-        data-wow-delay="0.3s"
-        style={{
-          visibility: "hidden",
-          animationDelay: "0.3s",
-          animationName: "none"
-        }}
-      >
-        <a href="#">
-          <img src="img/home3/logo_02.png" alt />
-        </a>
-      </div>
-      <div
-        className="p_logo_item wow fadeInLeft"
-        data-wow-delay="0.4s"
-        style={{
-          visibility: "hidden",
-          animationDelay: "0.4s",
-          animationName: "none"
-        }}
-      >
-        <a href="#">
-          <img src="img/home3/logo_03.png" alt />
-        </a>
-      </div>
-      <div
-        className="p_logo_item wow fadeInLeft"
-        data-wow-delay="0.5s"
-        style={{
-          visibility: "hidden",
-          animationDelay: "0.5s",
-          animationName: "none"
-        }}
-      >
-        <a href="#">
-          <img src="img/home3/logo_04.png" alt />
-        </a>
-      </div>
-      <div
-        className="p_logo_item wow fadeInLeft"
-        data-wow-delay="0.6s"
-        style={{
-          visibility: "hidden",
-          animationDelay: "0.6s",
-          animationName: "none"
-        }}
-      >
-        <a href="#">
-          <img src="img/home3/logo_05.png" alt />
-        </a>
-      </div>
-    </div>
-  </div>
+   </div>
 </section>
 <section className="process_area bg_color sec_pad">
-  <div className="container">
+<div className="container custom_container">
 <div className="elementor-column-wrap  elementor-element-populated">
   <div className="elementor-widget-wrap">
     <div
@@ -207,7 +142,7 @@ const Ecom = () => (
 </div>
 </div>
 </section>
-  
+<EcomTechnology/>
   </Layout>
 )
 

@@ -3,6 +3,13 @@ import { Link } from "gatsby"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import dashboard from "../../img/wordpress/dashboard.svg"
+import Responsive from "../../img/wordpress/smartphone.svg"
+import Migrate from "../../img/wordpress/update-alt.svg"
+import Plugin from "../../img/wordpress/plug-solid.svg" 
+import Ecomm from "../../img/wordpress/Ecomm.svg"  
+import CMS from "../../img/wordpress/wordpress-brands.svg" 
+
 
 
 const wordpress = () => (
@@ -52,45 +59,7 @@ const wordpress = () => (
       </div>
     </div>
   </section>
-  <section className="ticket_area">
-    <div
-      className="ticket_shap"
-      style={{ background: "url(img/pos/shape.png)" }}
-    />
-    <div
-      className="pattern"
-      style={{ background: "url(img/pos/pattern_01.png)" }}
-    />
-    <div className="container">
-      <div className="ticket_item">
-        <div className="icon">
-          <img src="img/pos/icon1.png" alt />
-        </div>
-        <h2>
-          44 POS <span>Already Set up</span>
-        </h2>
-        <p>More Than</p>
-      </div>
-      <div className="ticket_item">
-        <div className="icon pink">
-          <img src="img/pos/icon2.png" alt />
-        </div>
-        <h2>
-          $420.00 <span>Ultimate Plan</span>
-        </h2>
-        <p>Price</p>
-      </div>
-      <div className="ticket_item">
-        <div className="icon yellow">
-          <img src="img/pos/icon3.png" alt />
-        </div>
-        <h2>
-          in 7 days<span>In your Store</span>
-        </h2>
-        <p>Set Up</p>
-      </div>
-    </div>
-  </section>
+  
   <section className="partner_logo_area">
     <div className="container">
       <h4 className="f_size_18 f_400 f_p text-center l_height28 mb_70">
@@ -143,7 +112,11 @@ const wordpress = () => (
       <div className="row pos_service_info">
         <div className="col-lg-4 col-sm-6">
           <div className="hosting_service_item">
-            <img src="img/pos/laptop.png" alt />
+            <img src={dashboard} 
+            alt 
+            width={50}
+            height={50}
+            />
             <a href="#">
               <h4 className="h_head">WordPress Installation & Configuration</h4>
             </a>
@@ -154,7 +127,10 @@ const wordpress = () => (
         </div>
         <div className="col-lg-4 col-sm-6">
           <div className="hosting_service_item">
-            <img src="img/pos/statistics.png" alt />
+          <img src={Responsive}  alt 
+            width={50}
+            height={50}
+            />
             <a href="#">
               <h4 className="h_head">WordPress Responsive Design</h4>
             </a>
@@ -165,7 +141,10 @@ const wordpress = () => (
         </div>
         <div className="col-lg-4 col-sm-6">
           <div className="hosting_service_item">
-            <img src="img/pos/delivery-truck.png" alt />
+            <img src={Migrate}  alt 
+            width={50}
+            height={50}
+            />
             <a href="#">
               <h4 className="h_head">WordPress Migration</h4>
             </a>
@@ -176,7 +155,10 @@ const wordpress = () => (
         </div>
         <div className="col-lg-4 col-sm-6">
           <div className="hosting_service_item">
-            <img src="img/pos/cash-register.png" alt />
+            <img src={Plugin} alt 
+            width={50}
+            height={50}
+            />
             <a href="#">
               <h4 className="h_head">WordPress Plugin Development</h4>
             </a>
@@ -188,7 +170,9 @@ const wordpress = () => (
         <div className="col-lg-4 col-sm-6">
           <div className="hosting_service_item">
             <div className="icon">
-              <img src="img/pos/credit-card.png" alt />
+              <img src={Ecomm} alt 
+                  width={50}
+                  height={50}/>
             </div>
             <a href="#">
               <h4 className="h_head">WordPress eCommerce Solutions</h4>
@@ -201,10 +185,11 @@ const wordpress = () => (
         <div className="col-lg-4 col-sm-6">
           <div className="hosting_service_item">
             <div className="icon">
-              <img src="img/pos/mailbox.png" alt />
+              <img src={CMS} alt width={50}
+                  height={50}/>
             </div>
             <a href="#">
-              <h4 className="h_head">WordPress CMS Developmentr</h4>
+              <h4 className="h_head">WordPress CMS Development</h4>
             </a>
             <p>
             We specialize in making the content creation process simple and fast to update your site from time to time. By enhancing the features of WP CMS, we have built a website that maintains and meets standards

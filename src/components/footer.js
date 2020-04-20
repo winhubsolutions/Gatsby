@@ -6,6 +6,7 @@ import {Link} from "gatsby"
 
 
 const Footer = () => (
+
 <footer className="footer_nine_area">
   <div className="footer_nine_top">
     <div className="footer_shap left" />
@@ -100,6 +101,7 @@ const Footer = () => (
       </div>
     </div>
   </div>
+  
   <div className="footer_nine_bottom">
     <div className="container">
       <div className="row">

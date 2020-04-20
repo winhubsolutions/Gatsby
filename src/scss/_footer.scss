@@ -40,7 +40,7 @@
                         content: "";
                         width: 0;
                         height: 1px;
-                        background: #6754e2;
+                        background: #f13c31;
                         right: 0;
                         left: auto;
                         bottom: 0;
@@ -113,7 +113,7 @@
                 color: #7f88a6;
                 transition: color 0.2s linear;
                 &:hover{
-                    color: #6754e2; 
+                    color: #f13c31; 
                 }
             }
             & + li{
@@ -132,7 +132,7 @@
     }
     a{
         &:hover{
-            color: #6754e2; 
+            color: #f13c31; 
         }
     }
 }
@@ -303,9 +303,9 @@
                     li{
                         a{
                             &:hover{
-                                color:#5e2ced;
+                                color:#f13c31;
                                 &:before{
-                                    background: #5e2ced;
+                                    background: #f13c31;
                                 }
                             }
                         }
@@ -314,7 +314,7 @@
             }
             .widget-wrap p a{
                 &:hover{
-                   color:#5e2ced; 
+                   color:#f13c31; 
                 }
             }
         }
@@ -322,12 +322,12 @@
     .footer_bottom{
         p{
             a{
-                color:#5e2ced;
+                color:#f13c31;
             }
         } 
         a{
             &:hover{
-                color:#5e2ced;  
+                color:#f13c31;  
             }
         }
     }
@@ -477,7 +477,7 @@
     padding: 40px 0px;
     a{
         &:hover{
-            color: #5e2ced;
+            color: #f13c31;
         }
     }
     .f_menu{
@@ -488,14 +488,14 @@
                     content: "";
                     width: 0;
                     height: 1px;
-                    background: #5e2ced;
+                    background: #f13c31;
                     position: absolute;
                     bottom: 0;
                     left: 0;
                     transition: all 0.2s linear;
                 }
                 &:hover{
-                    color: #5e2ced;
+                    color: #f13c31;
                     &:before{
                         width: 100%;
                     }
@@ -611,7 +611,7 @@
             .f_social_icon_two{
                 a{
                     &:hover{
-                        color: #6754e2;
+                        color: #f13c31;
                     }
                 }
             }
@@ -619,17 +619,17 @@
         .widget-wrap p{
             a{
                 &:hover{
-                    color: #6754e2;
+                    color: #f13c31;
                 }
             }
         } 
         &.about-widget .f_list li{
             a{
                 &:before{
-                    background:#6754e2; 
+                    background:#f13c31; 
                 }
                 &:hover{
-                    color: #6754e2;
+                    color: #f13c31;
                 }
             }
         } 
@@ -638,19 +638,19 @@
         a{
             transition: color 0.2s linear;
             &:hover{
-                color: #6754e2;
+                color: #f13c31;
             }
         }
         p{
             a{
-                color: #6754e2;
+                color: #f13c31;
             }
         }
         .f_menu{
             li{
                 a{
                     &:hover{
-                        color: #6754e2;
+                        color: #f13c31;
                     }
                 }
             }
@@ -669,7 +669,7 @@
                 color: #6d738c;
                 transition: color 0.2s linear;
                 &:hover{
-                    color: #5e2ced;
+                    color: #f13c31;
                 }
             }
         } 
@@ -677,10 +677,10 @@
             a{
                 color: #6d738c;
                 &:before{
-                    background:#5e2ced; 
+                    background:#f13c31; 
                 }
                 &:hover{
-                    color: #5e2ced;
+                    color: #f13c31;
                 }
             }
         } 
@@ -689,13 +689,13 @@
         a{
             color: #6d738c;
             &:hover{
-                color: #5e2ced;
+                color: #f13c31;
             }
         }
         p{
             color: #6d738c;
             a{
-                color: #5e2ced;
+                color: #f13c31;
             }
         }
         .f_menu{
@@ -703,7 +703,7 @@
                 a{
                     color: #6d738c;
                     &:hover{
-                        color: #5e2ced;
+                        color: #f13c31;
                     }
                 }
             }
@@ -994,7 +994,7 @@
                 display: none;
             }
             &:hover{
-                color: #5e2ced;
+                color: #f13c31;
             }
         }
     } 
@@ -1006,8 +1006,8 @@
         border: 1px solid #e2e2eb;
         font-size: 12px;
         &:hover{
-            background: #5e2ced;
-            border-color: #5e2ced;
+            background: #f13c31;
+            border-color: #f13c31;
         }
         & + a{
             margin-left: 4px;

@@ -9,8 +9,11 @@ import enter from "../../img/home2/Enterprise-Solutions.svg"
 import ecom from "../../img/pos/Ecom.svg"
 import Content from "../../img/pos/item3.svg"
 import Customweb from "../../img/pos/customweb.svg"
+import Technology from "../../components/tech"
+
 const webdevelopment = () => (
   <Layout>
+  
     <SEO title="Page two" />
     <section className="agency_banner_area bg_color">
   <img className="banner_shap" src={bannerbg} alt />
@@ -57,73 +60,7 @@ const webdevelopment = () => (
         />
       </div>
     </div>
-    <div className="partner_logo">
-      <div
-        className="p_logo_item wow fadeInLeft"
-        data-wow-delay="0.2s"
-        style={{
-          visibility: "hidden",
-          animationDelay: "0.2s",
-          animationName: "none"
-        }}
-      >
-        <a href="#">
-          <img src="img/home3/logo_01.png" alt />
-        </a>
-      </div>
-      <div
-        className="p_logo_item wow fadeInLeft"
-        data-wow-delay="0.3s"
-        style={{
-          visibility: "hidden",
-          animationDelay: "0.3s",
-          animationName: "none"
-        }}
-      >
-        <a href="#">
-          <img src="img/home3/logo_02.png" alt />
-        </a>
-      </div>
-      <div
-        className="p_logo_item wow fadeInLeft"
-        data-wow-delay="0.4s"
-        style={{
-          visibility: "hidden",
-          animationDelay: "0.4s",
-          animationName: "none"
-        }}
-      >
-        <a href="#">
-          <img src="img/home3/logo_03.png" alt />
-        </a>
-      </div>
-      <div
-        className="p_logo_item wow fadeInLeft"
-        data-wow-delay="0.5s"
-        style={{
-          visibility: "hidden",
-          animationDelay: "0.5s",
-          animationName: "none"
-        }}
-      >
-        <a href="#">
-          <img src="img/home3/logo_04.png" alt />
-        </a>
-      </div>
-      <div
-        className="p_logo_item wow fadeInLeft"
-        data-wow-delay="0.6s"
-        style={{
-          visibility: "hidden",
-          animationDelay: "0.6s",
-          animationName: "none"
-        }}
-      >
-        <a href="#">
-          <img src="img/home3/logo_05.png" alt />
-        </a>
-      </div>
-    </div>
+    
   </div>
 </section>
 {/* <section className="process_area bg_color sec_pad">
@@ -255,8 +192,9 @@ const webdevelopment = () => (
     </div>
   </div>
 </section> */}
+<div Id="Enterprise">
 <section class="pos_features_area sec_pad">
-            <div class="container">
+<div className="container custom_container">
 <div className="row flex-row-reverse pos_item">
   <div className="col-lg-6">
     <div className="pos_features_img">
@@ -288,13 +226,19 @@ const webdevelopment = () => (
         </div>
       </div>
       <div className="media h_features_item">
-        <i className="icon_bag_alt orange" />
-        <div className="media-body">
-          <h3 className="h_head">Internet Olmadan Calisabilme</h3>
-          <p>
-            Tinkety tonk old fruit daft Richard baking cakes the bee's knees I
-            brown bread crikey.!
-          </p>
+        
+      <div className="col-lg-6 col-md-6-body">
+
+<li>Custom Software Development</li>
+<li>CRM Software Development</li>
+<li>Custom  Web Development</li>
+
+        </div>
+        <div className="col-lg-6 col-md-6-body">
+
+<li>Enterprise System Integration</li>
+<li>Enterprise Mobility Solutions</li>
+<li>End-to-end IT Consultation</li>
         </div>
       </div>
     </div>
@@ -302,9 +246,11 @@ const webdevelopment = () => (
 </div>
 </div>
 </section>
+</div>
 
+<div Id="E-Commerce">
 <section class="pos_features_area sec_pad">
-            <div class="container">
+<div className="container custom_container">
 <div className="row pos_item">
       <div className="col-lg-6">
         <div className="pos_features_img img_left">
@@ -333,9 +279,9 @@ const webdevelopment = () => (
             </div>
           </div>
           <div className="media h_features_item">
-            <i className="icon_bag_alt green" />
+
             <div className="media-body">
-              <h3 className="h_head">icon_creditcard</h3>
+            
               <div className="service-points"><div className="wwd-servces-points">
 <ul class="grey-bullet two-col">
 <li>Fraud Proof eCommerce Website Development</li>
@@ -356,8 +302,10 @@ const webdevelopment = () => (
     </div>
     </div>
 </section>
+</div>
+<div id="Custom-Web-Development">
 <section className="pos_features_area sec_pad">
-  <div className="container">
+<div className="container custom_container">
     <div className="row flex-row-reverse pos_item">
       <div className="col-lg-6">
         <div className="pos_features_img">
@@ -374,7 +322,7 @@ const webdevelopment = () => (
           Custom Web Development
           </h2>
           <div className="media h_features_item">
-            <i className="icon_lightbulb_alt" />
+           
             <div className="media-body">
             
               <p>
@@ -382,7 +330,7 @@ const webdevelopment = () => (
             </div>
           </div>
           <div className="media h_features_item">
-            <i className="icon_bag_alt orange" />
+
             <div className="media-body">
             
               <p>
@@ -395,7 +343,7 @@ const webdevelopment = () => (
             <div className="media h_features_item">
             <i className="icon_bag_alt green" />
             <div className="media-body">
-              <h3 className="h_head">icon_creditcard</h3>
+        
 
               <div _ngcontent-c4="" class="service-points"><ul class="white-bullet">
 <li>Custom Website Design</li>
@@ -412,7 +360,12 @@ const webdevelopment = () => (
         
       </div>
     </div>
-   
+    </div>
+    </section>
+    </div>
+    <div id="Content-Management-System">
+<section className="pos_features_area sec_pad">
+<div className="container custom_container">
     <div className="row flex-row-reverse pos_item">
       <div className="col-lg-6">
         <div className="pos_features_img">
@@ -428,7 +381,7 @@ const webdevelopment = () => (
           Content Management System
           </h2>
           <div className="media h_features_item">
-            <i className="icon_check check" />
+
             <div className="media-body">
               
               <p>
@@ -440,7 +393,6 @@ const webdevelopment = () => (
           <div className="media h_features_item">
             <i className="icon_check check" />
             <div className="media-body">
-              <h3 className="h_head">Bakim Maliyeti Yok</h3>
               <div _ngcontent-c4="" class="service-points"><ul class="grey-bullet">
 <li>Custom CMS Web Development</li>
 <li>CMS for eCommerce Solutions</li>
@@ -455,10 +407,12 @@ const webdevelopment = () => (
       </div>
     </div>
   </div>
-</section>;
+
+</section>
+</div>
 
 
-
+<Technology/> 
 
   </Layout>
 )

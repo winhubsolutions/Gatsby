@@ -64,7 +64,7 @@
             color: #7fcb11;
         }
         &.p_icon2{
-            color: #6754e2;
+            color: #f13c31;
         }
         &.p_icon3{
             color: #e92460;
@@ -159,7 +159,7 @@
     .btn-submit{
         position: absolute;
         background: transparent;
-        color: #6754e2;
+        color: #f13c31;
         right: 40px;
         line-height: 100px;
         padding: 0px;
@@ -551,19 +551,19 @@
             color: #fff;
             &:hover{
                 box-shadow: none;
-                color: #5e2ced;
+                color: #f13c31;
                 background: #fff;
             }
         }
         .white_btn{
-            color: #5e2ced;
+            color: #f13c31;
             box-shadow: none;
             background: #fff;
             margin-right: 25px;
             &:hover{
                 box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
                 color: #fff;
-                background: #5e2ced;
+                background: #f13c31;
             }
         }
     }
@@ -785,7 +785,7 @@
             }
             &:hover{
                 &:before{
-                    color: #5e2ced;
+                    color: #f13c31;
                 }
             }
         }
@@ -809,8 +809,8 @@
         margin: 40px 0px;
         transition: all 0.2s linear;
         &:hover{
-            background: #5e2ced;
-            border-color: #5e2ced;
+            background: #f13c31;
+            border-color: #f13c31;
             color: #fff;
         }
     }

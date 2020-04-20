@@ -1629,7 +1629,7 @@
         margin-bottom: 10px;
     }
     .header_area_three .menu_four .menu_toggle .hamburger span{
-        background: #6754e2;
+        background: #f13c31;
     }
     .header_area_three{
         padding: 28px 0px;
@@ -1678,10 +1678,10 @@
         background: #4069eb;
     }
     .menu_four >.menu > .nav-item:hover .nav-link,.menu_four .menu > .nav-item.active .nav-link{
-        color: #6754e2;
+        color: #f13c31;
     }
     .menu_four > .menu > .nav-item:hover > .nav-link:before,.menu_four .menu > .nav-item.active > .nav-link:before{
-        background: #6754e2;
+        background: #f13c31;
     }
     
     .payment_features_content.pl_70{

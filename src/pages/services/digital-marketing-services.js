@@ -1,10 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import ecom from "../../img/pos/Ecom.svg"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import banner from "../../img/home4/banner_img.png"
+import banner from "../../img/home4/Digital.svg"
 import bannerbg from "../../img/home4/banner_bg.png"
+import seo from "../../img/home4/Seologo.svg"
 const Digital = () => (
   <Layout>
     <SEO title="Page two" />
@@ -23,7 +24,7 @@ const Digital = () => (
               animationName: "fadeInLeft"
             }}
           >
-          E-Commerce Website Development Company In Telanagana
+         Digital Marketing Services Company In Telanagana
           </h2>
           <p
             className="f_400 l_height28 wow fadeInLeft"
@@ -35,8 +36,8 @@ const Digital = () => (
             }}
           >
           
-          Are You Looking For E-Commerce Website Development Company in Telangana, India. We offer the best e-Commerce Website Design and Development Services. We build fully Responsive Mobile Ready E-Commerce Stores with Good Looking Front-end and Secure Back-end with all Latest e-Commerce features, which you can control very easily.          </p>
-          <div className="action_btn d-flex align-items-center mt_60">
+          Digital Marketing is one type of marketing strategy used by digital technologies such as computers, the Internet, social media and so on to promote any brand, organization, product or service.    </p>
+              <div className="action_btn d-flex align-items-center mt_60">
             <Link
               to="/contact"
               className="btn_hover agency_banner_btn wow fadeInLeft"
@@ -67,139 +68,118 @@ const Digital = () => (
         />
       </div>
     </div>
-    <div className="partner_logo">
-      <div
-        className="p_logo_item wow fadeInLeft"
-        data-wow-delay="0.2s"
-        style={{
-          visibility: "hidden",
-          animationDelay: "0.2s",
-          animationName: "none"
-        }}
-      >
-        <a href="#">
-          <img src="img/home3/logo_01.png" alt />
-        </a>
-      </div>
-      <div
-        className="p_logo_item wow fadeInLeft"
-        data-wow-delay="0.3s"
-        style={{
-          visibility: "hidden",
-          animationDelay: "0.3s",
-          animationName: "none"
-        }}
-      >
-        <a href="#">
-          <img src="img/home3/logo_02.png" alt />
-        </a>
-      </div>
-      <div
-        className="p_logo_item wow fadeInLeft"
-        data-wow-delay="0.4s"
-        style={{
-          visibility: "hidden",
-          animationDelay: "0.4s",
-          animationName: "none"
-        }}
-      >
-        <a href="#">
-          <img src="img/home3/logo_03.png" alt />
-        </a>
-      </div>
-      <div
-        className="p_logo_item wow fadeInLeft"
-        data-wow-delay="0.5s"
-        style={{
-          visibility: "hidden",
-          animationDelay: "0.5s",
-          animationName: "none"
-        }}
-      >
-        <a href="#">
-          <img src="img/home3/logo_04.png" alt />
-        </a>
-      </div>
-      <div
-        className="p_logo_item wow fadeInLeft"
-        data-wow-delay="0.6s"
-        style={{
-          visibility: "hidden",
-          animationDelay: "0.6s",
-          animationName: "none"
-        }}
-      >
-        <a href="#">
-          <img src="img/home3/logo_05.png" alt />
-        </a>
-      </div>
-    </div>
+    
   </div>
 </section>
-<section className="process_area bg_color sec_pad">
-  <div className="container">
-<div className="elementor-column-wrap  elementor-element-populated">
-  <div className="elementor-widget-wrap">
-    <div
-      className="elementor-element elementor-element-5a6750c elementor-widget elementor-widget-spacer"
-      data-id="5a6750c"
-      data-element_type="widget"
-      data-widget_type="spacer.default"
-    >
-      <div className="elementor-widget-container">
-        <div className="elementor-spacer">
-          <div className="elementor-spacer-inner" />
+
+
+<div Id="DigitalMarketing">
+<section class="pos_features_area sec_pad">
+<div className="container custom_container">
+<div className="row pos_item">
+      <div className="col-lg-6">
+        <div className="pos_features_img img_left">
+          <div className="shape_img yellow" />
+          <div className="shap_img yellow">
+            <img src={ecom} 
+            height="600"
+            width="500"
+            alt="features" />
+          </div>
+        </div>
+      </div>
+      <div className="col-lg-6">
+        <div className="pos_features_content pl_70">
+          <h2>
+           
+          Digital Marketing 
+          </h2>
+          <div className="media h_features_item">
+            
+            <div className="media-body">
+              
+              <p>
+              Winhub Solutions, as one of the leading professional SEO and digital marketing companies in Hyderabad,
+           offers the best SEO and digital marketing services at reasonable prices. 
+           We have an experienced team of search engine optimists & digital marketing experts who can handle any kind of company-oriented website and target ideal users in order to boost your online business.
+       </p>
+            </div>
+          </div>
+          <div className="media h_features_item">
+
+            <div className="media-body">
+            
+              <div className="service-points"><div className="wwd-servces-points">
+<ul class="grey-bullet two-col">
+<li>Creating and maintaining profiles and fans on top social networking platforms like Facebook, Twitter, Google+, Linkedin and more.</li>
+           <li>Integrate social media profiles into your website for more followers.</li>
+           <li>Growing followers by organically for greater visibility in social media.</li>
+           <li>Linking Social Media accounts together for better efficiency</li>
+          <li>
+          Engaging your brand's followers with photos, videos, quotes and exclusive offers
+          </li>
+          <li>Getting traffic from  social media by approaching the right audience</li>
+          <li>Create and promote videos that reflect your brand in order to improve search engine rankings as well as increase traffic to your site.</li>
+
+</ul>
+</div>
+</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div
-      className="elementor-element elementor-element-f447bec elementor-widget elementor-widget-text-editor"
-      data-id="f447bec"
-      data-element_type="widget"
-      data-widget_type="text-editor.default"
-    >
-      <div className="elementor-widget-container">
-        <div className="elementor-text-editor elementor-clearfix">
+    </div>
+</section>
+</div>
+
+<div Id="SEO">
+<section class="pos_features_area sec_pad">
+<div className="container custom_container">
+<div className="row flex-row-reverse pos_item">
+  <div className="col-lg-6">
+    <div className="pos_features_img">
+      <div className="shape_img" />
+      <div className="shap_img">
+        <img src={seo} 
+         height="600"
+         width="500"
+         alt="features" />
+      </div>
+    </div>
+  </div>
+  <div className="col-lg-6">
+    <div className="pos_features_content">
+      <h2>
+      Search Engine Optimization
+      
+      </h2>
+      <div className="media h_features_item">
+      
+        <div className="media-body">
+       
           <p>
-            Winhub Solutions offers a most robust, customer oriented, well
-            arranged, secured and fast loading e-commerce website to convert
-            your site into one of the best online retail stores in the market
-            today. Winhub Solutions focuses exclusively on tasks intended at
-            selling your products online, increasing your online returns, high
-            conversion rate and improving your business strategy. Being a
-            premium ecommerce web development company in Kolkata we are
-            committed to deliver fully functional ecommerce website with all the
-            modern features on time.
-          </p>
-          <p>
-            Our ecommerce specialist team designs and develops an ecommerce
-            website in such a way so that it can stand out from other available
-            portals in today’s competitive market. Normally we use two most
-            popular open source platform Opencart and Magento to build an
-            standard ecommerce website. If it doesn’t meet your requirement
-            because of to the limitation of Open source platform features, don’t
-            worry!! We have also great customized ecommerce solutions to meet
-            your all needs.
-          </p>
-          <h2>Winhub Solutions eCommerce Development Services:</h2>
-          <ul>
-            <li>Custom eCommerce Web Development</li>
-            <li>eCommerce Shopping Cart Development</li>
-            <li>Payment Gateway Integration</li>
-            <li>eCommerce Website Design &amp; Customization</li>
-            <li>Plug-in &amp; Module Development</li>
-            <li>Responsive eCommerce Websites</li>
-            <li>Maintenance and Support</li>
-          </ul>
-          <p>
-            Our team of PHP developers is well-versed in delivering complete
-            eCommerce solutions across all major platforms like Magento,
-            Shopify, Bigcommerce, Zencart, Virtuemart etc. We can even provide
-            you with custom eCommerce development over Java and .NET. Our
-            experience over years helps us develop well-designed user-friendly
-            eCommerce websites that can be integrated with various proprietary
-            analytics tools.
-          </p>
+          Welcome to the Best SEO / Internet Marketing Company in Hyderabad with more than 10 + years of experience and knowledge in all digital marketing trends.
+          Seo is simply a method of making the website more available to search engines such as Google and search engine users. In other words, you make it easier for them to find your website or company.
+          Leading SEO Company in Hyderabad, Winhub solutions Provides the best SEO and digital marketing services for any form of industry / website, such as travel websites, educational websites, enterprise websites, personal websites, entertainment websites, ecommerce portals (b2b and b2c),etc. with very small SEO bundles. 
+          Our professional SEO team also practices only organic SEO strategies that are approved by all search engines, 
+          so that your website has decent keyword positions as well as real traffic.
+                </p>
+        </div>
+      </div>
+      <div className="media h_features_item">
+        
+      <div className="col-lg-6 col-md-6-body">
+
+<li> SEO provides Good Business Visibility and Branding.</li>
+<li>  SEO provides Credibility to Your Business.</li>
+<li>   SEO friendly websites in every project</li>
+
+        </div>
+        <div className="col-lg-6 col-md-6-body">
+<li>   SEO has one of The Best ROI's in Advertising.</li>
+<li>   SEO increases You Unmatched Insight into Your Business.</li>
+<li></li>
         </div>
       </div>
     </div>
@@ -207,6 +187,9 @@ const Digital = () => (
 </div>
 </div>
 </section>
+</div>
+
+
   
   </Layout>
 )

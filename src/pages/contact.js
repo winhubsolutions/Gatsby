@@ -44,10 +44,14 @@ class Contact extends Component {
         <div className="col-lg-3 pr-0">
           <div className="contact_info_item">
           <div className="f_p f_size_20 t_color3 f_500 mb_20 text-center">
-          <h1>INDIA</h1>
-            
+       
         <Clock 
-          value={this.state.date}  />
+            name="India Time:"
+            value={this.state.date}
+            country={"en-IN"}
+            timeZone={"Asia/Kolkata"}  />
+
+            
           </div>
      
             <h6 className="f_p f_size_20 t_color3 f_500 mb_20">

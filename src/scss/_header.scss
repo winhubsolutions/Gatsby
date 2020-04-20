@@ -41,7 +41,7 @@
                 content: "";
                 width: 0;
                 height: 1px;
-                background: #6754e2;
+                background: #f13c31;
                 position: absolute;
                 bottom: 0;
                 left: auto;
@@ -501,7 +501,7 @@
                 width: 16px;
                 height: 16px;
                 border-radius: 50%;
-                background: #6754e2;
+                background: #f13c31;
                 color: #fff;
                 font-size: 11px;
                 display: block;
@@ -572,7 +572,7 @@
                             font-size: 14px;
                             color: #333;
                             &:hover{
-                                color:#6754e2;
+                                color:#f13c31;
                             }
                         }
                     }
@@ -582,7 +582,7 @@
                         }
                         .cart-title{
                             a{
-                                color:#6754e2;
+                                color:#f13c31;
                             }
                         }
                     }
@@ -608,20 +608,20 @@
                             margin: 0px;
                             line-height: 40px;
                             padding: 0px 32px;
-                            background: #6754e2;
-                            border: 1px solid #6754e2;
+                            background: #f13c31;
+                            border: 1px solid #f13c31;
                             color: #fff;
                             transition: all 0.3s linear;
                             &:hover{
                                 background: transparent;
-                                color: #6754e2;
+                                color: #f13c31;
                             }
                             & + .get_btn{
                                 margin-left: 10px;
                                 background: transparent;
-                                color: #6754e2;
+                                color: #f13c31;
                                 &:hover{
-                                    background: #6754e2;
+                                    background: #f13c31;
                                     color: #fff;
                                 }
                             }
@@ -703,8 +703,8 @@
         min-width: 120px;
         text-align: center;
         &:hover{
-            background: #5e2ced;
-            border-color: #5e2ced;
+            background: #f13c31;
+            border-color: #f13c31;
         }
     }
     .btn_get_radious{
@@ -1022,7 +1022,7 @@
             left: 0;
             margin: 4px 0;
             display: block;
-            background: #5e2ced;
+            background: #f13c31;
             border-radius: 3px;
             -webkit-transition: .2s ease-in-out;
             transition: .2s ease-in-out;
@@ -1045,7 +1045,7 @@
         display: block;
         span{
             display: block;
-            background: #5e2ced;
+            background: #f13c31;
             border-radius: 3px;
             -webkit-transition: .2s ease-in-out;
             transition: .2s ease-in-out;
@@ -1118,19 +1118,19 @@
             padding-left: 30px;
         }
         .btn_get{
-            border-color:  #5e2ced;
-            background: #5e2ced;
+            border-color:  #f13c31;
+            background: #f13c31;
             color: #fff;
             &:hover{
                 background: transparent;
-                color: #5e2ced;
+                color: #f13c31;
             }
         }
     }
     &.navbar_fixed{
         .menu_four{
             .btn_get{
-                border-color:  #5e2ced !important;
+                border-color:  #f13c31 !important;
             }
         }
         
@@ -1143,7 +1143,7 @@
         a{
             transition: color 0.3s linear;
             &:hover{
-                color: #5e2ced;
+                color: #f13c31;
             }
         }
     }
@@ -1209,7 +1209,7 @@
         border-bottom: 1px solid #e5ddfc;
         a{
             &:hover{
-                color: #5e2ced !important;
+                color: #f13c31 !important;
             }
         }
         .header_contact_info{
@@ -1236,7 +1236,7 @@
 
 .header_area_seven{
     .header_top{
-        background: #5e2ced;
+        background: #f13c31;
         padding: 0px;
         a{
             line-height: 50px;
@@ -1394,7 +1394,7 @@
                 border: 2px solid #ccc5fa;
                 box-shadow: none;
                 &:hover{
-                    border-color: #6754e2;
+                    border-color: #f13c31;
                 }
             }
             .btn_get_radious{
@@ -1408,7 +1408,7 @@
             .menu_toggle{
                 .hamburger,.hamburger-cross{
                     span{
-                        background:#6754e2; 
+                        background:#f13c31; 
                     }
                 }
             } 

@@ -16,8 +16,8 @@ const Header = ({ siteTitle,theme  }) => (
  
   <header className="header_area">
  
-  <nav className="navbar navbar-expand-lg menu_one">
-    <div className="container custom_container p0">
+  <nav className="navbar navbar-expand-lg menu_one menu_four">
+  <div className="container custom_container p0">
       <Link className="navbar-brand" to="/">
         <img src={logo} 
         width={300}
@@ -76,7 +76,7 @@ const Header = ({ siteTitle,theme  }) => (
               <ul className="dropdown-menu">
                 <li className="nav-item">
                   <Link className="nav-link"
-                   to="/aboutus">Web Development
+                   to="services//Web-design">Web Design
                   
                   </Link>
                   <ul className="dropdown-menu">
@@ -99,39 +99,63 @@ const Header = ({ siteTitle,theme  }) => (
     <li className="nav-item">
     <Link 
       className="nav-link" 
-      to="services/ecommerce-development">
+      to="/services/ecommerce-development">
       Ecommerce Development
       
     </Link>
     </li>
-    <li className="nav-item">
-    <Link 
-      className="nav-link" 
-      to="services/digital-marketing-services">
-     Digital Marketing Services
+    
+                   
+                  </ul>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link"  to="services/Web-development">We Development </Link>
+                  <ul className="dropdown-menu">
+                  <li className="nav-item">
+                  <Link 
+                   className="nav-link" 
+                   to="/services/Web-development/#Enterprise">
+                       Enterprise Solutions
       
-    </Link>
-    </li>
-                   
+                   </Link>
+                   </li>
+                   <li className="nav-item">
+                  <Link 
+                   className="nav-link" 
+                   to="/services/Web-development/#E-Commerce">
+                       Ecommerce Development
+      
+                   </Link>
+                   </li>
+                   <li className="nav-item">
+                  <Link 
+                   className="nav-link" 
+                   to="/services/Web-development/#Custom-Web-Development">
+                       Custom Web Development
+      
+                   </Link>
+                   </li>
+                   <li className="nav-item">
+                  <Link 
+                   className="nav-link" 
+                   to="/services/Web-development/#Content-Management-System">
+                       Content Management System
+      
+                   </Link>
+                   </li>
                   </ul>
                 </li>
+                
                 <li className="nav-item">
-                  <Link className="nav-link">Elements 02</Link>
-                  <ul className="dropdown-menu">
-                    
-                  </ul>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link">Elements 03</Link>
-                  <ul className="dropdown-menu">
-                    
-                  </ul>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link">Headers</Link>
+                  <Link className="nav-link" to="services/digital-marketing-services">Digital Marketing Services</Link>
                   <ul className="dropdown-menu">
                    
-                   
+                   <Link 
+                className="nav-link" 
+                    to="/services/digital-marketing-services/#SEO">
+                   SEO
+      
+                  </Link>
                     
                     
                   </ul>
@@ -218,13 +242,10 @@ const Header = ({ siteTitle,theme  }) => (
         <Link className="btn_get btn_hover" to="/contact">
           Contact US
         </Link>
-
-        
-   
-
-      </div>
-      
-      <Switch
+        <ul className="navbar-nav ml-auto menu">
+        <li className="nav-item">
+           
+        <Switch
           onChange={() =>
             theme.updateTheme(theme.name === "light" ? "dark" : "light")
           }
@@ -236,14 +257,22 @@ const Header = ({ siteTitle,theme  }) => (
           boxShadow="0 0 2px 3px #B38CD9"
           activeBoxShadow="0 0 2px 3px #dfb3e6"
         /> 
+            
+          </li>
+          </ul>
+   
+
+      </div>
+      
+   
     
     
         
     </div>
-    
+ 
+
   </nav>
-
-
+  
 </header>
 
 )
