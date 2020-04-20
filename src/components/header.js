@@ -11,10 +11,10 @@ import Switch from "react-switch"
 
 
 const Header = ({ siteTitle,theme  }) => (
-
 <header className="header_area">
 
- <nav className="navbar navbar-expand-lg menu_one menu_four">
+  <nav className="navbar navbar-expand-lg menu_one ">
+ 
    
  <div className="container custom_container p0">
      <Link className="navbar-brand" to="/">
