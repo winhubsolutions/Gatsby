@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import ecom from "../../img/pos/Ecom.svg"
+import ecom from "../../img/pos/ecom.svg"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import banner from "../../img/home4/Digital.svg"

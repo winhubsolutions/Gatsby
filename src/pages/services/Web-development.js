@@ -6,7 +6,7 @@ import SEO from "../../components/seo"
 import banner from "../../img/home4/banner_img.png"
 import bannerbg from "../../img/home4/banner_bg.png"
 import enter from "../../img/home2/Enterprise-Solutions.svg"
-import ecom from "../../img/pos/Ecom.svg"
+import ecom from "../../img/pos/ecom.svg"
 import Content from "../../img/pos/item3.svg"
 import Customweb from "../../img/pos/customweb.svg"
 import Technology from "../../components/tech"
@@ -16,7 +16,7 @@ const webdevelopment = () => (
   
     <SEO title="Page two" />
     <section className="agency_banner_area bg_color">
-  <img className="banner_shap" src={bannerbg} alt />
+  <img className="banner_shap" src={bannerbg} alt="best web development company in hyderabad" />
   <div className="container custom_container">
     <div className="row">
       <div className="col-lg-5 d-flex align-items-center">
@@ -51,7 +51,7 @@ const webdevelopment = () => (
           className="protype_img wow fadeInRight"
           data-wow-delay="0.3s"
           src={banner}
-          alt
+          alt="best web development company in hyderabad"
           style={{
             visibility: "visible",
             animationDelay: "0.3s",
@@ -66,11 +66,11 @@ const webdevelopment = () => (
 {/* <section className="process_area bg_color sec_pad">
   <div className="container">
     <div className="features_info">
-      <img className="dot_img" src="img/process/divider.png" alt />
+      <img className="dot_img" src="img/process/divider.png" alt="best web development company in hyderabad" />
       <div className="row agency_featured_item mt-0 flex-row-reverse">
         <div className="col-md-6">
           <div className="agency_featured_img text-right">
-            <img src="img/process/process_1.png" alt />
+            <img src="img/process/process_1.png" alt="best web development company in hyderabad" />
           </div>
         </div>
         <div className="col-md-6">
@@ -79,7 +79,7 @@ const webdevelopment = () => (
               <span className="dot1" />
               <span className="dot2" />
             </div>
-            <img className="number" src="img/home4/icon01.png" alt />
+            <img className="number" src="img/home4/icon01.png" alt="best web development company in hyderabad" />
             <h3>Information Collection</h3>
             <p>
             For any web development company, this is a first step or a starting point. Our web developers will discuss your business in detail to get a clear understanding of the products or services you offer, what goals you want to achieve and when, and who your target audience is. This will help us decide on the strategy for building your website.
@@ -96,7 +96,7 @@ const webdevelopment = () => (
       <div className="row agency_featured_item agency_featured_item_two">
         <div className="col-md-6">
           <div className="agency_featured_img text-right">
-            <img src="img/process/process_2.png" alt />
+            <img src="img/process/process_2.png" alt="best web development company in hyderabad" />
           </div>
         </div>
         <div className="col-md-6">
@@ -105,7 +105,7 @@ const webdevelopment = () => (
               <span className="dot1" />
               <span className="dot2" />
             </div>
-            <img className="number" src="img/home4/icon02.png" alt />
+            <img className="number" src="img/home4/icon02.png" alt="best web development company in hyderabad" />
             <h3>Planning</h3>
             <p>
             In this stage, Winhub solutions professional developers, a reputed web development company India, build the sitemap and the wireframe. The sitemap will create the connection between the main areas on the site. It will also give you a good picture of what the website should look like once it's done. In fact, the sitemap allows to create a user-friendly and easy-to-use sitemap.
@@ -119,7 +119,7 @@ const webdevelopment = () => (
       <div className="row agency_featured_item flex-row-reverse">
         <div className="col-md-6">
           <div className="agency_featured_img text-right">
-            <img src="img/process/process_3.png" alt />
+            <img src="img/process/process_3.png" alt="best web development company in hyderabad" />
           </div>
         </div>
         <div className="col-md-6">
@@ -128,7 +128,7 @@ const webdevelopment = () => (
               <span className="dot1" />
               <span className="dot2" />
             </div>
-            <img className="number" src="img/home4/icon3.png" alt />
+            <img className="number" src="img/home4/icon3.png" alt="best web development company in hyderabad" />
             <h3>Design</h3>
             <p>
             We are Telangana's top web development service, and we're giving form to your website at this point. All needed visual material, including photographs, illustrations and videos, will also be created. We bear in mind the interests of your clients and the target market when working on the concept.The style, rendered in colors and with logos and pictures, offers a clearer view of the finished product.
@@ -142,7 +142,7 @@ const webdevelopment = () => (
       <div className="row agency_featured_item agency_featured_item_two">
         <div className="col-md-6">
           <div className="agency_featured_img text-right">
-            <img src="img/process/process_4.png" alt />
+            <img src="img/process/process_4.png" alt="best web development company in hyderabad" />
           </div>
         </div>
         <div className="col-md-6">
@@ -151,7 +151,7 @@ const webdevelopment = () => (
               <span className="dot1" />
               <span className="dot2" />
             </div>
-            <img className="number" src="img/process/icon_04.png" alt />
+            <img className="number" src="img/process/icon_04.png" alt="best web development company in hyderabad" />
             <h3>Wuth instant data to keep everyone in the know</h3>
             <p>
             When it comes to web development , content production also overlaps with other web development phases and has a central role to play in the whole process. The marketing department at Web Destiny, a reputable web development company, India, brings together information that has the potential to convey to the target market anything you have in mind. We would also include calls for action at the most strategic stage,We would also incorporate calls for action at the most important positions to ensure conversions. Our marketing specialists are writing catchy headlines, updating text, producing new text, assembling current data, and doing so many more to achieve the best traffic output.
@@ -165,7 +165,7 @@ const webdevelopment = () => (
       <div className="row agency_featured_item flex-row-reverse">
         <div className="col-md-6">
           <div className="agency_featured_img text-right">
-            <img src="img/process/process_5.png" alt />
+            <img src="img/process/process_5.png" alt="best web development company in hyderabad" />
           </div>
         </div>
         <div className="col-md-6">
@@ -174,7 +174,7 @@ const webdevelopment = () => (
               <span className="dot1" />
               <span className="dot2" />
             </div>
-            <img className="number" src="img/process/icon_05.png" alt />
+            <img className="number" src="img/process/icon_05.png" alt="best web development company in hyderabad" />
             <h3></h3>
             <p>
             We are a skilled and experienced web development company in India and we are starting to build your website at this point.Any dedicated web development company, such as Winhub solutions, will make use of all the graphic elements that were developed during the design and content creation phase at the time of the launch of the website. Typically, we're starting with the home page. Centered on the website hierarchy, sub- are added as set out in the sitemap.
@@ -203,7 +203,8 @@ const webdevelopment = () => (
         <img src={enter} 
          height="600"
          width="500"
-         alt="features" />
+         alt="best web development company in hyderabad"
+          />
       </div>
     </div>
   </div>
@@ -259,7 +260,9 @@ const webdevelopment = () => (
             <img src={ecom} 
             height="600"
             width="500"
-            alt="features" />
+            alt="best web development company in hyderabad"
+            
+           />
           </div>
         </div>
       </div>
@@ -312,7 +315,7 @@ const webdevelopment = () => (
           <div className="shape_img" />
           <div className="shap_img">
             <img src={Customweb}    height="600"
-         width="500" alt="features" />
+         width="500" alt="best web development company in hyderabad" />
           </div>
         </div>
       </div>
@@ -341,7 +344,7 @@ const webdevelopment = () => (
             </div>
             </div>
             <div className="media h_features_item">
-            <i className="icon_bag_alt green" />
+            <i className="icon_bag_alt"/>
             <div className="media-body">
         
 
@@ -371,7 +374,7 @@ const webdevelopment = () => (
         <div className="pos_features_img">
           <div className="shape_img blue" />
           <div className="shap_img blue">
-            <img src={Content} alt="features" />
+            <img src={Content} alt="best web development company in hyderabad" />
           </div>
         </div>
       </div>
