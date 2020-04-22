@@ -5,10 +5,11 @@ import Layout from "../components/layout"
 import {Link} from "gatsby"
 
 import SEO from "../components/seo"
-import {Col,Row,Container} from 'react-bootstrap'
+import {Col,Row} from 'react-bootstrap'
 import process from "../images/process_2.png"
 import { ThemeProvider } from "../components/ThemeContext"
 import Loadable from "react-loadable"
+import Clientlogo from "../components/clientlogo"
 
 import AllTechnology from "../components/alltechnology"
 
@@ -70,6 +71,8 @@ const IndexPage = () => (
     </div>
   </div>
 </section>
+
+<Clientlogo />
 <section className="seo_service_area sec_pad">
   <div className="container">
  

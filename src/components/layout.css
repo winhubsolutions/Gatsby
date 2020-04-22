@@ -132,3 +132,75 @@ p {
 .app_banner_contentmt.mt_40 p {
   color: #fff;
 }
+.bot {
+  bottom: 0;
+  right : 0;
+  position: fixed;
+  width: 350px;
+  z-index: 999;
+  
+}
+
+
+
+.svg-sprite {
+  background-image: url(https://www.indianic.com/brand-logo-black-sprite.beadcf92b69740a0f313.svg);
+  background-repeat: no-repeat;
+  display: block;
+  height: 70px;
+}
+
+
+.nav-tabs .nav-link {
+  border: 0px solid transparent;
+  /* border-top-left-radius: 1.25rem; */
+  /* border-top-right-radius: .25rem; */
+}
+
+
+body{font-family:Poppins,sans-serif}img{max-width:100%}h1, h2, h3, h4, h5, h6, p{margin:0}
+h1{font-size:60px;color:#252b33;font-weight:800;line-height:70px;letter-spacing:-1px}
+h2{font-size:40px;color:#252b33;font-weight:800;line-height:55px;letter-spacing:-.5px}
+h3{font-size:24px;color:#252b33;font-weight:600;line-height:34px}
+p{font-size:16px;color:#252b33;font-weight:400;line-height:28px}
+a{transition:all .3s ease-in-out}
+a:focus{outline:0}
+.link-button{padding:10px 30px;background:#f13c31;color:#fff;font-size:16px;border-radius:30px;border:2px solid #f13c31;font-weight:600;display:inline-block}
+.link-button:hover{background:0 0;color:#f13c31}
+.button-box{margin-top:60px}
+h2.mrg-b{margin-bottom:80px}
+.home-loader{width:200px;margin:0 auto;padding-top:60px}
+
+
+.support_integration_area {
+  background: #eaeeff;
+  padding-top: 120px;
+}
+.partner_info .logo_item {
+  width: calc(100% / 10);
+  margin-bottom: 60px;
+}
+
+
+
+.support_integration_area {
+  background: #eaeeff;
+  padding-top: 120px;
+}
+
+
+
+@media only screen and (max-width: 768px)
+{
+a.navbar-brand img {
+  width: 220px;
+  height: 80px;
+}
+}
+@media only screen and (max-width: 375px)
+{
+a.navbar-brand img {
+  width: 150px;
+  height: 50px;
+}
+}

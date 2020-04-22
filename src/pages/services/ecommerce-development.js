@@ -10,7 +10,7 @@ const Ecom = () => (
   <Layout>
     <SEO title="Page two" />
     <section className="agency_banner_area bg_color">
-  <img className="banner_shap" src={bannerbg} alt />
+  <img className="banner_shap" src={bannerbg} alt="ecommerce development company in hyderabad" />
   <div className="container custom_container">
     <div className="row">
       <div className="col-lg-5 d-flex align-items-center">
@@ -59,7 +59,7 @@ const Ecom = () => (
           className="protype_img wow fadeInRight"
           data-wow-delay="0.3s"
           src={banner}         
-           alt
+           alt="ecommerce development company in hyderabad"
            width={800}height={800}
           style={{
             visibility: "visible",

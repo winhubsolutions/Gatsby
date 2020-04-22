@@ -2,8 +2,7 @@ import React, { Component } from "react"
 import PropTypes from "prop-types"
 import ChatBot from "react-simple-chatbot"
 import { ThemeProvider } from "styled-components"
-
-
+import chat from "../img/home2/msgchat.png"
 const theme = {
   background: "#f5f8fb",
   fontFamily: "Helvetica",
@@ -13,7 +12,8 @@ const theme = {
   botBubbleColor: "#6d3dff",
   botFontColor: "#fff",
   userBubbleColor: "#fff",
-  userFontColor: "#4a4a4a"
+  userFontColor: "#4a4a4a",
+  hideBotAvatar:"false"
 };
 
 class Review extends Component {
@@ -94,12 +94,13 @@ class SimpleForm extends Component {
     return (
       <div>
         <ThemeProvider theme={theme}>
-          <ChatBot
+          <ChatBot headerTitle="Welcome" hideUserAvatar	="false" botAvatar={chat} cacheName="rsc_cache"  cache="false" toggleFloating="opened" opened="undefined"
+           floatingIcon={chat} floating="false" 
             handleEnd={this.handleEnd}
             steps={[
               {
                 id: "1",
-                message: "Bitte nenne mir deinen Namen!",
+                message: "Please tell me your name!",
                 trigger: "name"
               },
               {
@@ -109,19 +110,19 @@ class SimpleForm extends Component {
               },
               {
                 id: "3",
-                message: "Hallo {previousValue}, bist du...",
+                message: "Hi {previousValue}! What is your gender?",
                 trigger: "gender"
               },
               {
                 id: "gender",
                 options: [
-                  { value: "male", label: "Männlich", trigger: "5" },
-                  { value: "female", label: "Weiblich", trigger: "5" }
+                  { value: "male", label: "Male", trigger: "5" },
+                  { value: "female", label: "Female", trigger: "5" }
                 ]
               },
               {
                 id: "5",
-                message: "Wie alt bist du?",
+                message: "How old are you?",
                 trigger: "age"
               },
               {
@@ -130,11 +131,11 @@ class SimpleForm extends Component {
                 trigger: "7",
                 validator: value => {
                   if (isNaN(value)) {
-                    return "Bitte gib eine Zahl ein.";
+                    return "value must be a number.";
                   } else if (value < 0) {
-                    return "Die Zahl muss positive sein.";
+                    return "value must be positive.";
                   } else if (value > 120) {
-                    return `${value}? Komm schon...`;
+                    return `${value}? come on...`;
                   }
 
                   return true;
@@ -142,7 +143,7 @@ class SimpleForm extends Component {
               },
               {
                 id: "7",
-                message: "Wie lautet deine E-Mail Adresse?",
+                message: "What is your email address?",
                 trigger: "mail"
               },
               {
@@ -151,14 +152,14 @@ class SimpleForm extends Component {
                 trigger: "9",
                 validator: value => {
                   if (emailRegex.test(value) === false) {
-                    return "Bitte gib eine gültige E-Mail Adresse ein.";
+                    return "Please enter a valid e-mail address.";
                   }
                   return true;
                 }
               },
               {
                 id: "9",
-                message: "Super! Hier ist deine Zusammenfassung",
+                message: "Excellent! Here is your summary",
                 trigger: "review"
               },
               {
@@ -169,19 +170,19 @@ class SimpleForm extends Component {
               },
               {
                 id: "update",
-                message: "Möchtest du etwas ändern?",
+                message: "Do you want to change something?",
                 trigger: "update-question"
               },
               {
                 id: "update-question",
                 options: [
-                  { value: "yes", label: "Ja", trigger: "update-yes" },
-                  { value: "no", label: "Nein", trigger: "end-message" }
+                  { value: "yes", label: "Yes", trigger: "update-yes" },
+                  { value: "no", label: "No", trigger: "end-message" }
                 ]
               },
               {
                 id: "update-yes",
-                message: "Welches Feld möchtest du gerne ändern?",
+                message: "Which field would you like to change",
                 trigger: "update-fields"
               },
               {
@@ -219,7 +220,7 @@ class SimpleForm extends Component {
               },
               {
                 id: "end-message",
-                message: "Danke! Deine Daten wurden erfolgreich übermittelt",
+                message: "Thank you! Your data has been successfully transmitted",
                 end: true
               }
             ]}

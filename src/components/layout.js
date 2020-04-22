@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from 'react'
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from './header'
@@ -19,6 +19,12 @@ import "../vendors/magnify-pop/magnific-popup.css"
 import styled from "@emotion/styled"
 import { css } from '@emotion/core'
 import '../components/layout.css'
+import SimpleForm from "../components/chatbot"
+import chat from "../img/home2/msgchat.png"
+
+
+
+
 
 const themes = {
   light: {
@@ -44,6 +50,7 @@ const ThemedLayout = styled.div`
   min-height: 100vh;
   & a,h1,h2,h3,h4,h5,h6,span,p{
     color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
+    
   }  
   
   & section,h3,.service_item{
@@ -121,7 +128,10 @@ const Layout = ({ children }) => {
       }
     }
   `)
+  let [showChat, setShowChat] = useState(false);
 
+  const startChat = () => { setShowChat(true); }
+  const hideChat = () => { setShowChat(false); }
   return (
     
 <ThemeContext.Consumer>
@@ -132,7 +142,17 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         
       <Footer/>
-    
+      <div className = "bot">
+        <div style ={{display: showChat ? "" : "none"}}>
+        <SimpleForm></SimpleForm>
+        </div>      
+        {/* <div> {showChat ? <SimpleForm></SimpleForm> : null} </div> */}
+        <div>
+          {!showChat 
+            ? <button className="btn" onClick={() => startChat()}><img src={chat} alt="" wight={50} height={50}/> </button> 
+            : <button className="btn" onClick={() => hideChat()}><img src={chat} alt="" wight={50} height={50}/></button>}
+        </div>
+      </div>   
     
     </ThemedLayout>
       )}

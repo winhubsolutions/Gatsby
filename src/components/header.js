@@ -1,7 +1,7 @@
 
 import PropTypes from "prop-types"
 import React from "react"
-import logo from "../images/logo.svg"
+import logo from "../images/logo.png"
 import {Link} from  "gatsby"
 import sunIcon from "../images/sun-icon.svg"
 import moonIcon from "../images/moon-icon.svg"
@@ -18,14 +18,10 @@ const Header = ({ siteTitle,theme  }) => (
    
  <div className="container custom_container p0">
      <Link className="navbar-brand" to="/">
-       <img src={logo} 
-       width={300}
-         height={90}
-       
-        srcSet="img/logo2x.png 2x" alt="logo" />
+     <img src={logo} width={300} height={90} srcSet="" />
      </Link>
      <button
-       className="navbar-toggler collapsed"
+       className="navbar-toggler collapsed"   
        type="button"
        data-toggle="collapse"
        data-target="#navbarSupportedContent"
@@ -45,7 +41,7 @@ const Header = ({ siteTitle,theme  }) => (
          </span>
        </span>
      </button>
-     <div className="collapse navbar-collapse" id="navbarSupportedContent">
+     <div className="collapse navbar-collapse" id="navbarSupportedContent"> 
        <ul className="navbar-nav ml-auto menu">
          <li className="nav-item dropdown submenu mega_menu mega_menu_two active">
           <Link
@@ -82,7 +78,7 @@ const Header = ({ siteTitle,theme  }) => (
                  <li className="nav-item">
    <Link 
      className="nav-link" 
-     to="services/wordpress-development-services">
+     to="/services/wordpress-development-services">
    Wordpress Development Services
      
    </Link>

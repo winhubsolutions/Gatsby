@@ -12,8 +12,8 @@ import React from "react"
 // import mssql from "../img/Tech/MSSQL.svg"
 
 // import Django from "../img/Tech/Django.svg"
-import {Tab,Tabs,Row,Col}from "react-bootstrap"
-import EcomTechnology from "./ecomtech"
+import {Tab,Tabs}from "react-bootstrap"
+
 function AllTechnology(){
 
 

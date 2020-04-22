@@ -9,56 +9,91 @@ import Migrate from "../../img/wordpress/update-alt.svg"
 import Plugin from "../../img/wordpress/plug-solid.svg" 
 import Ecomm from "../../img/wordpress/Ecomm.svg"  
 import CMS from "../../img/wordpress/wordpress-brands.svg" 
+import setup from "../../img/home2/installation-symbol-svgrepo-com.svg"
+import Custom  from "../../img/home2/idea-svgrepo-com.svg"
+import Customization from "../../img/home2/desktop-computer-screen-svgrepo-com.svg"
+import html from "../../img/home2/html-svgrepo-com.svg"
+import optimization from "../../img/home2/optimization-svgrepo-com.svg"
+import Deployment from "../../img/home2/circular-right-arrow-with-half-broken-line-svgrepo-com.svg"
+import integration from "../../img/new-home/tree.png"
+import cloud1 from "../../img/erp-home/cloud_01.png"
+import cloud2 from "../../img/erp-home/cloud_02.png"
+import cloud3 from "../../img/erp-home/cloud_03.png"
+import cloud4 from "../../img/erp-home/cloud_04.png"
 
-
+import dash from   "../../img/erp-home/dash1.png"
+import cloud5 from "../../img/erp-home/cloud_05.png"
+import cloud6 from "../../img/erp-home/cloud_06.png"
+import back from "../../img/erp-home/banner_shap.png"
+import support from "../../img/pos/chat.png"
+import Wordpress from "../../img/Tech/wordpress-brands.svg"
 
 const wordpress = () => (
     <Layout>
       <SEO title="Page two" />
 
       <div>
-  <section className="pos_banner_area">
-    <div className="pos_slider owl-carousel">
-      <div
-        className="pos_banner_item"
-        style={{ background: "url(img/pos/pos_slideshow1.jpg)" }}
-      />
-      <div
-        className="pos_banner_item"
-        style={{ background: "url(img/pos/pos_slideshow2.jpg)" }}
-      />
-      <div
-        className="pos_banner_item"
-        style={{ background: "url(img/pos/pos_slideshow3.jpg)" }}
-      />
-    </div>
-    <div className="container">
-      <div className="pos_banner_text text-center">
-        <h6>Welcome To Winhub solutions</h6>
-        <h2>
-        Industry leading Wordpress Development Services{" "}
-          <span>in india.</span>
-        </h2>
-        <div
-          className="action_btn d-flex align-items-center justify-content-center wow fadeInLeft"
-          data-wow-delay="0.6s"
-        >
-          <Link to="/contact" className="software_banner_btn">
-          Contact Us
+      <section className="erp_banner_area_two">
+  <ul className="list-unstyled cloud_animation">
+    <li>
+    <img src={cloud1} alt />
+    </li>
+    <li>
+    <img src={cloud2} alt />
+    </li>
+    <li>
+    <img src={cloud3} alt />
+    </li>
+    <li>
+    <img src={cloud4} alt />
+    </li>
+    <li>
+    <img src={cloud5} alt />
+    </li>
+    <li>
+    <img src={cloud6} alt />
+    </li>
+  </ul>
+  <div className="erp_shap" />
+  <div
+    className="erp_shap_two"
+    style={{
+      background:
+        "url({back}) no-repeat scroll top left"
+    }}
+  />
+  <div className="section_intro">
+    <div className="section_container">
+      <div className="intro">
+        <div className=" intro_content">
+          <h1>Industry leading Wordpress Development Services</h1>
+         
+     <p>While custom-designed websites are the pinnacle of website creation, with each granular feature being personalized and developed specifically for the Customer, custom development may not be required or justified in certain cases. Join WordPress-a highly capable and internationally recognized authoring website.
+     While it initially gained prominence as a blogging site, over the years, its ease of use has made WordPress the world's most successful open source CMS & Publishing program.
+     </p>
+          <Link to="/contact" className="er_btn er_btn_two">
+           Contact Us
           </Link>
-          <a
-            href="https://www.youtube.com/watch?v=sU3FkzUKHXU"
-            className="video_btn popup-youtube"
-          >
-            <div className="icon">
-              <i className="fas fa-play" />
-            </div>
-            <span>Watch Video</span>
-          </a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+  <div
+    className="animation_img wow fadeInUp"
+    data-wow-delay="0.3s"
+    style={{
+      visibility: "visible",
+      animationDelay: "0.3s",
+      animationName: "fadeInUp"
+    }}
+  >
+    <div className="container">
+      <img src={dash} alt />
+    </div>
+  </div>
+</section>
+
+ 
   
   <section className="partner_logo_area">
     <div className="container">
@@ -94,6 +129,7 @@ const wordpress = () => (
       </div>
     </div>
   </section>
+ 
   <section className="hosting_service_area sec_pad">
     <div data-parallax='{"x": 0, "y": 100}'>
       <div
@@ -114,8 +150,8 @@ const wordpress = () => (
           <div className="hosting_service_item">
             <img src={dashboard} 
             alt 
-            width={50}
-            height={50}
+            width={30}
+            height={30}
             />
             <a href="#">
               <h4 className="h_head">WordPress Installation & Configuration</h4>
@@ -128,8 +164,8 @@ const wordpress = () => (
         <div className="col-lg-4 col-sm-6">
           <div className="hosting_service_item">
           <img src={Responsive}  alt 
-            width={50}
-            height={50}
+            width={30}
+            height={30}
             />
             <a href="#">
               <h4 className="h_head">WordPress Responsive Design</h4>
@@ -142,8 +178,8 @@ const wordpress = () => (
         <div className="col-lg-4 col-sm-6">
           <div className="hosting_service_item">
             <img src={Migrate}  alt 
-            width={50}
-            height={50}
+            width={30}
+            height={30}
             />
             <a href="#">
               <h4 className="h_head">WordPress Migration</h4>
@@ -156,8 +192,8 @@ const wordpress = () => (
         <div className="col-lg-4 col-sm-6">
           <div className="hosting_service_item">
             <img src={Plugin} alt 
-            width={50}
-            height={50}
+            width={30}
+            height={30}
             />
             <a href="#">
               <h4 className="h_head">WordPress Plugin Development</h4>
@@ -171,8 +207,8 @@ const wordpress = () => (
           <div className="hosting_service_item">
             <div className="icon">
               <img src={Ecomm} alt 
-                  width={50}
-                  height={50}/>
+                  width={30}
+                  height={30}/>
             </div>
             <a href="#">
               <h4 className="h_head">WordPress eCommerce Solutions</h4>
@@ -185,8 +221,8 @@ const wordpress = () => (
         <div className="col-lg-4 col-sm-6">
           <div className="hosting_service_item">
             <div className="icon">
-              <img src={CMS} alt width={50}
-                  height={50}/>
+              <img src={Wordpress} alt width={30}
+                  height={30}/>
             </div>
             <a href="#">
               <h4 className="h_head">WordPress CMS Development</h4>
@@ -199,296 +235,84 @@ const wordpress = () => (
       </div>
     </div>
   </section>
-  <section className="pos_developer_product_area sec_pad">
-    <div className="container">
-      <div className="hosting_title text-center">
-        <h2 className="wow fadeInUp" data-wow-delay="0.3s">
-         Benefits of our WordPress Development Services
-        </h2>
-      </div>
-      <div className="row">
-        <div className="col-lg-6">
-          <div className="tab_img_info">
-            <div className="tab_img active" id="tab_one">
-              <img
-                className="img-fluid wow fadeInRight"
-                data-wow-delay="0.4s"
-                src="img/pos/High-end-all-in-one-dual-screen.png"
-                alt
-              />
-              <div className="square" />
-              <div className="bg_circle" />
-              <div data-parallax='{"x": 0, "y": 100}' className="tab_round" />
-              <div data-parallax='{"x": 50, "y": 5}' className="tab_triangle" />
-              <div data-parallax='{"x": 0, "y": 100}'>
-                <div
-                  className="pattern_shap"
-                  style={{ background: "url(img/pos/tab_pattern.png)" }}
-                />
-              </div>
-            </div>
-            <div className="tab_img" id="tab_two">
-              <img
-                className="img-fluid wow fadeInRight"
-                data-wow-delay="0.4s"
-                src="img/pos/ezgif-1-997e5035cba4.png"
-                alt
-              />
-              <div className="square" />
-              <div className="bg_circle green" />
-              <div data-parallax='{"x": 0, "y": 100}' className="tab_round" />
-              <div data-parallax='{"x": 50, "y": 5}' className="tab_triangle" />
-              <div data-parallax='{"x": 0, "y": 100}'>
-                <div
-                  className="pattern_shap"
-                  style={{ background: "url(img/pos/tab_pattern.png)" }}
-                />
-              </div>
-            </div>
-            <div className="tab_img" id="tab_three">
-              <img
-                className="img-fluid wow fadeInRight"
-                data-wow-delay="0.4s"
-                src="img/pos/pos.png"
-                alt
-              />
-              <div className="square" />
-              <div className="bg_circle pink" />
-              <div data-parallax='{"x": 0, "y": 100}' className="tab_round" />
-              <div data-parallax='{"x": 50, "y": 5}' className="tab_triangle" />
-              <div data-parallax='{"x": 0, "y": 100}'>
-                <div
-                  className="pattern_shap"
-                  style={{ background: "url(img/pos/tab_pattern.png)" }}
-                />
-              </div>
-            </div>
-            <div className="tab_img" id="tab_four">
-              <img
-                className="img-fluid wow fadeInRight"
-                data-wow-delay="0.4s"
-                src="img/pos/b_dashboard.png"
-                alt
-              />
-              <div className="square" />
-              <div className="bg_circle yellow" />
-              <div data-parallax='{"x": 0, "y": 100}' className="tab_round" />
-              <div data-parallax='{"x": 50, "y": 5}' className="tab_triangle" />
-              <div data-parallax='{"x": 0, "y": 100}'>
-                <div
-                  className="pattern_shap"
-                  style={{ background: "url(img/pos/tab_pattern.png)" }}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-6 d-flex align-items-center">
-          <div className="developer_product_content">
-            <ul
-              className="nav nav-tabs develor_tab mb-30"
-              id="myTab2"
-              role="tablist"
-            >
-              <li className="nav-item">
-                <a
-                  className="nav-link active show"
-                  data-tab="tab_one"
-                  id="ruby-tab"
-                  data-toggle="tab"
-                  href="#ruby"
-                  role="tab"
-                  aria-controls="ruby"
-                  aria-selected="true"
-                >
-                  Server Handling
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  data-tab="tab_two"
-                  id="curl-tab"
-                  data-toggle="tab"
-                  href="#curl"
-                  role="tab"
-                  aria-controls="curl"
-                  aria-selected="false"
-                >
-                  Upgradation
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  data-tab="tab_three"
-                  data-toggle="tab"
-                  href="#resize"
-                  role="tab"
-                  aria-controls="resize"
-                  aria-selected="false"
-                >
-                  Tasks
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  data-tab="tab_four"
-                  id="doctl-tab"
-                  data-toggle="tab"
-                  href="#doctl"
-                  role="tab"
-                  aria-controls="doctl"
-                  aria-selected="false"
-                >
-                  Changes
-                </a>
-              </li>
-            </ul>
-            <div className="tab-content developer_tab_content">
-              <div
-                className="tab-pane fade active show"
-                id="ruby"
-                role="tabpanel"
-                aria-labelledby="ruby-tab"
-              >
-                <h4>
-                Server Handling 
-                  <br /> / Maintenance
-                </h4>
-                <p>
-                Get efficient server handling / maintenance support
-                </p>
-              </div>
-              <div
-                className="tab-pane fade"
-                id="curl"
-                role="tabpanel"
-                aria-labelledby="curl-tab"
-              >
-                <h4>
-                Upgradation
-                </h4>
-                <p>
-                We help you to update your WordPress website without any trouble
-                </p>
-              </div>
-              <div
-                className="tab-pane fade"
-                id="resize"
-                role="tabpanel"
-                aria-labelledby="resize-tab"
-              >
-                <h4>
-                  Tasks
-                </h4>
-                <p>
-                We perform all small/daily/weekly tasks with utter perfection
-                </p>
-              </div>
-              <div
-                className="tab-pane fade"
-                id="doctl"
-                role="tabpanel"
-                aria-labelledby="doctl-tab"
-              >
-                <h4>
-                Changes
-                </h4>
-                <p>
-                Our developers can make desired changes whether big or small
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
   
-  <section className="h_blog_area sec_pad">
-    <div className="container">
-      <div className="hosting_title text-center">
-        <h2 className="wow fadeInUp" data-wow-delay="0.3s">
-          Check out some of our amazing
-          <br /> resources or join us in a city near you.
-        </h2>
+  <section className="support_integration_area">
+  <div className="container">
+    <div
+      className="sec_title text-center wow fadeInUp"
+      data-wow-delay="0.3s"
+      style={{
+        visibility: "visible",
+        animationDelay: "0.3s",
+        animationName: "fadeInUp"
+      }}
+    >
+      <h2 className="f_p f_size_30 l_height50 f_600 t_color">
+      Wordpress Website Development solutions
+      </h2>
+
+      <p className="f_400 f_size_18 l_height34">
+      WordPress may be used to represent a variety of business cases, including Blogs & Magazines, Product Demos, Industry & Corporate Websites, News Websites, Marketing & Landing pages, to name a few.
+               
+      </p>
+      <p className="f_400 f_size_18 l_height34">
+      We work closely with Customers to deliver the following services: 
+   
+           </p>
+
       </div>
-      <div className="row">
-        <div className="col-lg-4 col-md-6">
-          <div className="h_blog_item pos_blog_item">
-            <img src="img/pos/pos_blog_1.png" alt />
-            <div className="h_blog_content">
-              <a href="#" className="post_time">
-                <i className="icon_clock_alt" />
-                March 20, 2019
-              </a>
-              <a href="#">
-                <h3>How To Deploy a PHP Application with Kubernetes..</h3>
-              </a>
-              <div className="post-info-bottom">
-                <a href="#" className="learn_btn_two">
-                  Read More <i className="arrow_right" />
-                </a>
-                <a className="post-info-comments" href="#">
-                  <i className="icon_comment_alt" aria-hidden="true" />
-                  <span>3 Comments</span>
-                </a>
-              </div>
-            </div>
+
+    <div className="row flex-row-reverse ">
+      <div className="col-lg-9 col-md-10 col-sm-12">
+        <div className="row">
+          <div className="col-lg-4 col-md-4 col-sm-6">
+            <a href="#" className="s_integration_item">
+              <img src={setup} alt="" width={30} height={30} />
+              <h5>Wordpress Setup, Installation & Migration</h5>
+            </a>
+          </div>
+          <div className="col-lg-4 col-md-4 col-sm-6">
+            <a href="#" className="s_integration_item">
+              <img src={Custom} alt="" width={30} height={30} />
+              <h5>Custom Wordpress themes from scratch</h5>
+            </a>
+          </div>
+          <div className="col-lg-4 col-md-4 col-sm-6">
+            <a href="#" className="s_integration_item">
+              <img src={Customization}width={30} height={30} alt="" />
+              <h5>Customization of Wordpress themes</h5>
+            </a>
+          </div>
+          <div className="col-lg-4 col-md-4 col-sm-6">
+            <a href="#" className="s_integration_item">
+              <img src={html} width={30} height={30} alt="" />
+              <h5>Plugin development & advanced customizations
+</h5>
+            </a>
+          </div>
+          <div className="col-lg-4 col-md-4 col-sm-6">
+            <a href="#" className="s_integration_item">
+              <img src={optimization} width={30} height={30} alt=""  />
+              <h5>Code optimization & W3C Validation</h5>
+            </a>
+          </div>
+          <div className="col-lg-4 col-md-4 col-sm-6">
+            <a href="#" className="s_integration_item">
+              <img src={Deployment} width={30} height={30} alt=""  />
+              <h5>Deployment to Live environments</h5>
+            </a>
           </div>
         </div>
-        <div className="col-lg-4 col-md-6">
-          <div className="h_blog_item pos_blog_item">
-            <img src="img/pos/pos_blog_2.png" alt />
-            <div className="h_blog_content">
-              <a href="#" className="post_time">
-                <i className="icon_clock_alt" />
-                April 22, 2019
-              </a>
-              <a href="#">
-                <h3>How To Build a Node.js Application with Docker</h3>
-              </a>
-              <div className="post-info-bottom">
-                <a href="#" className="learn_btn_two">
-                  Read More <i className="arrow_right" />
-                </a>
-                <a className="post-info-comments" href="#">
-                  <i className="icon_comment_alt" aria-hidden="true" />
-                  <span>02 Comments</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6">
-          <div className="h_blog_item pos_blog_item">
-            <img src="img/pos/pos_blog_3.png" alt />
-            <div className="h_blog_content">
-              <a href="#" className="post_time">
-                <i className="icon_clock_alt" />
-                March 26, 2019
-              </a>
-              <a href="#">
-                <h3>Hear from our Customer Community</h3>
-              </a>
-              <div className="post-info-bottom">
-                <a href="#" className="learn_btn_two">
-                  Read More <i className="arrow_right" />
-                </a>
-                <a className="post-info-comments" href="#">
-                  <i className="icon_comment_alt" aria-hidden="true" />
-                  <span>02 Comments</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
+      <div className="col-lg-3 col-md-2 col-sm-12">
+        <img className="integration_img" src={integration} alt="" width={500}height={300}/>
       </div>
     </div>
-  </section>
-  <section className="chat_area">
+  </div>
+</section>
+
+  
+    <section className="chat_area">
     <div className="container">
       <div className="row">
         <div className="col-lg-7">
@@ -497,23 +321,23 @@ const wordpress = () => (
               Have any questions? <br />
               Talk to us
             </h2>
-            <a href="#" className="pos_btn">
+            <Link to="/contact" className="pos_btn">
               Book a Callback
-            </a>
+            </Link>
           </div>
         </div>
         <div className="col-lg-5">
           <div className="media chat_info">
-            <img src="img/pos/chat.png" alt />
+            <img src={support} alt />
             <div className="media-body">
               <div className="date">
                 24<span>/</span>7<span>/</span>365
               </div>
               <h3>Toast Customer Support</h3>
-              <a href="#" className="pos_service_btn">
+              <Link to="/contact" className="pos_service_btn">
                 Services and Support
                 <i className="arrow_right" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -525,9 +349,9 @@ const wordpress = () => (
       <div className="pos_action_content text-center">
         <h2>Ready to start selling your digital goods?</h2>
         <p>Create your own e-commerce store with SaasLand today.</p>
-        <a href="#" className="pos_btn">
+        <Link to="/contact" className="pos_btn">
           Get Started Free
-        </a>
+        </Link>
       </div>
     </div>
   </section>

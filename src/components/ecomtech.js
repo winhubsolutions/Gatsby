@@ -58,7 +58,7 @@ function EcomTechnology(){
         <span className="text">
           <a href="#">
             <img src={reactlogo}
-            alt
+           alt="web design company in hyderabad"
             width={100}
             height={100} />
           </a>
@@ -69,14 +69,14 @@ function EcomTechnology(){
       <div className="s_promo_info">
         <div className="promo_item item_one scroll_animation">
           <div className="text">
-            <img src={nodelogo} alt
+            <img src={nodelogo}alt="web design company in hyderabad"
             width={50}
             height={50} />
           </div>
         </div>
         <div className="promo_item item_two scroll_animation">
           <div className="text">
-          <img src={Magento} alt
+          <img src={Magento}alt="web design company in hyderabad"
             width={50}
             height={50} />
           </div>
@@ -84,49 +84,49 @@ function EcomTechnology(){
         <div className="promo_item item_three scroll_animation">
           <div className="text">
             <img src={Shopify}
-             alt
+            alt="web design company in hyderabad"
              width={50}
              height={50} />
           </div>
         </div>
         <div className="promo_item item_four scroll_animation">
           <div className="text">
-            <img src={Opencart} alt
+            <img src={Opencart}alt="web design company in hyderabad"
             width={50}
             height={50} />
           </div>
         </div>
         <div className="promo_item item_five scroll_animation">
           <div className="text">
-            <img src={Wordpress} alt
+            <img src={Wordpress}alt="web design company in hyderabad"
             width={50}
             height={50} />
           </div>
         </div>
         {/* <div className="promo_item item_six scroll_animation">
           <div className="text">
-            <img src={Mysql} alt
+            <img src={Mysql}alt="web design company in hyderabad"
             width={80}
             height={80} />
           </div>
         </div>
         <div className="promo_item item_seven scroll_animation">
           <div className="text">
-            <img src={magentobrands} alt
+            <img src={magentobrands}alt="web design company in hyderabad"
             width={50}
             height={50} />
           </div>
         </div>
         <div className="promo_item item_eight scroll_animation">
           <div className="text">
-            <img src={mssql} alt 
+            <img src={mssql}alt="web design company in hyderabad" 
             width={50}
             height={50} />
           </div>
         </div> */}
         {/* <div className="promo_item item_nine scroll_animation">
           <div className="text">
-            <img src={Django} alt
+            <img src={Django}alt="web design company in hyderabad"
             width={50}
             height={50} />
           </div>

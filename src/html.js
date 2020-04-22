@@ -14,7 +14,8 @@ export default class HTML extends React.Component {
           {this.props.headComponents}
           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
           <script src="http://droitthemes.com/html/saasland/vendors/owl-carousel/assets/owl.carousel.min.css"></script> 
-          
+          <link rel="stylesheet" href="http://droitthemes.com/html/saasland/css/style.css"/>
+          <link rel="stylesheet" href="http://droitthemes.com/html/saasland/css/responsive.css"/>
       
         <link
             href="/img/apple-touch-icon.png"
@@ -31,8 +32,8 @@ export default class HTML extends React.Component {
           {this.props.postBodyComponents}
       
           <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js "></script>      
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js "></script>  
+   
+     
    
   
         </body>
