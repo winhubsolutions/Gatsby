@@ -12,6 +12,8 @@ import Loadable from "react-loadable"
 import Clientlogo from "../components/clientlogo"
 
 import AllTechnology from "../components/alltechnology"
+import Freeestimate from"../components/contactbar"
+
 
 const loader=()=>(<div>Loading...</div>)
 
@@ -110,7 +112,9 @@ const IndexPage = () => (
 <MyLoadableCarousel/>
 
     <AllTechnology/>
-  </Layout>
+    <Freeestimate/>
+
+      </Layout>
   </ThemeProvider>
 )
 

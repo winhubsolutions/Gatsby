@@ -8,13 +8,12 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-source-filesystem`,  
+      resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
     },
-    
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -29,7 +28,40 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/content`,
+      },
+    },
     `gatsby-plugin-emotion`,
+    // Setup WPGraphQL.com to be the source
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        /*
+         * The base URL of the WordPress site without the trailingslash and the protocol. This is required.
+         * Example : 'dev-gatbsyjswp.pantheonsite.io' or 'www.example-site.com'
+         */
+        baseUrl: `winhubsolutions.in`,
+        protocol: `https`,
+        hostingWPCOM: false,
+        useACF: true,
+         // Set to true to debug endpoints on 'gatsby build'
+         verboseOutput: true,
+        includedRoutes: [
+          "**/categories",
+          "**/posts",
+          "**/pages",
+          "**/media",
+          "**/tags",
+          "**/taxonomies",
+          "**/portfolio",
+          "**/users",
+        ],
+      },
+    },
     
    
     // this (optional) plugin enables Progressive Web App + Offline functionality

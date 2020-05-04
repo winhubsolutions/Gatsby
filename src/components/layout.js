@@ -61,7 +61,21 @@ const ThemedLayout = styled.div`
   color: ${props => themes[props.theme.name].foreground};
   background-color: ${props => themes[props.theme.name].background};
  }
+& .menu > .nav-item.submenu.mega_menu .mega_menu_inner > .dropdown-menu {
 
+  color: ${props => themes[props.theme.name].foreground};
+  background-color: ${props => (props.theme.name === "dark" ? "#222222" : "#ffffff")};
+
+}
+
+.menu > .nav-item.submenu.mega_menu .mega_menu_inner{
+  background-color: ${props => (props.theme.name === "dark" ? "#222222" : "#ffffff")};
+
+}
+.menu > .nav-item.submenu .dropdown-menu{
+  background-color: ${props => (props.theme.name === "dark" ? "#222222" : "#ffffff")};
+
+}
  &
 .menu {
    
@@ -80,6 +94,13 @@ const ThemedLayout = styled.div`
  background-color: ${props => (props.theme.name === "dark" ? "#222222" : "#ffffff")};
 
  }
+ .menu > .nav-item.submenu .dropdown-menu .nav-item .nav-link ,.menu > .nav-item.submenu.mega_menu .mega_menu_inner > .dropdown-menu > .nav-item > .nav-link{
+ 
+  
+color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
+
+  
+}
 
  .seo_service_item{
   background-color: ${props => themes[props.theme.name].back};

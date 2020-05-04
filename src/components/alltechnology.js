@@ -293,7 +293,7 @@ function AllTechnology(){
     </a>
     
   </div>
-</div>;
+</div>
 
   </Tab>
   <Tab eventKey="contact" title="CMS">

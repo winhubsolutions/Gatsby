@@ -222,7 +222,7 @@ const Header = ({ siteTitle,theme  }) => (
          <li className="nav-item dropdown submenu">
           <Link
              className="nav-link dropdown-toggle"
-             to="#"
+             to="/blogpost"
              role="button"
              data-toggle="dropdown"
              aria-haspopup="true"

@@ -10,6 +10,7 @@ import ecom from "../../img/pos/ecom.svg"
 import Content from "../../img/pos/item3.svg"
 import Customweb from "../../img/pos/customweb.svg"
 import Technology from "../../components/tech"
+import Freeestimate from "../../components/contactbar"
 
 const webdevelopment = () => (
   <Layout>
@@ -42,7 +43,7 @@ const webdevelopment = () => (
             }}
                             >
           
-           Winhub Solutions is a full-service website design & development company in India. We believe in providing the best advanced technology to help clients understand their needs and overcome their challenges quickly and affordably. Our main services - ecommerce web development, SEO (search engine optimization), digital marketing & mobile app development.          </p>
+           Winhub Solutions is a full-service website design & development company in India. We believe in providing the best advanced technology to help clients understand their needs and overcome their challenges quickly and affordably. Our main services - Custom Web Development,Enterprise Solutions, Content Management System& Mobile app development.  </p>
        
         </div>
       </div>
@@ -412,11 +413,12 @@ const webdevelopment = () => (
   </div>
 
 </section>
+
 </div>
 
 
 <Technology/> 
-
+<Freeestimate/>
   </Layout>
 )
 

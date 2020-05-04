@@ -8,7 +8,7 @@ import Responsive from "../../img/wordpress/smartphone.svg"
 import Migrate from "../../img/wordpress/update-alt.svg"
 import Plugin from "../../img/wordpress/plug-solid.svg" 
 import Ecomm from "../../img/wordpress/Ecomm.svg"  
-import CMS from "../../img/wordpress/wordpress-brands.svg" 
+
 import setup from "../../img/home2/installation-symbol-svgrepo-com.svg"
 import Custom  from "../../img/home2/idea-svgrepo-com.svg"
 import Customization from "../../img/home2/desktop-computer-screen-svgrepo-com.svg"
@@ -16,119 +16,77 @@ import html from "../../img/home2/html-svgrepo-com.svg"
 import optimization from "../../img/home2/optimization-svgrepo-com.svg"
 import Deployment from "../../img/home2/circular-right-arrow-with-half-broken-line-svgrepo-com.svg"
 import integration from "../../img/new-home/tree.png"
-import cloud1 from "../../img/erp-home/cloud_01.png"
-import cloud2 from "../../img/erp-home/cloud_02.png"
-import cloud3 from "../../img/erp-home/cloud_03.png"
-import cloud4 from "../../img/erp-home/cloud_04.png"
 
+import banner from "../../img/home4/banner_img.png"
+import bannerbg from "../../img/home4/banner_bg.png"
 import dash from   "../../img/erp-home/dash1.png"
-import cloud5 from "../../img/erp-home/cloud_05.png"
-import cloud6 from "../../img/erp-home/cloud_06.png"
-import back from "../../img/erp-home/banner_shap.png"
+
 import support from "../../img/pos/chat.png"
 import Wordpress from "../../img/Tech/wordpress-brands.svg"
+import Clientlogo from "../../components/clientlogo"
 
 const wordpress = () => (
     <Layout>
       <SEO title="Page two" />
 
       <div>
-      <section className="erp_banner_area_two">
-  <ul className="list-unstyled cloud_animation">
-    <li>
-    <img src={cloud1} alt />
-    </li>
-    <li>
-    <img src={cloud2} alt />
-    </li>
-    <li>
-    <img src={cloud3} alt />
-    </li>
-    <li>
-    <img src={cloud4} alt />
-    </li>
-    <li>
-    <img src={cloud5} alt />
-    </li>
-    <li>
-    <img src={cloud6} alt />
-    </li>
-  </ul>
-  <div className="erp_shap" />
-  <div
-    className="erp_shap_two"
-    style={{
-      background:
-        "url({back}) no-repeat scroll top left"
-    }}
-  />
-  <div className="section_intro">
-    <div className="section_container">
-      <div className="intro">
-        <div className=" intro_content">
-          <h1>Industry leading Wordpress Development Services</h1>
-         
-     <p>While custom-designed websites are the pinnacle of website creation, with each granular feature being personalized and developed specifically for the Customer, custom development may not be required or justified in certain cases. Join WordPress-a highly capable and internationally recognized authoring website.
-     While it initially gained prominence as a blogging site, over the years, its ease of use has made WordPress the world's most successful open source CMS & Publishing program.
-     </p>
-          <Link to="/contact" className="er_btn er_btn_two">
-           Contact Us
-          </Link>
+
+
+      <section className="agency_banner_area bg_color">
+  <img className="banner_shap" src="" alt="best web development company in hyderabad" />
+  <div className="container custom_container">
+    <div className="row">
+      <div className="col-lg-5 d-flex align-items-center">
+        <div className="agency_content">
+          <h2
+            className="f_700 t_color3 mb_40 wow fadeInLeft"
+            data-wow-delay="0.3s"
+            style={{
+              visibility: "visible",
+              animationDelay: "0.3s",
+              animationName: "fadeInLeft"
+            }}
+          >
+            Industry leading Wordpress Development Services
+          </h2>
+          <p
+            className="f_400 l_height28 wow fadeInLeft"
+            data-wow-delay="0.4s"
+            style={{
+              visibility: "visible",
+              animationDelay: "0.4s",
+              animationName: "fadeInLeft"
+            }}
+                            >
+          While custom-designed websites are the pinnacle of website creation, with each granular feature being personalized and developed specifically for the Customer, custom development may not be required or justified in certain cases. Join WordPress-a highly capable and internationally recognized authoring website.
+     While it initially gained prominence as a blogging site, over the years, its ease of use has made WordPress the world's most successful open source CMS & Publishing program.  
+
+           </p>
+       
         </div>
       </div>
+      <div className="col-lg-7 text-right">
+        <img
+          className="protype_img wow fadeInRight"
+          data-wow-delay="0.3s"
+          src={dash}
+          alt="best web development company in hyderabad"
+          style={{
+            visibility: "visible",
+            animationDelay: "0.3s",
+            animationName: "fadeInRight"
+          }}
+        />
+      </div>
     </div>
-  </div>
-  <div
-    className="animation_img wow fadeInUp"
-    data-wow-delay="0.3s"
-    style={{
-      visibility: "visible",
-      animationDelay: "0.3s",
-      animationName: "fadeInUp"
-    }}
-  >
-    <div className="container">
-      <img src={dash} alt />
-    </div>
+    
   </div>
 </section>
-
+   
+         
  
   
-  <section className="partner_logo_area">
-    <div className="container">
-      <h4 className="f_size_18 f_400 f_p text-center l_height28 mb_70">
-        Market leaders use app to nrich their brand &amp; business.
-      </h4>
-      <div className="row partner_info">
-        <div className="logo_item">
-          <a href="#">
-            <img src="img/home3/logo_01.png" alt />
-          </a>
-        </div>
-        <div className="logo_item">
-          <a href="#">
-            <img src="img/home3/logo_02.png" alt />
-          </a>
-        </div>
-        <div className="logo_item">
-          <a href="#">
-            <img src="img/home3/logo_03.png" alt />
-          </a>
-        </div>
-        <div className="logo_item">
-          <a href="#">
-            <img src="img/home3/logo_04.png" alt />
-          </a>
-        </div>
-        <div className="logo_item">
-          <a href="#">
-            <img src="img/home3/logo_05.png" alt />
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+<Clientlogo />
  
   <section className="hosting_service_area sec_pad">
     <div data-parallax='{"x": 0, "y": 100}'>

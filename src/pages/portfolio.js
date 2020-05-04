@@ -1,323 +1,84 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { Component } from "react"
+
+import Portfoliolist from "../content/My-JSON-Content.json"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+// import SEO from "../components/seo"
 
-const portfolio = () => (
-  <Layout>
-    <SEO title="Page two" />
-    <div>
-  <section className="breadcrumb_area">
-    <img className="breadcrumb_shap" src="img/breadcrumb/banner_bg.png" alt="" />
-    <div className="container">
-      <div className="breadcrumb_content text-center">
-        <h1 className="f_p f_700 f_size_50 w_color l_height50 mb_20">
-          Portfolio grid 4 column
-        </h1>
-        <p className="f_400 w_color f_size_16 l_height26">
-          Why I say old chap that is spiffing off his nut arse pear shaped
-          plastered
-          <br /> Jeffrey bodge barney some dodgy.!!
-        </p>
-      </div>
-    </div>
-  </section>
-  <section className="portfolio_area sec_pad bg_color">
-    <div className="container">
-      <div id="portfolio_filter" className="portfolio_filter mb_50">
-        <div data-filter="*" className="work_portfolio_item active">
-          See All
-        </div>
-        <div data-filter=".br" className="work_portfolio_item">
-          Branding
-        </div>
-        <div data-filter=".web" className="work_portfolio_item">
-          Web Design
-        </div>
-        <div data-filter=".fashion" className="work_portfolio_item">
-          Fashion
-        </div>
-        <div data-filter=".ux" className="work_portfolio_item">
-          UI/UX
-        </div>
-        <div data-filter=".product" className="work_portfolio_item">
-          Product
-        </div>
-      </div>
-      <div className="row portfolio_gallery mb_30" id="work-portfolio">
-        <div className="col-lg-3 col-sm-6 portfolio_item br ux mb-30">
-          <div className="portfolio_img">
-            <img src="img/portfolio/3-columns/image_01.jpg" alt="" />
-            <div className="hover_content h_content_two">
-              <Link
-                href="img/portfolio/3-columns/image_01.jpg"
-                className="img_popup leaf"
-              >
-                <i className="ti-plus" />
-              </Link>
-              <div className="portfolio-description leaf">
-                <Link href="work-default.html" className="portfolio-title">
-                  <h3 className="f_500 f_size_16 f_p">Apple Mobile Mockup</h3>
-                </Link>
-                <div className="links">
-                  <Link href="#">Branding,</Link>
-                  <Link href="#">Fashion</Link>
+// import Portfolio2 from "../img/portfolio/2-columns/grid2.jpg"
+// import Portfolio3 from "../img/portfolio/2-columns/grid3.jpg"
+// import Portfolio4 from "../img/portfolio/2-columns/grid4.jpg"
+// import Portfolio5 from "../img/portfolio/2-columns/grid5.jpg"
+// import Portfolio6 from "../img/portfolio/2-columns/grid6.jpg"
+// import Portfolio7 from "../img/portfolio/2-columns/grid7.jpg"
+// import Portfolio8 from "../img/portfolio/2-columns/grid8.jpg"
+
+
+
+function portfolio() {
+    return (
+        <Layout>
+            <section className="portfolio_area sec_pad bg_color">
+                <div className="container">
+                    <div id="portfolio_filter" className="portfolio_filter mb_50">
+                        <div
+                            className="row portfolio_gallery ml-0 mr-0 mb-50"
+                            id="work-portfolio"
+                            style={{ position: "relative", height: "883.532px" }}
+                        >
+
+                            {Portfoliolist.content.map((data, index) => {
+                                return (<div className="col-lg-3 col-sm-6 portfolio_item br ux mb_50" key={`content_item_${index}`}>
+                                    <div className="portfolio_img">
+                                        <img src={data.imageurl} alt />
+                                        <div className="hover_content">
+                                            <a href={data.imageurl} className="img_popup leaf">
+                                                <i className="ti-plus" />
+                                            </a>
+                                            <div className="portfolio-description leaf">
+                                                <a href="work-default.html" className="portfolio-title">
+                                                    <h3 className="f_500 f_size_20 f_p"> {data.name}</h3>
+                                                </a>
+                                                <div className="links">
+                                                    <a href="#">{data.item1}</a>
+                                                    <a href="#">{data.item2}</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                )
+                            })}
+
+
+
+
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-sm-6 portfolio_item fashion web mb-30">
-          <div className="portfolio_img">
-            <img src="img/portfolio/3-columns/image_02.jpg" alt="" />
-            <div className="hover_content h_content_two">
-              <Link
-                href="img/portfolio/3-columns/image_02.jpg"
-                className="img_popup leaf"
-              >
-                <i className="ti-plus" />
-              </Link>
-              <div className="portfolio-description leaf">
-                <Link href="work-default.html" className="portfolio-title">
-                  <h3 className="f_500 f_size_16 f_p">Interior Design</h3>
-                </Link>
-                <div className="links">
-                  <Link href="#">Branding,</Link>
-                  <Link href="#">Fashion</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-sm-6 portfolio_item product br mb-30">
-          <div className="portfolio_img">
-            <img src="img/portfolio/3-columns/image_03.jpg" alt="" />
-            <div className="hover_content h_content_two">
-              <Link
-                href="img/portfolio/3-columns/image_03.jpg"
-                className="img_popup leaf"
-              >
-                <i className="ti-plus" />
-              </Link>
-              <div className="portfolio-description leaf">
-                <Link href="work-default.html" className="portfolio-title">
-                  <h3 className="f_500 f_size_16 f_p">
-                    Portfolio Center Slider
-                  </h3>
-                </Link>
-                <div className="links">
-                  <Link href="#">Branding,</Link>
-                  <Link href="#">Fashion</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-sm-6 portfolio_item ux web mb-30">
-          <div className="portfolio_img">
-            <img src="img/portfolio/3-columns/image_04.jpg" alt="" />
-            <div className="hover_content h_content_two">
-              <Link
-                href="img/portfolio/3-columns/image_04.jpg"
-                className="img_popup leaf"
-              >
-                <i className="ti-plus" />
-              </Link>
-              <div className="portfolio-description leaf">
-                <Link href="work-default.html" className="portfolio-title">
-                  <h3 className="f_500 f_size_16 f_p">Portfolio Masonry</h3>
-                </Link>
-                <div className="links">
-                  <Link href="#">Branding,</Link>
-                  <Link href="#">Fashion</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-sm-6 portfolio_item br ux mb-30">
-          <div className="portfolio_img">
-            <img src="img/portfolio/3-columns/image_05.jpg" alt="" />
-            <div className="hover_content h_content_two">
-              <Link
-                href="img/portfolio/3-columns/image_05.jpg"
-                className="img_popup leaf"
-              >
-                <i className="ti-plus" />
-              </Link>
-              <div className="portfolio-description leaf">
-                <Link href="work-default.html" className="portfolio-title">
-                  <h3 className="f_500 f_size_16 f_p">Double Exposure</h3>
-                </Link>
-                <div className="links">
-                  <Link href="#">Branding,</Link>
-                  <Link href="#">Fashion</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-sm-6 portfolio_item fashion web mb-30">
-          <div className="portfolio_img">
-            <img src="img/portfolio/3-columns/image_06.jpg" alt="" />
-            <div className="hover_content h_content_two">
-              <Link
-                href="img/portfolio/3-columns/image_06.jpg"
-                className="img_popup leaf"
-              >
-                <i className="ti-plus" />
-              </Link>
-              <div className="portfolio-description leaf">
-                <Link href="work-default.html" className="portfolio-title">
-                  <h3 className="f_500 f_size_16 f_p">American Burger</h3>
-                </Link>
-                <div className="links">
-                  <Link href="#">Branding,</Link>
-                  <Link href="#">Fashion</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-sm-6 portfolio_item product br mb-30">
-          <div className="portfolio_img">
-            <img src="img/portfolio/3-columns/image_07.jpg" alt="" />
-            <div className="hover_content h_content_two">
-              <Link
-                href="img/portfolio/3-columns/image_07.jpg"
-                className="img_popup leaf"
-              >
-                <i className="ti-plus" />
-              </Link>
-              <div className="portfolio-description leaf">
-                <Link href="work-default.html" className="portfolio-title">
-                  <h3 className="f_500 f_size_16 f_p">Apple Laptop Mockup</h3>
-                </Link>
-                <div className="links">
-                  <Link href="#">Branding,</Link>
-                  <Link href="#">Fashion</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-sm-6 portfolio_item ux web mb-30">
-          <div className="portfolio_img">
-            <img src="img/portfolio/3-columns/image_08.jpg" alt="" />
-            <div className="hover_content h_content_two">
-              <Link
-                href="img/portfolio/3-columns/image_08.jpg"
-                className="img_popup leaf"
-              >
-                <i className="ti-plus" />
-              </Link>
-              <div className="portfolio-description leaf">
-                <Link href="work-default.html" className="portfolio-title">
-                  <h3 className="f_500 f_size_16 f_p">Inner Smart Watch</h3>
-                </Link>
-                <div className="links">
-                  <Link href="#">Branding,</Link>
-                  <Link href="#">Fashion</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-sm-6 portfolio_item fashion web mb-30">
-          <div className="portfolio_img">
-            <img src="img/portfolio/3-columns/image_09.jpg" alt="" />
-            <div className="hover_content h_content_two">
-              <Link
-                href="img/portfolio/3-columns/image_09.jpg"
-                className="img_popup leaf"
-              >
-                <i className="ti-plus" />
-              </Link>
-              <div className="portfolio-description leaf">
-                <Link href="work-default.html" className="portfolio-title">
-                  <h3 className="f_500 f_size_16 f_p">American Burger</h3>
-                </Link>
-                <div className="links">
-                  <Link href="#">Branding,</Link>
-                  <Link href="#">Fashion</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-sm-6 portfolio_item product br mb-30">
-          <div className="portfolio_img">
-            <img src="img/portfolio/3-columns/image_10.jpg" alt="" />
-            <div className="hover_content h_content_two">
-              <Link
-                href="img/portfolio/3-columns/image_10.jpg"
-                className="img_popup leaf"
-              >
-                <i className="ti-plus" />
-              </Link>
-              <div className="portfolio-description leaf">
-                <Link href="work-default.html" className="portfolio-title">
-                  <h3 className="f_500 f_size_16 f_p">Apple Laptop Mockup</h3>
-                </Link>
-                <div className="links">
-                  <Link href="#">Branding,</Link>
-                  <Link href="#">Fashion</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-sm-6 portfolio_item ux web mb-30">
-          <div className="portfolio_img">
-            <img src="../img/portfolio/3-columns/image_11.jpg" alt="" />
-            <div className="hover_content h_content_two">
-              <Link
-                href="../img/portfolio/3-columns/image_11.jpg"
-                className="img_popup leaf"
-              >
-                <i className="ti-plus" />
-              </Link>
-              <div className="portfolio-description leaf">
-                <Link href="work-default.html" className="portfolio-title">
-                  <h3 className="f_500 f_size_16 f_p">Inner Smart Watch</h3>
-                </Link>
-                <div className="links">
-                  <Link href="#">Branding,</Link>
-                  <Link href="#">Fashion</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-sm-6 portfolio_item ux web mb-30">
-          <div className="portfolio_img">
-            <img src="../img/portfolio/3-columns/image_12.jpg" alt="" />
-            <div className="hover_content h_content_two">
-              <Link
-                href="../img/portfolio/3-columns/image_12.jpg"
-                className="img_popup leaf"
-              >
-                <i className="ti-plus" />
-              </Link>
-              <div className="portfolio-description leaf">
-                <Link href="work-default.html" className="portfolio-title">
-                  <h3 className="f_500 f_size_16 f_p">Inner Smart Watch</h3>
-                </Link>
-                <div className="links">
-                  <Link href="#">Branding,</Link>
-                  <Link href="#">Fashion</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-  </Layout>
-)
+            </section>
+        </Layout>
+    )
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export default portfolio
 

@@ -32,8 +32,9 @@ Web Development
 
 </h4>
 <p>
-We specialize in developing custom software applications specifically for custom programming, database design, client-server and internet / intranet software development.
+Our web developers are developing custom web and mobile application solutions. We're providing a web presence to help you expand your business using the latest web technologies.
 </p>
+<a class=".read-more-btn" href="/contact">Contact US</a>
 <img className="float-right" src={Websitedevelopment} alt />
 </div>
 </div>
