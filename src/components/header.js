@@ -10,7 +10,7 @@ import Switch from "react-switch"
 
 
 const Header = ({ siteTitle,theme  }) => (
-<header className="header_area" style={{backgroundColor: window.scrollY > 20 ? "white" : "transparent"}}>
+<header className="header_area">
 
   <nav className="navbar navbar-expand-lg menu_one " >
  

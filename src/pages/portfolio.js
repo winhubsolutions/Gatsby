@@ -1,22 +1,19 @@
 import React, { Component } from "react"
 import Img from "gatsby-image"
-import Portfoliolist from "../content/My-JSON-Content.json"
+
 import { Link, graphql } from "gatsby"
-import Layout from "../components/layout"
-// import SEO from "../components/seo"
+import Layout from "../components/layout" 
+import SEO from "../components/seo"
 
-import portfoliocarousel from "../components/portfoliocarousel"
-
-// import Portfolio2 from "../img/portfolio/2-columns/grid2.jpg"
-// import Portfolio3 from "../img/portfolio/2-columns/grid3.jpg"
-// import Portfolio4 from "../img/portfolio/2-columns/grid4.jpg"
-// import Portfolio5 from "../img/portfolio/2-columns/grid5.jpg"
-// import Portfolio6 from "../img/portfolio/2-columns/grid6.jpg"
-// import Portfolio7 from "../img/portfolio/2-columns/grid7.jpg"
-// import Portfolio8 from "../img/portfolio/2-columns/grid8.jpg"
+import Loadable from "react-loadable"
+const loader=()=>(<div>Loading...</div>)
 
 
 
+const  Portfoliocarousel = Loadable({
+  loader: () => import("../components/portfoliocarousel"),
+  loading: loader,
+})
 
 class portfolio extends Component {
 
@@ -27,6 +24,8 @@ class portfolio extends Component {
 
     return (
         <Layout>
+         <SEO/>
+  < Portfoliocarousel/>
           
           <section className="portfolio_area sec_pad bg_color">
           <div className="container">
@@ -69,6 +68,7 @@ class portfolio extends Component {
 
                 </div>
             </section>
+            
         </Layout>
 
     

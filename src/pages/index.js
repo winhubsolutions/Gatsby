@@ -6,7 +6,7 @@ import { Link, graphql } from "gatsby"
 import  Img from "gatsby-image"
 import SEO from "../components/seo"
 import {Col,Row} from 'react-bootstrap'
-import process from "../images/process_2.png"
+
 import { ThemeProvider } from "../components/ThemeContext"
 import Loadable from "react-loadable"
 import Clientlogo from "../components/clientlogo"
