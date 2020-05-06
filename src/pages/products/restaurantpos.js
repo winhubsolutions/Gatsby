@@ -33,8 +33,7 @@ Winhub POS – restaurant point of sale web application {" "}
       <ol className="breadcrumb">
         <li>
           <Link href="/"> Home </Link>
-        </li>
-        <li className="active"> Gym / Fitness Club Management </li>
+> Gym / Fitness Club Management </li>
       </ol>
     </div>
   </div>

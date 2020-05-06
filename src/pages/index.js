@@ -2,8 +2,8 @@ import React from "react"
 
 import seoimage from "../img/seo/image.png"
 import Layout from "../components/layout"
-import {Link} from "gatsby"
-
+import { Link, graphql } from "gatsby"
+import  Img from "gatsby-image"
 import SEO from "../components/seo"
 import {Col,Row} from 'react-bootstrap'
 import process from "../images/process_2.png"
@@ -23,7 +23,8 @@ const MyLoadableCarousel = Loadable({
   loader: () => import("../components/servicescarousel"),
   loading: loader,
 })
-const IndexPage = () => (
+
+const IndexPage =({ data }) => (
   <ThemeProvider>
   <Layout>
     <SEO title="Home" />
@@ -84,7 +85,7 @@ const IndexPage = () => (
  <div style={{
 
        textAlign:'justify',
-     }}><p>WinHub Solutions is one of the best professional web designing, web development, mobile application development &amp; digital marketing companies in Telangana ,has more than 5 years experience in web applications design and development and has successfully completed 100+ projects for client’s round-up. World.Our main objective is to style and Develop the website/app supported the Client’s customized requirements which helps them achieve their business targets.&nbsp;</p><p>Win hub Solutions also provides <b>Digital Marketing Services</b>&nbsp;for your Business. We not only build your website but also provide program Optimization Services, Social Media Marketing, PPC management, Facebook and Google Ads Service. We assist you reach thousands of potential customers for your business through online medium. We provide Digital Marketing services mainly within the field of <b>Properties, Fashion, E-commerce and Retail, Education, Healthcare and native Businesses.&nbsp;</b></p>
+     }}><div dangerouslySetInnerHTML={{ __html: data.wordpressPage.content }} />
 
  </div>
  
@@ -95,12 +96,8 @@ const IndexPage = () => (
  <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
    
 
-   <img
-     alt=""
-     src={process}
-     width="300"
-     height="300"
-     
+   <Img fluid={data.wordpressPage.acf.featureimage.localFile.childImageSharp.fluid}
+   
    />
  </div>
  </Col>
@@ -119,3 +116,26 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+
+export const query = graphql`
+  {
+    wordpressPage(title: {eq: "ABOUT"}) {
+      title
+      slug
+      content
+      acf {
+        description
+        featureimage {
+          localFile {
+            childImageSharp {
+              fluid(maxWidth: 300, maxHeight: 300) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`

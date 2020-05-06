@@ -49,7 +49,7 @@ const webdesign=() => (
          Winhub Solutions is a team of passionate designers, developers and ux&ui and
 digital. We collaborate with clients to establish bold, effective identities.
           </p>
-          <a
+          <Link
             href="#"
             className="btn_hover mt_30 app_btn wow fadeInLeft"
             data-wow-delay="0.5s"
@@ -60,7 +60,7 @@ digital. We collaborate with clients to establish bold, effective identities.
             }}
           >
             Get Started
-          </a>
+          </Link>
         </div>
       </div>
       <div className="col-lg-5">
@@ -68,22 +68,22 @@ digital. We collaborate with clients to establish bold, effective identities.
           <img
             className="app_screen one wow fadeInDown animated"
             src={image4}
-            alt
+            alt="web design company"
             style={{ visibility: "visible", animationName: "animateUpDown" }}
           />
           <img
             className="app_screen two wow fadeInDown animated"
             src={image3}
-            alt
+            alt="web design company"
             style={{ visibility: "visible", animationName: "animateUpDown" }}
           />
           <img
             className="app_screen three wow fadeInDown animated"
             src={image2}
-            alt
+            alt="web design company"
             style={{ visibility: "visible", animationName: "animateUpDown" }}
           />
-          <img className="mobile" src={image1} alt />
+          <img className="mobile" src={image1} alt="web design company" />
         </div>
       </div>
     </div>
@@ -102,7 +102,7 @@ digital. We collaborate with clients to establish bold, effective identities.
             <span className="pluse_2" />
             <i className="icon_lightbulb_alt" />
           </div>
-          <img src={Webdesign} alt 
+          <img src={Webdesign} alt="web design company" 
           width={600}
           height={400} />
         </div>
@@ -129,7 +129,7 @@ digital. We collaborate with clients to establish bold, effective identities.
             <span className="pluse_2" />
             <i className="icon_lightbulb_alt" />
           </div>
-          <img src={Ux} alt
+          <img src={Ux} alt="web design company"
             width={600}
             height={400} />
         </div>
@@ -144,7 +144,7 @@ digital. We collaborate with clients to establish bold, effective identities.
           </div>
           <div className="media erp_item">
             <div className="icon blue">
-              <i className="icon_menu-square_alt2" />
+              <i className="icon_menu-square_alt" />
             </div>
             <div className="media-body">
               <h5>We have more than 8 years of Web Development Experience</h5>

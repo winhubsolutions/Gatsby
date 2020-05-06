@@ -5,7 +5,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css'
 import 'owl.carousel/dist/assets/owl.theme.default.css'
 
 
-const Portfolio = () => (
+const portfoliocarousel = () => (
 
 <section class="prototype_service_area_two">
         <div class="container-fluid">
@@ -209,4 +209,4 @@ const Portfolio = () => (
 </section>
 )
 
-export default Portfolio
+export default portfoliocarousel

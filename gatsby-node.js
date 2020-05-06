@@ -18,13 +18,14 @@ exports.onCreateWebpackConfig = ({
   }
 
 
-  const path = require(`path`)
+const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   const BlogPostTemplate = path.resolve("./src/templates/post.js")
   const PageTemplate = path.resolve("./src/templates/page.js")
+  const PortfoliosTemplate = path.resolve("./src/templates/works.js")
 
   return graphql(`
     {
@@ -44,7 +45,18 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
+  
+
+    allWordpressWpPortfolios {
+      edges {
+        node {
+          slug
+          wordpress_id
+        }
+      }
     }
+  }
+  
   `).then(result => {
     if (result.errors) {
       throw result.errors
@@ -60,16 +72,35 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
 
-      const Pages = result.data.allWordpressPage.edges
-      Pages.forEach(page => {
+      const Portfolios = result.data.allWordpressWpPortfolios.edges
+      Portfolios.forEach(portfolios => {
         createPage({
-          path: `/${page.node.slug}`,
+          path: `/portfolios/${portfolios.node.slug}`,
+          component:PortfoliosTemplate,
+          context: {
+            id: portfolios.node.wordpress_id,
+          },
+        })
+   
+
+       const Pages = result.data.allWordpressPage.edges
+       Pages.forEach(page => {
+        createPage({
+          path: `/Page/${page.node.slug}`,
           component: PageTemplate,
           context: {
             id: page.node.wordpress_id,
           },
         })
-      })
+
+
+
+       })
+
+
+      
+     })
+     
     })
   })
 }

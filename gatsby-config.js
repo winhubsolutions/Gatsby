@@ -50,16 +50,16 @@ module.exports = {
         useACF: true,
          // Set to true to debug endpoints on 'gatsby build'
          verboseOutput: true,
-        includedRoutes: [
-          "**/categories",
-          "**/posts",
-          "**/pages",
-          "**/media",
-          "**/tags",
-          "**/taxonomies",
-          "**/portfolio",
-          "**/users",
-        ],
+        // includedRoutes: [
+        //   "**/categories",
+        //   "**/posts",
+        //   "**/pages",
+        //   "**/media",
+        //   "**/tags",
+        //   "**/taxonomies",
+        //   "**/portfolio",
+        //   "**/users",
+        // ],
       },
     },
     

@@ -13993,13 +13993,13 @@ p span {
   justify-content: center;
   right: 50px;
   top: -40px;
-  background: #fff;
+  background:  #f13c31;
 }
 
 .blog_content .post_date h2 {
   font: 700 30px/20px "Poppins", sans-serif;
   margin-bottom: 0px;
-  color: #f13c31;
+  color: #ffffff;
   padding-top: 5px;
 }
 
@@ -14548,11 +14548,11 @@ p span {
   left: 20px;
   top: 20px;
   border-radius: 4px;
-  background-color: #fbfbfd;
+  background-color: #ff1e10;
   -webkit-box-shadow: 0px 14px 30px 0px rgba(68, 28, 183, 0.25);
   box-shadow: 0px 14px 30px 0px rgba(68, 28, 183, 0.25);
   text-align: center;
-  color: #f13c31;
+  color: #ed2c2c;
   padding: 13px 26px;
   z-index: 1;
 }

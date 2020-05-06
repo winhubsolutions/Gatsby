@@ -23,7 +23,7 @@ const POS = () => (
     <li />
   </ul>
       
-    <img className="breadcrumb_shap" src={banner} alt />
+    <img className="breadcrumb_shap" src={banner} alt="" />
   <div className="container">
     <div className="breadcrumb_content_two text-center">
       <h1 className="f_p f_700 f_size_50 w_color l_height50 mb_20">
@@ -32,9 +32,7 @@ const POS = () => (
       </h1>
       <ol className="breadcrumb">
         <li>
-          <Link href="https://www.winhubsolutions.in/"> Home > </Link>
-        </li>
-        <li className="active"> Winhub POS – Restaurant Point Of Sale Web Application </li>
+          <Link href="https://www.winhubsolutions.in/"> Home </Link> > Winhub POS – Restaurant Point Of Sale Web Application </li>
       </ol>
     </div>
   </div>

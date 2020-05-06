@@ -34,9 +34,7 @@ const BlogPostTemplate = ({ data }) => (
       </h1>
       <ol className="breadcrumb">
         <li>
-          <Link href="https://www.winhubsolutions.in/"> Home </Link>
-        </li>
-        <li className="active">  Written by {data.wordpressPost.author.name} on {data.wordpressPost.date}</li>
+          <Link href="https://www.winhubsolutions.in/"> Home </Link> >  Written by {data.wordpressPost.author.name} on {data.wordpressPost.date}</li>
       </ol>
     </div>
   </div>
@@ -44,7 +42,7 @@ const BlogPostTemplate = ({ data }) => (
 <div className="container">
 
     
-
+<Img fluid={data.wordpressPost.acf.featureimage.localFile.childImageSharp.fluid}/>
 
     
     <div
@@ -58,15 +56,29 @@ export default BlogPostTemplate
 
 export const query = graphql`
   query($id: Int!) {
-    wordpressPost(wordpress_id: { eq: $id }) {
-      title
-      content
-      excerpt
-      date(formatString: "MMMM DD, YYYY")
-      author {
-        name
+
+  wordpressPost(wordpress_id: { eq: $id }) {
+    title
+    slug
+    excerpt
+    date(formatString: "MMMM DD, YYYY")
+    content
+    author {
+      name
+    }
+    acf {
+      featureimage {
+        localFile {
+          childImageSharp {
+              fluid(maxHeight: 400, maxWidth: 900)  {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
-      
     }
   }
+}
+
+
 `

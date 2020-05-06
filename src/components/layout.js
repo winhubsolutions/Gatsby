@@ -48,12 +48,14 @@ const ThemedLayout = styled.div`
   background-color: ${props => themes[props.theme.name].background};
   transition: all 0.4s ease;
   min-height: 100vh;
-  & a,h1,h2,h3,h4,h5,h6,span,p{
+  & a,h1,h2,h3,h4,h5,h6,span,p,a.learn_btn_two{
     color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
     
   }  
+ 
   
-  & section,h3,.service_item{
+  
+  & section,h3,.service_item,.blog_list_item_two {
     background-color: ${props => themes[props.theme.name].background};
     color: ${props => themes[props.theme.name].foreground};
   }
@@ -90,7 +92,7 @@ const ThemedLayout = styled.div`
   color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
  }
  &
- .navbar-expand-lg{
+ .navbar-expand-lg,.blog_content{
  background-color: ${props => (props.theme.name === "dark" ? "#222222" : "#ffffff")};
 
  }
@@ -101,6 +103,7 @@ color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
 
   
 }
+
 
  .seo_service_item{
   background-color: ${props => themes[props.theme.name].back};

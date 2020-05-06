@@ -34,9 +34,7 @@ const GYM = () => (
       </h1>
       <ol className="breadcrumb">
         <li>
-          <Link href="https://www.winhubsolutions.in/"> Home </Link>
-        </li>
-        <li className="active"> Gym / Fitness Club Management </li>
+          <Link href="https://www.winhubsolutions.in/"> Home </Link>> Gym / Fitness Club Management </li>
       </ol>
     </div>
   </div>
