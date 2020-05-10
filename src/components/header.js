@@ -44,12 +44,9 @@ const Header = ({ siteTitle,theme  }) => (
        <ul className="navbar-nav ml-auto menu">
          <li className="nav-item dropdown submenu mega_menu mega_menu_two active">
           <Link
-             className="nav-link dropdown-toggle"
+             className="nav-link"
              to="/aboutus"
-             role="button"
-             data-toggle="dropdown"
-             aria-haspopup="true"
-             aria-expanded="false"
+             
            >
              Company
            </Link>
@@ -77,7 +74,8 @@ const Header = ({ siteTitle,theme  }) => (
                  <li className="nav-item">
    <Link 
      className="nav-link" 
-     to="/services/wordpress-development-services">
+     to="/services/wordpress-development-services"
+     >
    Wordpress Development Services
      
    </Link>
@@ -159,12 +157,9 @@ const Header = ({ siteTitle,theme  }) => (
          </li>
          <li className="nav-item dropdown submenu mega_menu">
           <Link
-             className="nav-link dropdown-toggle"
+             className="nav-link"
              to="/portfolio"
-             role="button"
-             data-toggle="dropdown"
-             aria-haspopup="true"
-             aria-expanded="false"
+        
            >
              Portfolio
            </Link>
@@ -223,9 +218,7 @@ const Header = ({ siteTitle,theme  }) => (
              className="nav-link dropdown-toggle"
              to="/blogpost"
              role="button"
-             data-toggle="dropdown"
-             aria-haspopup="true"
-             aria-expanded="false"
+             
            >
              Blog
            </Link>

@@ -3,7 +3,7 @@ import { graphql,Link } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const works = ({ data }) => (
     <Layout>
       <SEO
@@ -31,7 +31,7 @@ const works = ({ data }) => (
       </h1>
       <ol className="breadcrumb">
         <li>
-          <Link href="https://www.winhubsolutions.in/"> Home </Link> > {data.wordpressWpPortfolios.title} </li>
+          <Link to="/"> Home </Link> > {data.wordpressWpPortfolios.title} </li>
       </ol>
     </div>
   </div>
@@ -62,33 +62,34 @@ const works = ({ data }) => (
               <h6 className="f_p f_size_15 f_400 t_color3 mb-0 l_height28">
                 Client:{data.wordpressWpPortfolios.acf.client_}
               </h6>
-              <p className="f_size_15 f_400 mb-0">Abstergo Industries.</p>
+              <p className="f_size_15 f_400 mb-0"></p>
             </div>
             <div className="p_category_item mb-30">
               <h6 className="f_p f_size_15 f_400 t_color3 mb-0 l_height28">
                 Date:{" "}
               </h6>
-              <p className="f_size_15 f_400 mb-0">March, 2018</p>
+              <p className="f_size_15 f_400 mb-0">{data.wordpressWpPortfolios.date}</p>
             </div>
             <div className="p_category_item mb-30">
               <h6 className="f_p f_size_15 f_400 t_color3 mb-0 l_height28">
                 Website:{" "}
               </h6>
-              <p className="f_size_15 f_400 mb-0">droitlab.com</p>
+              <p className="f_size_15 f_400 mb-0">{data.wordpressWpPortfolios.acf.website_}</p>
             </div>
             <div className="p_category_item mb-30">
               <h6 className="f_p f_size_15 f_400 t_color3 mb-0 l_height28">
                 Services:{" "}
               </h6>
               <p className="f_size_15 f_400 mb-0">
-                Web Development, UX Design, SEO
+              {data.wordpressWpPortfolioCategories.name}
               </p>
             </div>
             <div className="p_category_item">
               <p className="f_400 f_size_15 mb-0">Share on</p>
               <div className="social_icon">
                 <a href="#">
-                  <i className="ti-facebook" />
+                <FontAwesomeIcon icon="coffee" mask={['far', 'circle']} />
+                     
                 </a>
                 <a href="#">
                   <i className="ti-twitter-alt" />
@@ -100,10 +101,10 @@ const works = ({ data }) => (
             </div>
           </div>
           <div className="portfolio_pagination portfolio_pagination_two mt_100">
-            <a className="prev" href="#">
-              <i className="ti-arrow-left" />
+            <Link className="prev" to="">
+            
               Prev Project
-            </a>
+            </Link>
             <a className="next" href="#">
               Next Project
               <i className="ti-arrow-right" />
@@ -143,7 +144,27 @@ wordpressWpPortfolios(wordpress_id: {eq: $id }) {
         }
       }
     }
+
   }
+  wordpressWpPortfolioCategories {
+    name
+    path
+  }
+
+
+
+
+  allWordpressWpPortfolios {
+    edges {
+      previous {
+        slug
+      }
+      next {
+        slug
+      }
+    }
+  }
+
 }
 
 

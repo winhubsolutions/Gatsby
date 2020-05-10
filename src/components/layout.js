@@ -26,6 +26,9 @@ import chat from "../img/home2/msgchat.png"
 
 
 
+
+
+
 const themes = {
   light: {
     foreground: "inherit",
@@ -103,7 +106,10 @@ color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
 
   
 }
+.erp_content_two .erp_item .media-body h5{
 
+  color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
+}
 
  .seo_service_item{
   background-color: ${props => themes[props.theme.name].back};
@@ -137,6 +143,8 @@ color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
 }
 
 
+
+
  
 
 `
@@ -166,6 +174,9 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         
       <Footer/>
+
+         
+         
       <div className = "bot">
         <div style ={{display: showChat ? "" : "none"}}>
         <SimpleForm></SimpleForm>

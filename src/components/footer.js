@@ -43,7 +43,7 @@ const Footer = () => (
             <h3 className="f-title f_500 f_size_16 mb-30">About Us</h3>
             <ul className="list-unstyled f_list">
               <li>
-                <Link to="#">Developer</Link>
+                <Link to="/aboutus">Company</Link>
               </li>
               <li>
                 <Link to="/blogpost">Blog</Link>
@@ -62,22 +62,28 @@ const Footer = () => (
         </div>
         <div className="col-lg-2 col-md-6">
           <div className="f_widget about-widget">
-            <h3 className="f-title f_500 f_size_16 mb-30">Help &amp; Suport</h3>
+            <h3 className="f-title f_500 f_size_16 mb-30">Services</h3>
             <ul className="list-unstyled f_list">
               <li>
-                <Link to="#">Help aand Contact</Link>
+                <Link to="/services/Web-design">Web Design</Link>
               </li>
               <li>
-                <Link to="#">Fees</Link>
+                <Link to="/services/Web-development">Web Development</Link>
               </li>
               <li>
-                <Link to="#">Security</Link>
+                <Link to="services/ecommerce-development">Ecommerce Development</Link>
               </li>
               <li>
-                <Link to="#">App</Link>
+                <Link to="/services/Web-development/#Custom-Web-Development">Custom Web Development</Link>
               </li>
               <li>
-                <Link to="#">Shop</Link>
+                <Link to="/services/Web-development/#Content-Management-System">Content Management System</Link>
+              </li>
+              <li>
+                <Link to="/services/Web-development/#Enterprise">Enterprise Solutions</Link>
+              </li>
+              <li>
+                <Link to="/services/digital-marketing-services">Digital Marketing</Link>
               </li>
             </ul>
           </div>

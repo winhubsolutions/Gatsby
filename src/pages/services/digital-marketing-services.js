@@ -179,7 +179,7 @@ const Digital = () => (
         <div className="col-lg-6 col-md-6-body">
 <li>   SEO has one of The Best ROI's in Advertising.</li>
 <li>   SEO increases You Unmatched Insight into Your Business.</li>
-<li></li>
+
         </div>
       </div>
     </div>
