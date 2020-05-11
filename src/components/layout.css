@@ -31,7 +31,7 @@ padding: 10px 30px;
 body {
   font: 400    15px/28px "Poppins", sans-serif;
   letter-spacing: 0px;
-  color: #212529;
+  color: #000000;
   padding: 0px;
   overflow-x: hidden;
   z-index: 0;
@@ -1222,3 +1222,9 @@ a.navbar-brand img {
    }
 
    
+
+
+
+
+
+

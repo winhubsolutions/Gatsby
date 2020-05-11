@@ -68,7 +68,7 @@ i:before {
 body {
   font: 400 15px/28px "Poppins", sans-serif;
   letter-spacing: 0px;
-  color: #677294;
+  color: #000000;
   padding: 0px;
   overflow-x: hidden;
   z-index: 0;
@@ -1215,7 +1215,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   padding-top: 5px;
   font-size: 15px;
   line-height: 20px;
-  color: #677294;
+  color: #000000;
 }
 
 .menu > .nav-item.submenu .dropdown-menu.mega_menu_three > .nav-item > .dropdown-menu .nav-item.nav_download_btn {
@@ -2252,7 +2252,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .header_area_six .header_top .header_contact_info li a {
-  color: #677294;
+  color: #000000;
 }
 
 .header_area_six .header_top .header_social_icon li a {
@@ -5310,7 +5310,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .s_promo_info .promo_item .text p {
   display: block;
   font-size: 14px;
-  color: #677294;
+  color: #000000;
   margin-bottom: 0px;
   margin-top: 5px;
   font-weight: 400;
@@ -5480,7 +5480,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .feature_info .f_content p {
-  color: #677294;
+  color: #000000;
   line-height: 30px;
   margin-bottom: 0px;
 }
@@ -6217,7 +6217,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .payment_features_content p {
   font-size: 18px;
-  color: #677294;
+  color: #000000;
   line-height: 30px;
   margin-bottom: 50px;
 }
@@ -6472,7 +6472,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .perfect_solution_area .perfect_solution_left .per_solution_content .btn_six {
   background: transparent;
-  color: #677294;
+  color: #000000;
   border-color: #dfe3ed;
   margin-left: 20px;
 }
@@ -7284,7 +7284,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   border-left: 4px solid #e6e8ef;
   background: transparent;
   font: 400 16px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
   position: relative;
 }
 
@@ -7359,7 +7359,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .developer_product_content .develor_tab .nav-item .nav-link {
   font: 400 16px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
   border: 0px;
   padding: 0px 0px 10px;
   position: relative;
@@ -7494,7 +7494,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .app_service_item .app_icon.one {
   text-shadow: 0px 14px 30px rgba(44, 130, 237, 0.4);
-  color: #677294;
+  color: #000000;
   background-image: -moz-linear-gradient(0deg, #2171d4 0%, #2cc4f0 100%);
   background-image: -webkit-linear-gradient(0deg, #2171d4 0%, #2cc4f0 100%);
   -webkit-background-clip: text;
@@ -7565,7 +7565,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .service_details ul li {
   font: 400 16px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
   position: relative;
   padding-left: 35px;
   margin-bottom: 13px;
@@ -7864,7 +7864,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .case_study_item p {
   font-size: 15px;
-  color: #677294;
+  color: #000000;
   margin-bottom: 0;
 }
 
@@ -7916,7 +7916,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .study_details ul li {
   font: 400 15px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
   margin-bottom: 15px;
 }
 
@@ -7937,7 +7937,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .study_details_content p {
-  color: #677294;
+  color: #000000;
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
@@ -8175,7 +8175,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .s_pricing-item p {
-  color: #677294;
+  color: #000000;
 }
 
 .s_pricing-item .price {
@@ -8185,7 +8185,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .s_pricing-item .price sub {
-  color: #677294;
+  color: #000000;
   bottom: 0;
 }
 
@@ -8328,7 +8328,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .price_tab .nav-item .nav-link {
   margin: 0px;
   font: 400 16px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
   padding: 12px 30px;
   display: inline-block;
   border: 0px;
@@ -8419,7 +8419,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .price_content .price_item p {
   font-size: 16px;
   line-height: 22px;
-  color: #677294;
+  color: #000000;
   font-weight: 300;
   margin-bottom: 0px;
 }
@@ -8431,7 +8431,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .price_content .price_item .price sub {
-  color: #677294;
+  color: #000000;
   bottom: 0;
 }
 
@@ -8634,7 +8634,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   margin-bottom: 0px;
   font-size: 15px;
   font-weight: 300;
-  color: #677294;
+  color: #000000;
   -webkit-transition: color 0.5s ease 0s;
   -o-transition: color 0.5s ease 0s;
   transition: color 0.5s ease 0s;
@@ -9047,7 +9047,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .price_info_two .price_btn {
   border-radius: 45px;
-  color: #677294;
+  color: #000000;
   border-color: #dfe3ed;
   padding: 0px 32px;
   line-height: 46px;
@@ -9072,7 +9072,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   box-shadow: 0px 20px 40px 0px rgba(12, 0, 46, 0.14);
   font-size: "Poppins", sans-serif;
   font-size: 16px;
-  color: #677294;
+  color: #000000;
   line-height: 26px;
   width: 100%;
 }
@@ -10000,7 +10000,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .feedback_area_three .feedback_slider_two .owl-nav i {
   border-color: #dfe3ed;
-  color: #677294;
+  color: #000000;
 }
 
 .feedback_area_three .feedback_slider_two .owl-nav i:hover {
@@ -10194,7 +10194,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .ex_team_item h5 {
   font: 300 14px/24px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
   margin-bottom: 0px;
 }
 
@@ -10671,7 +10671,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   border: 1px solid #e0e4ed;
   text-align: center;
   font-size: 14px;
-  color: #677294;
+  color: #000000;
   border-radius: 50%;
   line-height: 48px;
   -webkit-transition: all 0.3s linear;
@@ -11269,7 +11269,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .job_listing .job_list_tab .list_item_tab {
   font: 300 15px/26px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
   padding: 0px 0px 10px;
   border: 0px;
   border-radius: 0px;
@@ -11375,7 +11375,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .job_listing .listing_tab .list_item .joblisting_text ul li {
   float: left;
   font: 300 14px/15px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
   padding: 0px 10px;
   border-left: 2px solid #aeb3c3;
 }
@@ -11451,7 +11451,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   display: inline-block;
   text-align: center;
   line-height: 40px;
-  color: #677294;
+  color: #000000;
   font-size: 16px;
   border-radius: 50%;
   background-color: #fbfbfd;
@@ -11496,7 +11496,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   padding-left: 36px;
   font-weight: 300;
   font-size: 15px;
-  color: #677294;
+  color: #000000;
   margin-bottom: 27px;
 }
 
@@ -11558,7 +11558,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   margin-bottom: 0px;
   font-size: 14px;
   font-weight: 300;
-  color: #677294;
+  color: #000000;
 }
 
 /*========== job_apply_area css =========*/
@@ -11631,7 +11631,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .apply_form p {
   font: 300 15px/26px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
 }
 
 .apply_form p a {
@@ -11680,7 +11680,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .faq_tab .nav-item .nav-link {
   font: 400 16px/22px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
   padding: 0px;
   border: 0px;
   border-radius: 0px;
@@ -11764,7 +11764,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .faq_content .tab-pane .card .card-body {
   padding: 0px 0px 45px;
   font: 400 15px/26px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
 }
 
 /*====================================================*/
@@ -11799,7 +11799,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .portfolio_filter .work_portfolio_item {
   font: 400 16px/22px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
   display: inline-block;
   border-radius: 3px;
   -webkit-transition: all 0.2s linear;
@@ -12002,7 +12002,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .portfolio-description .links a {
   font-size: 15px;
-  color: #677294;
+  color: #000000;
   font-weight: 300;
   position: relative;
   display: inline-block;
@@ -12120,7 +12120,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   background: transparent;
   padding: 0px;
   font-size: 24px;
-  color: #677294;
+  color: #000000;
   -webkit-transition: color 0.2s linear;
   -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
@@ -12228,7 +12228,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .app_contact_info .info_item p, .app_contact_info .info_item a {
-  color: #677294;
+  color: #000000;
   line-height: 24px;
   margin-bottom: 0px;
 }
@@ -12244,12 +12244,12 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .contact_info_item p {
-  color: #677294;
+  color: #000000;
   margin-bottom: 8px;
 }
 
 .contact_info_item a {
-  color: #677294;
+  color: #000000;
   padding-left: 3px;
   display: inline-block;
 }
@@ -12359,7 +12359,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .login_area .login_info p a {
-  color: #677294;
+  color: #000000;
 }
 
 .login-form .text_box .text_c {
@@ -12429,7 +12429,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .login-form .extra .forgotten-password a {
-  color: #677294;
+  color: #000000;
 }
 
 .login-form .btn_three {
@@ -12479,12 +12479,12 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .sign_info .sign_info_content h2 {
   font-size: 30px;
-  color: #677294;
+  color: #000000;
 }
 
 .sign_info .sign_info_content ul li {
   font: 400 16px/34px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
 }
 
 .sign_info .sign_info_content ul li i {
@@ -12498,7 +12498,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .sign_info .lead-text {
   font: 400 14px/40px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
   padding-right: 20px;
 }
 
@@ -12563,7 +12563,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .get_quote_form .form-group .form-control {
   font: 300 15px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
   border-radius: 4px;
   background-color: white;
   -webkit-box-shadow: 0px 2px 4px 0px rgba(12, 0, 46, 0.04);
@@ -12958,7 +12958,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   border-radius: 45px;
   height: 60px;
   padding: 0px 30px;
-  color: #677294;
+  color: #000000;
   font-size: 15px;
   font-weight: 300;
   -webkit-transition: all 0.3s linear;
@@ -12967,19 +12967,19 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .error_content_two .search .form-control.placeholder {
-  color: #677294;
+  color: #000000;
 }
 
 .error_content_two .search .form-control:-moz-placeholder {
-  color: #677294;
+  color: #000000;
 }
 
 .error_content_two .search .form-control::-moz-placeholder {
-  color: #677294;
+  color: #000000;
 }
 
 .error_content_two .search .form-control::-webkit-input-placeholder {
-  color: #677294;
+  color: #000000;
 }
 
 .error_content_two .search .form-control:focus {
@@ -13146,7 +13146,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .thanks_content p {
-  color: #677294;
+  color: #000000;
 }
 
 .thanks_content a {
@@ -13213,7 +13213,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .typography_breacrumb p {
-  color: #677294;
+  color: #000000;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13222,7 +13222,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-size: 16px;
-  color: #677294;
+  color: #000000;
 }
 
 p span {
@@ -13243,7 +13243,7 @@ p span {
 
 .h_title {
   font-size: 24px;
-  color: #677294;
+  color: #000000;
   font-weight: 300;
   margin-bottom: 50px;
 }
@@ -13255,7 +13255,7 @@ p span {
 
 .heading_style .h_title {
   font-size: 24px;
-  color: #677294;
+  color: #000000;
   font-weight: 300;
 }
 
@@ -13360,7 +13360,7 @@ p span {
   background: #f9fafb;
   padding: 40px;
   font-size: 22px;
-  color: #677294;
+  color: #000000;
   font-style: italic;
   line-height: 40px;
 }
@@ -13448,7 +13448,7 @@ p span {
 .alert.notice {
   background: #f9f8fc;
   border-color: #e9e6f5;
-  color: #677294;
+  color: #000000;
 }
 
 .alert.error {
@@ -13503,7 +13503,7 @@ p span {
   text-align: center;
   line-height: 70px;
   font-size: 20px;
-  color: #677294;
+  color: #000000;
   border: 1px solid #e9e6f5;
   background: #f9f8fc;
   border-radius: 50%;
@@ -13521,14 +13521,14 @@ p span {
 .box_alert .media-body p {
   font-size: 15px;
   line-height: 28px;
-  color: #677294;
+  color: #000000;
 }
 
 .box_alert .alert_close {
   position: absolute;
   right: 20px;
   top: 20px;
-  color: #677294;
+  color: #000000;
   font-size: 20px;
   cursor: pointer;
 }
@@ -14044,12 +14044,12 @@ p span {
 
 .entry_post_info {
   font: 400 15px/25px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
   padding-bottom: 5px;
 }
 
 .entry_post_info a {
-  color: #677294;
+  color: #000000;
 }
 
 .entry_post_info a + a:before {
@@ -14132,11 +14132,11 @@ p span {
 }
 
 .post_author .media-body h6 {
-  color: #677294;
+  color: #000000;
 }
 
 .post_author .media-body p {
-  color: #677294;
+  color: #000000;
   margin-bottom: 0px;
 }
 
@@ -14193,7 +14193,7 @@ p span {
 .widget_title .border_bottom {
   width: 180px;
   height: 1px;
-  background: #677294;
+  background: #000000;
   display: block;
 }
 
@@ -14214,7 +14214,7 @@ p span {
 
 .blog-sidebar .widget.widget_search .search-form .form-control {
   font: 300 14px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
   border-radius: 3px;
   background-color: white;
   -webkit-box-shadow: 0px 2px 3px 0px rgba(12, 0, 46, 0.08);
@@ -14228,19 +14228,19 @@ p span {
 }
 
 .blog-sidebar .widget.widget_search .search-form .form-control.placeholder {
-  color: #677294;
+  color: #000000;
 }
 
 .blog-sidebar .widget.widget_search .search-form .form-control:-moz-placeholder {
-  color: #677294;
+  color: #000000;
 }
 
 .blog-sidebar .widget.widget_search .search-form .form-control::-moz-placeholder {
-  color: #677294;
+  color: #000000;
 }
 
 .blog-sidebar .widget.widget_search .search-form .form-control::-webkit-input-placeholder {
-  color: #677294;
+  color: #000000;
 }
 
 .blog-sidebar .widget.widget_search .search-form .form-control:focus {
@@ -14357,7 +14357,7 @@ p span {
   border-radius: 4px;
   height: 60px;
   font-size: 15px;
-  color: #677294;
+  color: #000000;
   -webkit-box-shadow: none;
   box-shadow: none;
   position: relative;
@@ -14369,19 +14369,19 @@ p span {
 }
 
 .blog-sidebar .widget.search_widget_two .search-form .form-control.placeholder {
-  color: #677294;
+  color: #000000;
 }
 
 .blog-sidebar .widget.search_widget_two .search-form .form-control:-moz-placeholder {
-  color: #677294;
+  color: #000000;
 }
 
 .blog-sidebar .widget.search_widget_two .search-form .form-control::-moz-placeholder {
-  color: #677294;
+  color: #000000;
 }
 
 .blog-sidebar .widget.search_widget_two .search-form .form-control::-webkit-input-placeholder {
-  color: #677294;
+  color: #000000;
 }
 
 .blog-sidebar .widget.search_widget_two .search-form .form-control:focus {
@@ -14919,7 +14919,7 @@ p span {
 
 .post_author_two .media-body .comment_info .comment-date {
   font: 400 14px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
 }
 
 .post_author_two .media-body p {
@@ -15172,7 +15172,7 @@ p span {
 
 .shop_menu_right .selectpickers .current {
   font: 300 16px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
 }
 
 .shop_menu_right .shop_grid {
@@ -15183,7 +15183,7 @@ p span {
 
 .shop_menu_right .shop_grid a {
   font-size: 16px;
-  color: #677294;
+  color: #000000;
   margin-left: 12px;
 }
 
@@ -15269,7 +15269,7 @@ p span {
   -ms-flex-pack: center;
   justify-content: center;
   font: 300 14px/28px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
 }
 
 .single_product_item .single_pr_details .price ins {
@@ -15314,7 +15314,7 @@ p span {
   font-size: 16px;
   line-height: 39px;
   font-weight: 300;
-  color: #677294;
+  color: #000000;
   text-align: center;
   display: block;
   -webkit-transition: all 0.2s linear;
@@ -15363,7 +15363,7 @@ p span {
 
 .shop_list_item .single_product_item .single_pr_details .pr_button .cart_btn {
   font: 400 15px/30px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
   border: 1px solid #e7e7f6;
   border-radius: 45px;
   background: #f9f9fc;
@@ -15461,12 +15461,12 @@ p span {
 .pr_details .ratting .woocommerce-review-link {
   font-size: 14px;
   font-weight: 300;
-  color: #677294;
+  color: #000000;
 }
 
 .pr_details .price {
   font: 300 20px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15526,7 +15526,7 @@ p span {
   background: #fff;
   border: 0px;
   font-size: 12px;
-  color: #677294;
+  color: #000000;
   right: 5px;
   border-radius: 15px;
   padding: 0px 15px 0px 0px;
@@ -15551,7 +15551,7 @@ p span {
 .pr_details .cart_button .cart_btn {
   border-radius: 45px;
   font: 400 15px/48px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
   border: 1px solid #e7e7f6;
   background: #f8f8fc;
   min-width: 140px;
@@ -15590,12 +15590,12 @@ p span {
 .pr_details .product_meta li {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  color: #677294;
+  color: #000000;
   margin-bottom: 10px;
 }
 
 .pr_details .product_meta li a {
-  color: #677294;
+  color: #000000;
 }
 
 .pr_details .product_meta li a:hover {
@@ -15625,7 +15625,7 @@ p span {
 
 .pr_details .share-link .social-icon li a {
   font-size: 12px;
-  color: #677294;
+  color: #000000;
   padding-right: 10px;
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
@@ -15662,7 +15662,7 @@ p span {
 
 .product_info_details .pr_tab .nav-item .nav-link {
   font: 300 16px/40px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
   padding: 5px 25px;
   min-width: 148px;
   text-align: center;
@@ -15871,7 +15871,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .shopping_cart_area .cart_table .quantity p {
-  color: #677294;
+  color: #000000;
   margin-bottom: 0px;
 }
 
@@ -15882,7 +15882,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .shopping_cart_area .cart_table .del-item a {
-  color: #677294;
+  color: #000000;
 }
 
 .shopping_cart_area .cart_table .del-item a:hover {
@@ -15912,7 +15912,7 @@ input[type=number]::-webkit-inner-spin-button {
   background: #fff;
   border: 0px;
   font-size: 12px;
-  color: #677294;
+  color: #000000;
   right: 4px;
   border-radius: 15px;
   padding: 0px 15px 0px 0px;
@@ -15938,23 +15938,23 @@ input[type=number]::-webkit-inner-spin-button {
   height: 44px;
   border-radius: 45px;
   text-align: center;
-  color: #677294;
+  color: #000000;
 }
 
 .shopping_cart_area .cart_table .product-qty .manual-adjust.placeholder {
-  color: #677294;
+  color: #000000;
 }
 
 .shopping_cart_area .cart_table .product-qty .manual-adjust:-moz-placeholder {
-  color: #677294;
+  color: #000000;
 }
 
 .shopping_cart_area .cart_table .product-qty .manual-adjust::-moz-placeholder {
-  color: #677294;
+  color: #000000;
 }
 
 .shopping_cart_area .cart_table .product-qty .manual-adjust::-webkit-input-placeholder {
-  color: #677294;
+  color: #000000;
 }
 
 .shopping_cart_area .cart_btn {
@@ -16041,7 +16041,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .cart_box .shop_table tbody tr td .amount {
-  color: #677294;
+  color: #000000;
 }
 
 .cart_box .shop_table tbody tr:last-child {
@@ -16379,7 +16379,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 .woocommerce-checkout-review-order .shop_table tbody tr td {
   font: 400 15px/30px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
 }
 
 .woocommerce-checkout-review-order .shop_table tbody tr td.price {
@@ -16417,7 +16417,7 @@ input[type=number]::-webkit-inner-spin-button {
 .woocommerce-checkout-review-order .note {
   font-size: 15px;
   line-height: 26px;
-  color: #677294;
+  color: #000000;
   font-weight: 300;
   font-family: "Poppins", sans-serif;
   margin-bottom: 25px;
@@ -16648,7 +16648,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 .pr_sidebar .widget_category ul li a {
   font-size: 16px;
-  color: #677294;
+  color: #000000;
   display: inline-block;
   position: relative;
 }
@@ -16771,7 +16771,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .pr_sidebar .widget_product ul li .media .media-body .rate {
-  color: #677294;
+  color: #000000;
   font-size: 16px;
 }
 
@@ -16786,7 +16786,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 .pr_sidebar .widget_tag ul li a {
   font-size: 16px;
-  color: #677294;
+  color: #000000;
   position: relative;
   display: block;
   -webkit-transition: all 0.2s linear;
@@ -22121,7 +22121,7 @@ a .h_head:hover {
 }
 
 .f_widget .widget-wrap p a {
-  color: #677294;
+  color: #000000;
   -webkit-transition: color 0.2s linear;
   -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
@@ -22141,7 +22141,7 @@ a .h_head:hover {
 
 .f_widget.about-widget .f_list li a {
   font: 300 16px/20px "Poppins", sans-serif;
-  color: #677294;
+  color: #000000;
   position: relative;
   -webkit-transition: color 0.2s linear;
   -o-transition: color 0.2s linear;

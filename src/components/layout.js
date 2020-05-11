@@ -6,12 +6,12 @@ import Footer from './footer'
 import '../css/bootstrap.min.css'
 import { ThemeContext } from "./ThemeContext"
 import "../vendors/bootstrap-selector/css/bootstrap-select.min.css"
-import "../css/style.css"
+import '../css/style.css'
 import "../vendors/animation/animate.css"
 import "../vendors/owl-carousel/assets/owl.carousel.min.css"
 import "../vendors/elagent/style.css"
 
-import "../css/responsive.css"
+import '../css/responsive.css'
 import "../vendors/nice-select/nice-select.css"
 import "../vendors/scroll/jquery.mCustomScrollbar.min.css"
 
@@ -41,6 +41,7 @@ const themes = {
     button:"#f13c31",
     button1:"#00c99c",
     button3:"-webkit-linear-gradient(-86deg, #000000 0%, #000000 100%)"
+
 
   },
 }
@@ -144,15 +145,16 @@ color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
 }
 
 
-.h_analytics_content p,.h_analytics_content h2,.w_color{
-  color:#fff;
-}
-.payment_banner_area,.home_analytics_banner_area{
+
+
+&.payment_banner_area,.home_analytics_banner_area{
   background-image: ${props => themes[props.theme.name].button3};
 
 }
- 
+&p.h_analytics_content,.h_analytics_content h2{
 
+  color: ${props => (props.theme.name === "dark" ? "#ffffff" : "#ffffff")};
+}
 `
 
 
