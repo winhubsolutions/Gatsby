@@ -96,6 +96,13 @@ const Header = ({ siteTitle,theme  }) => (
      
    </Link>
    </li>
+
+   <li className="nav-item">
+                 <Link className="nav-link"
+                  to="services/ui-ux-development-service">UX/UI Design Services
+                 
+                 </Link>
+                 </li>
    
                   
                  </ul>
@@ -135,7 +142,26 @@ const Header = ({ siteTitle,theme  }) => (
      
                   </Link>
                   </li>
+                
+                  <li className="nav-item">
+                 <Link 
+                  className="nav-link" 
+                  to="/services/react-js-development">
+                     React Js Development
+     
+                  </Link>
+                  </li>
+                    
+                  <li className="nav-item">
+                 <Link 
+                  className="nav-link" 
+                  to="/services/node-js-development-company">
+                    Node Js Development
+     
+                  </Link>
+                  </li>
                  </ul>
+                
                </li>
                
                <li className="nav-item">

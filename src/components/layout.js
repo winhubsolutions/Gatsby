@@ -36,10 +36,11 @@ const themes = {
   },
   dark: {
     foreground: "#ffffff",
-    background: "#222222",
+    background: "#000000",
     back:"#2e2edb",
     button:"#f13c31",
     button1:"#00c99c",
+    button3:"-webkit-linear-gradient(-86deg, #000000 0%, #000000 100%)"
 
   },
 }
@@ -96,7 +97,7 @@ const ThemedLayout = styled.div`
  }
  &
  .navbar-expand-lg,.blog_content{
- background-color: ${props => (props.theme.name === "dark" ? "#222222" : "#ffffff")};
+ background-color: ${props => (props.theme.name === "dark" ? "#000000" : "#ffffff")};
 
  }
  .menu > .nav-item.submenu .dropdown-menu .nav-item .nav-link ,.menu > .nav-item.submenu.mega_menu .mega_menu_inner > .dropdown-menu > .nav-item > .nav-link{
@@ -106,7 +107,7 @@ color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
 
   
 }
-.erp_content_two .erp_item .media-body h5{
+.erp_content_two .erp_item .media-body h5,.h_analytices_features_item .h_analytices_content h2,.h_analytices_features_item .h_analytices_content ul{
 
   color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
 }
@@ -143,8 +144,13 @@ color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
 }
 
 
+.h_analytics_content p,.h_analytics_content h2,.w_color{
+  color:#fff;
+}
+.payment_banner_area,.home_analytics_banner_area{
+  background-image: ${props => themes[props.theme.name].button3};
 
-
+}
  
 
 `

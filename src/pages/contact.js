@@ -143,21 +143,7 @@ class Contact extends Component {
       </div>
     </div>
   </section>
-  <section className="mapbox2">
-    
-  <div className="container-fulid">
-    <iframe
-  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15177.654200799623!2d79.5542047!3d18.0060014!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe835400639546e36!2sWINHUB%20SOLUTIONS%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1585772133313!5m2!1sen!2sin"
-  width={1900}
-  height={450}
-  frameBorder={0}
-  style={{ border: 0 }}
-  allowFullScreen
-  aria-hidden="false"
-  tabIndex={0}  
-/>
-   </div>
-  </section>
+
 
 
   </Layout>

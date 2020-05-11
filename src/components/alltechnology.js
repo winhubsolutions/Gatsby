@@ -663,7 +663,7 @@ function AllTechnology(){
      
       className="icon-block"
       aria-label="ic-technology-node-js2x"
-      href="/services/web/nodejs-development-company"
+      href="/services/node-js-development-company"
     >
       <div className="icon-box">
         <svg
@@ -675,7 +675,7 @@ function AllTechnology(){
           version="1.1"
          
           className="svg-convert"
-          src="https://d1i2cp4a5c819e.cloudfront.net/wp-content/uploads/2020/02/ic-technology-node-js2x.svg"
+          src="https://siteapi.winhubsolutions.in/wp-content/uploads/2020/05/technology-node-js2x.svg"
           alt="Winhub-technology-node-js2x"
         >
          
@@ -1035,7 +1035,7 @@ function AllTechnology(){
          version="1.1"
          
          className="svg-convert"
-         src="https://d1i2cp4a5c819e.cloudfront.net/wp-content/uploads/2020/02/ic-technology-react-native2x.svg"
+         src="https://siteapi.winhubsolutions.in/wp-content/uploads/2020/05/technology-react-native2x.svg"
          alt="winhub-technology-react-native2x"
        >
         
@@ -1084,7 +1084,7 @@ function AllTechnology(){
          version="1.1"
          
          className="svg-convert"
-         src="https://d1i2cp4a5c819e.cloudfront.net/wp-content/uploads/2020/02/ic-technology-phone-gap2x.svg"
+         src="https://siteapi.winhubsolutions.in/wp-content/uploads/2020/05/technology-phone-gap2x.svg"
          alt="winhub-technology-phone-gap2x"
        >
         
@@ -1128,7 +1128,7 @@ function AllTechnology(){
          version="1.1"
          
          className="svg-convert"
-         src="https://d1i2cp4a5c819e.cloudfront.net/wp-content/uploads/2020/02/ic-technology-xamarin2x.svg"
+         src="https://siteapi.winhubsolutions.in/wp-content/uploads/2020/05/technology-xamarin2x.svg"
          alt="winhub-technology-xamarin2x"
        >
         

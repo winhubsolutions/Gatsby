@@ -9,7 +9,7 @@ import seo from "../../img/home9/mac.png"
 import whyus from "../../img/home9/why-us-hero.svg"
 const Reactjs = () => (
   <Layout>
-
+<SEO/>
 <section className="payment_banner_area">
   <div className="shape one" />
   <div className="shape two" />
