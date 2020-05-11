@@ -125,7 +125,7 @@ color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
   background-color: ${props => themes[props.theme.name].foreground};
   color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
 }
- & .seo_btn_one{
+ & .seo_btn_one,.s_service_item .solid_overlay{
 
   background-color: ${props => themes[props.theme.name].button};
 
