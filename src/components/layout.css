@@ -1224,4 +1224,12 @@ a.navbar-brand img {
    
 
 
-
+   .menu > .nav-item.submenu.mega_menu .mega_menu_inner > .dropdown-menu > .nav-item .dropdown-menu {
+    left: 35px;
+    position: relative;
+    transform: translateY(0);
+    box-shadow: none;
+    padding: 0px;
+    background: transparent;
+    top: 0;
+}

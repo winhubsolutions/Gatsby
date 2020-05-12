@@ -38,6 +38,7 @@ const themes = {
     button3:"-webkit-linear-gradient(-50deg, #22186e 0%, #0e044b 100%)",
  button4:"-webkit-linear-gradient(-86deg, #7121ff 0%, #21d4fd 100%)",
  button5:"-webkit-linear-gradient(-50deg, #22186e 0%, #17c7bd 100%)",
+ button6:"-webkit-linear-gradient(-86deg,#7121ff 0,#21d4fd 100%)",
   },
   dark: {
     foreground: "#ffffff",
@@ -50,6 +51,8 @@ const themes = {
 
 
    button5:"-webkit-linear-gradient(-86deg, #000000 0%, #000000 100%)",
+   
+   button6:"-webkit-linear-gradient(-86deg, #000000 0%, #000000 100%)",
   },
 }
 
@@ -163,6 +166,10 @@ color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
   background-image: ${props => themes[props.theme.name].button5};
 
 }
+.process_area bg_color sec_pad{
+  background: ${props => themes[props.theme.name].button5};
+}
+
 .startup_content_three p{
   color:#000000;
 }
@@ -172,7 +179,7 @@ color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
 }
 
 
-.h_analytics_content,payment_banner_content wow fadeInLeft{
+.h_analytics_content{
   color:#ffffff;
 }
 
@@ -185,7 +192,15 @@ color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
   color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
 
 }
+.payment_banner_area{
 
+  background-image: ${props => themes[props.theme.name].button6};
+}
+
+.navbar-collapse, .menu_four .navbar-collapse{
+  background-color: ${props => themes[props.theme.name].background};
+
+}
 `
 
 

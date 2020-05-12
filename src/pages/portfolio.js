@@ -25,7 +25,7 @@ class portfolio extends Component {
     return (
         <Layout>
          <SEO/>
-  < Portfoliocarousel/>
+
           
 
   <section  className="casestudy-listing">

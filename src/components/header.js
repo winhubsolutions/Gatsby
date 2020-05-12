@@ -1,6 +1,6 @@
 
 import PropTypes from "prop-types"
-import React from "react"
+import {React ,useState, useEffect }from "react"
 import logo from "../images/logo.png"
 import {Link} from  "gatsby"
 import sunIcon from "../images/sun-icon.svg"
@@ -8,7 +8,33 @@ import moonIcon from "../images/moon-icon.svg"
 import Switch from "react-switch"
 import webdesignlogo from "../img/navbaricon/web-design.png"
 import webdevelopment from "../img/navbaricon/web-development.png"
+import ReactLogo from "../img/navbaricon/nodejs.png"
+import digital from "../img/navbaricon/digital.png"
 
+
+const themeType = {
+  dark: 'dark',
+  light: 'light'
+};
+
+const DarkModeSwitch = () => {
+  const [mode, setMode] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const val = localStorage.getItem('theme');
+      return val ? JSON.parse(val) : themeType.light;
+    }
+    return themeType.light;
+  });
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('theme', JSON.stringify(mode));
+    }
+  }, [mode]);
+
+}
+  
+ 
 const Header = ({ siteTitle,theme  }) => (
 <header className="header_area">
 
@@ -89,7 +115,7 @@ const Header = ({ siteTitle,theme  }) => (
    <Link 
      className="nav-link" 
      to="services/Web-development">
-     We Development
+     Web Development
      
    </Link>
    </li>
@@ -113,8 +139,9 @@ const Header = ({ siteTitle,theme  }) => (
                  </ul>
                </li>
                <li className="nav-item">
+      
                  <Link className="nav-link"  to="services/Web-development">
-                 <i><img  src={webdevelopment} width={30} height={30}/> </i> We Development </Link>
+                 <img  src={webdevelopment} width={30} height={30}/> Web Development </Link>
                  <ul className="dropdown-menu">
                  <li className="nav-item">
                  <Link 
@@ -149,29 +176,33 @@ const Header = ({ siteTitle,theme  }) => (
                   </Link>
                   </li>
                 
-                  <li className="nav-item">
-                 <Link 
-                  className="nav-link" 
-                  to="/services/react-js-development">
-                     React Js Development
-     
-                  </Link>
-                  </li>
-                    
-                  <li className="nav-item">
-                 <Link 
-                  className="nav-link" 
-                  to="/services/node-js-development-company">
-                    Node Js Development
-     
-                  </Link>
-                  </li>
+                  
                  </ul>
                 
                </li>
                
+
                <li className="nav-item">
-                 <Link className="nav-link" to="services/digital-marketing-services">Digital Marketing Services</Link>
+                 <Link className="nav-link" to="services/node-js-development-company">
+                   <img  src={ReactLogo} width={30} height={30}/> Node Js Development</Link>
+                   <ul className="dropdown-menu">
+                 <li className="nav-item">
+              
+              
+                 <Link className="nav-link " to="services/react-js-development"> React Js Development</Link>
+                 </li>
+                 <li className="nav-item">
+              
+              
+                 <Link className="nav-link " to="services/gatsby-js-development"> Gatsby Js Development</Link>
+                 </li>
+                   
+                   
+                   </ul>
+                 
+                 <br></br>
+              
+                 <Link className="nav-link" to="services/digital-marketing-services"><img  src={digital} width={30} height={30}/> Digital Marketing Services</Link>
                  <ul className="dropdown-menu">
                   
                   <Link 
@@ -256,11 +287,13 @@ const Header = ({ siteTitle,theme  }) => (
            </Link>
            
          </li>
-        
+         
        </ul>
-       <Link className="btn_get btn_hover" to="/contact">
+   
+       <Link className="btn_get btn_hover nav-link" to="/contact">
          Contact US
        </Link>
+       
        <ul className="navbar-nav ml-auto menu">
        <li className="nav-item">
           
