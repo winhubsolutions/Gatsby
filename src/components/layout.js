@@ -19,6 +19,7 @@ import "../vendors/magnify-pop/magnific-popup.css"
 import styled from "@emotion/styled"
 import { css } from '@emotion/core'
 import '../components/layout.css'
+
 import SimpleForm from "../components/chatbot"
 import chat from "../img/home2/msgchat.png"
 
@@ -30,9 +31,13 @@ import chat from "../img/home2/msgchat.png"
 
 
 const themes = {
+  
   light: {
     foreground: "inherit",
     background: "inherit",
+    button3:"-webkit-linear-gradient(-50deg, #22186e 0%, #0e044b 100%)",
+ button4:"-webkit-linear-gradient(-86deg, #7121ff 0%, #21d4fd 100%)",
+ button5:"-webkit-linear-gradient(-50deg, #22186e 0%, #17c7bd 100%)",
   },
   dark: {
     foreground: "#ffffff",
@@ -40,9 +45,11 @@ const themes = {
     back:"#2e2edb",
     button:"#f13c31",
     button1:"#00c99c",
-    button3:"-webkit-linear-gradient(-86deg, #000000 0%, #000000 100%)"
+    button3:"-webkit-linear-gradient(-86deg, #000000 0%, #000000 100%)",
+   button4:"-webkit-linear-gradient(-86deg, #000000 0%, #000000 100%)",
 
 
+   button5:"-webkit-linear-gradient(-86deg, #000000 0%, #000000 100%)",
   },
 }
 
@@ -147,14 +154,38 @@ color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
 
 
 
-&.payment_banner_area,.home_analytics_banner_area{
+.home_analytics_banner_area{
   background-image: ${props => themes[props.theme.name].button3};
 
 }
-&p.h_analytics_content,.h_analytics_content h2{
 
-  color: ${props => (props.theme.name === "dark" ? "#ffffff" : "#ffffff")};
+.startup_banner_area_three{
+  background-image: ${props => themes[props.theme.name].button5};
+
 }
+.startup_content_three p{
+  color:#000000;
+}
+
+.startup_content_three h2 ,.startup_content_three span{
+  color:#000000;
+}
+
+
+.h_analytics_content,payment_banner_content wow fadeInLeft{
+  color:#ffffff;
+}
+
+.cs-project-detail a ,.cs-project-detail p{
+  color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
+
+}
+
+.cs-filter-bar .tab-filter a.active{
+  color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
+
+}
+
 `
 
 

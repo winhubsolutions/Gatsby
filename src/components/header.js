@@ -6,8 +6,8 @@ import {Link} from  "gatsby"
 import sunIcon from "../images/sun-icon.svg"
 import moonIcon from "../images/moon-icon.svg"
 import Switch from "react-switch"
-
-
+import webdesignlogo from "../img/navbaricon/web-design.png"
+import webdevelopment from "../img/navbaricon/web-development.png"
 
 const Header = ({ siteTitle,theme  }) => (
 <header className="header_area">
@@ -66,8 +66,13 @@ const Header = ({ siteTitle,theme  }) => (
            <div className="mega_menu_inner">
              <ul className="dropdown-menu">
                <li className="nav-item">
+           
                  <Link className="nav-link"
-                  to="services//Web-design">Web Design
+                  to="services//Web-design"
+                 >
+                   <i><img  src={webdesignlogo} width={30} height={30}/> </i>
+                         
+                  Web Design
                  
                  </Link>
                  <ul className="dropdown-menu">
@@ -108,7 +113,8 @@ const Header = ({ siteTitle,theme  }) => (
                  </ul>
                </li>
                <li className="nav-item">
-                 <Link className="nav-link"  to="services/Web-development">We Development </Link>
+                 <Link className="nav-link"  to="services/Web-development">
+                 <i><img  src={webdevelopment} width={30} height={30}/> </i> We Development </Link>
                  <ul className="dropdown-menu">
                  <li className="nav-item">
                  <Link 
