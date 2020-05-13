@@ -7,6 +7,7 @@ import SEO from "../../components/seo"
 import shape from "../../img/home9/shape.png"
 import seo from "../../img/home9/mac.png"
 import whyus from "../../img/home9/why-us-hero.svg"
+import ReactJs from "../../img/home9/Reactjs.svg"
 const Reactjs = () => (
   <Layout>
 <SEO/>
@@ -95,7 +96,7 @@ const Reactjs = () => (
   </div>
   <div className="container">
     <div
-      className="payment_banner_content wow fadeInLeft"
+      className=""
       data-wow-delay="0.4s"
       style={{
         visibility: "visible",
@@ -107,26 +108,57 @@ const Reactjs = () => (
       What is ReactJS ?
       </h2>
       <br></br>
-      <p className="w_color f_p f_size_18">
+      <p className="w_color f_p f_size_18 text-justify" >
       ReactJS is one of the most successful JavaScript UI frameworks that are commonly used today because of its high performance in rendering. It provides developers of ReactJS with a simple, robust and flexible framework for the creation of user interface applications. ReactJS 'data binding and state management features make it an perfect platform for building and deploying dynamic apps with outstanding UI.
          </p>
 
    </div>
-   <div
-    className="payment_banner_content wow fadeInRight"
-    data-wow-delay="0.5s"
-    style={{
-      visibility: "visible",
-      animationDelay: "0.5s",
-      animationName: "fadeInRight"
-    }}
-  >
-        <br>
-        </br> 
-        <h2 className="f_p f_size_30 l_height50 f_600 t_color">
-        ReactJS Development Services
-      </h2>       
-      <p className="w_color f_p f_size_18">
+
+
+
+   <div className="s_features_section">
+    <div className="container custom_container">
+      <div className="row s_features_item">
+        <div className="col-lg-6">
+          <div
+            className="s_features_img ml_50 wow fadeInLeft"
+            data-wow-delay="0.3s"
+            style={{
+              visibility: "visible",
+              animationDelay: "0.3s",
+              animationName: "fadeInLeft"
+            }}
+          >
+            <img src={ReactJs} alt=""
+             width={900}
+             height={600}/>
+          </div>
+        </div>
+        <div className="col-lg-6 d-flex align-items-center">
+          <div className="s_features_content pl_120">
+          
+          
+            <h2
+              className="f_p f_size_30 f_700 t_color l_height45 wow fadeInRight"
+              data-wow-delay="0.4s"
+              style={{
+                visibility: "visible",
+                animationDelay: "0.4s",
+                animationName: "fadeInRight"
+              }}
+            >
+                   ReactJS Development Services
+            </h2>
+            <p
+              className="f_size_18 l_height30 f_400 wow fadeInRight"
+              data-wow-delay="0.5s"
+              style={{
+                visibility: "visible",
+                animationDelay: "0.5s",
+                animationName: "fadeInRight"
+              }}
+            >
+
       We build innovative web applications in React JS development environment through an array of services  
  
       <br></br>
@@ -137,7 +169,27 @@ const Reactjs = () => (
       <li>Frontend Development using ReactJS</li>
       <li>Web Development Using ReactJS</li>
       <li>React JS Plugin Development   </li></p>
+           
+            <a
+              href="#"
+              className="learn_btn wow fadeInRight"
+              data-wow-delay="0.7s"
+              style={{
+                visibility: "visible",
+                animationDelay: "0.7s",
+                animationName: "fadeInRight"
+              }}
+            >
+          
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      
     </div>
+   </div>
+  
  
  
   </div>
@@ -401,7 +453,7 @@ ReactJS UI/UX Development</h5>
                 animationName: "fadeInRight"
               }}
             >
-              Get Started Now! <i className="ti-arrow-right" />
+          
             </a>
           </div>
         </div>

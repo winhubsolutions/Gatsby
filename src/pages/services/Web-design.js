@@ -21,7 +21,7 @@ const webdesign=() => (
    
    
   <section className="app_banner_area">
-  <div className="container">
+   <div className="container">
     <div className="row">
       <div className="col-lg-7">
         <div className="app_banner_contentmt mt_40">
@@ -47,7 +47,7 @@ const webdesign=() => (
             }}
           >
          Winhub Solutions is a team of passionate designers, developers and ux&ui and
-digital. We collaborate with clients to establish bold, effective identities.
+                digital. We collaborate with clients to establish bold, effective identities.
           </p>
           <Link
             href="#"

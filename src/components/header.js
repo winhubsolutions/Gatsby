@@ -319,7 +319,7 @@ const Header = ({ siteTitle,theme  }) => (
   
    
    
-       
+
 
      
    
@@ -327,8 +327,6 @@ const Header = ({ siteTitle,theme  }) => (
   </nav>
 </header>
 
- 
-  
 
 )
 

@@ -10,7 +10,7 @@ const Digital = () => (
   <Layout>
     <SEO title="Page two" />
     <section className="agency_banner_area bg_color">
-  <img className="banner_shap" src={bannerbg} alt="" />
+  <img className="banner_shap" src="" alt="" />
   <div className="container custom_container">
     <div className="row">
       <div className="col-lg-5 d-flex align-items-center">

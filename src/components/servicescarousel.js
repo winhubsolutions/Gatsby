@@ -19,12 +19,12 @@ const MyCarousel = () => (
                 <h2 class="f_p f_size_30 l_height50 f_600 t_color3">Our Services</h2>
             </div>
 
-<OwlCarousel className="owl-theme" loop margin={5} autoWidth  autoplay autoHeightClass item={5}>
+<OwlCarousel className="owl-theme" loop margin={5} autoWidth  autoplay autoHeightClass item={5} responsiveRefreshRate={200} responsiveBaseElement={window}>
 
 
 
 
-<div className="" style={{ width: 380, marginRight: 15 }}>
+<div className="" style={{ width: 350, marginRight: 10 }}>
 <div className=" service_item text-center">
 
 <h4 className="f_600 f_size_20 l_height28 t_color2 mb_20">
@@ -75,7 +75,7 @@ Winhub solutions is one of the Best Web Designing Company in Hyderabad with spec
 <img className="item" src={Websitedesign} alt />
 </div>
 </div>
-<div className="" style={{ width: 400, marginRight: 15 }}>
+<div className="our-services-inner" style={{ width: 400, marginRight: 15 }}>
 <div className=" service_item text-center">
 
 <h4 className="f_600 f_size_20 l_height28 t_color2 mb_20">

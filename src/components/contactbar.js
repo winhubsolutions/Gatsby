@@ -40,20 +40,20 @@ function Freeestimate(){
   />
  <div className="container">
   <div className="security_action_inner">
-    <div className="media">
+    <div className="banner_top">
 
       <div className="media-body">
-        <h2>
+        <h1 className="f_p f_size_30 l_height50 f_600 t_color3">
         Interested in working with Winhub Solutions?
-        </h2>
-
-
-      </div>
-      <Link to="/contact" className="btn_get btn_hover">
+        </h1>
+       
+        <Link to="/contact" className="btn_get btn_hover">
       Free Quote
     </Link>
+      </div>
+      
     </div>
-    
+   
   </div>
 </div>
 
