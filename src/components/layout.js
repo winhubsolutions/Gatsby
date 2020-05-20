@@ -17,11 +17,12 @@ import "../vendors/scroll/jquery.mCustomScrollbar.min.css"
 
 import "../vendors/magnify-pop/magnific-popup.css"
 import styled from "@emotion/styled"
-import { css } from '@emotion/core'
+
 import '../components/layout.css'
 
-import SimpleForm from "../components/chatbot"
-import chat from "../img/home2/msgchat.png"
+// import SimpleForm from "../components/chatbot"
+// import chat from "../img/home2/msgchat.png"
+
 
 
 
@@ -157,7 +158,7 @@ color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
 
 
 
-.home_analytics_banner_area{
+.home_analytics_banner_area,.hosting_banner_area{
   background-image: ${props => themes[props.theme.name].button3};
 
 }
@@ -177,7 +178,9 @@ color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
 .startup_content_three h2 ,.startup_content_three span{
   color:#000000;
 }
-
+.hosting_content h2,.hosting_content p{
+  color:#ffffff;
+}
 
 .h_analytics_content{
   color:#ffffff;
@@ -200,6 +203,14 @@ color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
 .navbar-collapse, .menu_four .navbar-collapse{
   background-color: ${props => themes[props.theme.name].background};
 
+}
+&.s_integration_item h5{
+
+  color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
+}
+.s_integration_item{
+
+  background-color: ${props => (props.theme.name === "dark" ? "#ffffff" : "inherit")};
 }
 `
 
@@ -229,20 +240,12 @@ const Layout = ({ children }) => {
         
       <Footer/>
 
+
+
          
-         
-      <div className = "bot">
-        <div style ={{display: showChat ? "" : "none"}}>
-        <SimpleForm></SimpleForm>
-        </div>      
-        {/* <div> {showChat ? <SimpleForm></SimpleForm> : null} </div> */}
-        <div>
-          {!showChat 
-            ? <button className="btn" onClick={() => startChat()}><img src={chat} alt="" wight={50} height={50}/> </button> 
-            : <button className="btn" onClick={() => hideChat()}><img src={chat} alt="" wight={50} height={50}/></button>}
-        </div>
-      </div>   
-    
+     
+     
+   
     </ThemedLayout>
       )}
     </ThemeContext.Consumer>

@@ -47,9 +47,9 @@ const Reactjs = () => (
       animationName: "fadeInRight"
     }}
   >
-    <img src={seo} alt="" />
+    <img src={seo}alt="reactjs development company" />
   </div>
-  <img className="svg_intro_bottom" src={shape} alt />
+  <img className="svg_intro_bottom" src={shape}alt="reactjs development company" />
 </section>
 <section className="s_subscribe_area">
   <div className="s_shap">
@@ -129,7 +129,7 @@ const Reactjs = () => (
               animationName: "fadeInLeft"
             }}
           >
-            <img src={ReactJs} alt=""
+            <img src={ReactJs}alt="reactjs development company"
              width={900}
              height={600}/>
           </div>
@@ -170,8 +170,8 @@ const Reactjs = () => (
       <li>Web Development Using ReactJS</li>
       <li>React JS Plugin Development   </li></p>
            
-            <a
-              href="#"
+            <Link
+              to="#"
               className="learn_btn wow fadeInRight"
               data-wow-delay="0.7s"
               style={{
@@ -181,7 +181,7 @@ const Reactjs = () => (
               }}
             >
           
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -292,9 +292,9 @@ ReactJS UI/UX Development</h5>
             <p className="l_height28">
             We are designing elegant and collaborative UI templates for your Web interfaces and applications.
             </p>
-            <a href="#" className="learn_btn_two">
+            <Link to="#" className="learn_btn_two">
               Learn More <i className="ti-arrow-right" />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="col-lg-3 col-sm-6">
@@ -315,9 +315,9 @@ ReactJS UI/UX Development</h5>
             <p className="l_height28">
             Winhub Solutions has significant experience with the development of highly scalable mobile apps using ReactJS. Web apps that we build are SEO-friendly, responsive and high-performance for you.
             </p>
-            <a href="#" className="learn_btn_two">
+            <Link to="#" className="learn_btn_two">
               Learn More <i className="ti-arrow-right" />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="col-lg-3 col-sm-6">
@@ -338,9 +338,9 @@ ReactJS UI/UX Development</h5>
             <p className="l_height28">
             Need a personalized ReactJS app that fits your unique needs? We have the strongest custom programming services in ReactJS.
             </p>
-            <a href="#" className="learn_btn_two">
+            <Link to ="#" className="learn_btn_two">
               Learn More <i className="ti-arrow-right" />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="col-lg-3 col-sm-6">
@@ -361,9 +361,9 @@ ReactJS UI/UX Development</h5>
             <p className="l_height28">
             Get custom plugins and extensions for your website and mobile applications from ReactJS, and open up additional revenue opportunities.
             </p>
-            <a href="#" className="learn_btn_two">
+            <Link to="#" className="learn_btn_two">
               Learn More <i className="ti-arrow-right" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -382,7 +382,7 @@ ReactJS UI/UX Development</h5>
               animationName: "fadeInLeft"
             }}
           >
-            <img src={whyus} alt=""
+            <img src={whyus}alt="reactjs development company"
              width={900}
              height={600}/>
           </div>
@@ -443,8 +443,8 @@ ReactJS UI/UX Development</h5>
             <h3>Easy Migration</h3>
             Employ ReactJS developers to ensure trouble-free migration to ReactJS from some other framework to satisfy business-specific requirements.
             </div>
-            <a
-              href="#"
+            <Link
+              to="#"
               className="learn_btn wow fadeInRight"
               data-wow-delay="0.7s"
               style={{
@@ -454,7 +454,7 @@ ReactJS UI/UX Development</h5>
               }}
             >
           
-            </a>
+            </Link>
           </div>
         </div>
       </div>

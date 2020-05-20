@@ -17,49 +17,49 @@ const Clientlogo = () => (
 <div className="partner_logo_area_four">
   <div className="row partner_info">
     <div className="logo_item">
-      <a href="#">
-        <img src={cache} alt=""/>
-      </a>
+     <Link to="#">
+        <img src={cache} alt="the best website development company"/>
+      </Link>
     </div>
     <div className="logo_item">
-      <a href="#">
-        <img src={credai} alt />
-      </a>
+     <Link to="#">
+        <img src={credai} alt="the best website development company" />
+      </Link>
     </div>
     <div className="logo_item">
-      <a href="#">
-        <img src={elmnts} alt />
-      </a>
+     <Link to="#">
+        <img src={elmnts} alt="the best website development company" />
+      </Link>
     </div>
     <div className="logo_item">
-      <a href="#">
-        <img src={cacheper} alt />
-      </a>
+     <Link to="#">
+        <img src={cacheper} alt="the best website development company" />
+      </Link>
     </div>
     <div className="logo_item">
-      <a href="#">
-        <img src={MSN}alt />
-      </a>
+     <Link to="#">
+        <img src={MSN}alt="the best website development company" />
+      </Link>
     </div>
     <div className="logo_item">
-      <a href="#">
+     <Link to="#">
         <img src={KIPL}alt="KIPL" />
-      </a>
+      </Link>
     </div>
     <div className="logo_item">
-      <a href="#">
+     <Link to="#">
         <img src={smart2buy}alt="smart2buy" />
-      </a>
+      </Link>
     </div>
     <div className="logo_item">
-      <a href="#">
+     <Link to="#">
         <img src={wucb} alt="WARANGAL URBAN CO-OPERATIVE BANK LIMITED" />
-      </a>
+      </Link>
     </div>
     <div className="logo_item">
-      <a href="#">
+     <Link to="#">
         <img src={chitrambhalare}alt="chitrambhalare" />
-      </a>
+      </Link>
     </div>
   </div>
 </div>

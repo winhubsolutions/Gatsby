@@ -18,22 +18,22 @@ const nodejs = ({ data }) => (
     <section className="home_analytics_banner_area">
   <div className="elements">
     <div className="elements_item">
-      <img src={elementone} alt />
+      <img src={elementone}alt="node js development company" />
     </div>
     <div className="elements_item">
-      <img src={elementtwo}alt />
+      <img src={elementtwo}alt="node js development company" />
     </div>
     <div className="elements_item">
-      <img src={elementthree} alt />
+      <img src={elementthree}alt="node js development company" />
     </div>
     <div className="elements_item">
-      <img src={elementfour} alt />
+      <img src={elementfour}alt="node js development company" />
     </div>
     <div className="elements_item">
-      <img src={elementfive} alt />
+      <img src={elementfive}alt="node js development company" />
     </div>
     <div className="elements_item">
-      <img src={elementsix} alt />
+      <img src={elementsix}alt="node js development company" />
     </div>
   </div>
   <div className="container">
@@ -79,7 +79,7 @@ const nodejs = ({ data }) => (
       </div>
       <div className="col-lg-6">
         <div className="h_analytices_img">
-          <img src={pie} alt />
+          <img src={pie}alt="node js development company" />
         </div>
       </div>
     </div>
@@ -87,7 +87,7 @@ const nodejs = ({ data }) => (
 </section>
     <section className="process_area bg_color sec_pad">
 <div className="container">
-<div dangerouslySetInnerHTML={{ __html: data.wordpressPage.content }} />
+<div dangerouslySetInnerHTML={{ __html: data.winhub.page.content }} />
 
 
 </div>
@@ -101,13 +101,18 @@ export default nodejs
 
 export const query = graphql`
   {
-    wordpressPage(title: {eq: "Node.js Development Company"}) {
-        content
-        id
+    winhub {
+      page(id: "cGFnZTo0ODc4") {
         title
+        slug
+        content
         excerpt
-        date
+        featuredImage {
+          sizes(size: MEDIUM)
+          sourceUrl(size: MEDIUM)
+        }
       }
     }
+  }
     
 `

@@ -4,7 +4,7 @@ import ecom from "../../img/pos/ecom.svg"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import banner from "../../img/home4/Digital.svg"
-import bannerbg from "../../img/home4/banner_bg.png"
+
 import seo from "../../img/home4/Seologo.svg"
 const Digital = () => (
   <Layout>

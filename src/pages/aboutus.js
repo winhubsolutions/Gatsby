@@ -1,5 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
+
+
 import banner from "../img/breadcrumb/banner_bg.png"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -23,7 +24,7 @@ const Aboutus = () => (
     <li />
     <li />
   </ul>
-  <img className="breadcrumb_shap" src={banner} alt />
+  <img className="breadcrumb_shap" src={banner} alt="winhub solutions" />
   <div className="container">
     <div className="breadcrumb_content_two text-center">
       <h1 className="f_p f_700 f_size_50 w_color l_height50 mb_20">

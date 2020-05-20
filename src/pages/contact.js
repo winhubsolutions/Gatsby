@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from "gatsby"
+
 import Clock from 'react-clock'
 
 
@@ -24,7 +24,7 @@ class Contact extends Component {
     <SEO title="About Us" />
   
   <section className="breadcrumb_area">
-    <img className="breadcrumb_shap" src={banner} alt=''/>
+    <img className="breadcrumb_shap" src={banner} alt="Winhub Solutions -Blog"/>
     <div className="container">
       <div className="breadcrumb_content text-center">
         <h1 className="f_p f_700 f_size_50 w_color l_height50 mb_20">
@@ -85,6 +85,8 @@ class Contact extends Component {
               method="post"
               id="contactForm"
               noValidate="novalidate"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field" netlify 
             >
               <div className="row">
                 <div className="col-lg-6">

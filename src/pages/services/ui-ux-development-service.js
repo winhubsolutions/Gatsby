@@ -36,7 +36,7 @@ const uiux = ({ data }) => (
       className="phone wow slideInnew"
       data-wow-delay="0.8s"
       src={green}
-      alt
+     alt="reactjs development company"
       style={{
         visibility: "visible",
         animationDelay: "0.8s",
@@ -47,7 +47,7 @@ const uiux = ({ data }) => (
       className="laptop wow slideInnew"
       data-wow-delay="0.3s"
       src={green1}
-      alt
+     alt="reactjs development company"
       style={{
         visibility: "visible",
         animationDelay: "0.3s",
@@ -58,7 +58,7 @@ const uiux = ({ data }) => (
 </section>
       <section className="process_area bg_color sec_pad">
 <div className="container">
-<div dangerouslySetInnerHTML={{ __html: data.wordpressPage.content }} />
+<div dangerouslySetInnerHTML={{ __html: data.winhub.page.content }} />
 
 
 </div>
@@ -70,13 +70,18 @@ const uiux = ({ data }) => (
 export default uiux
 export const query = graphql`
   {
-    wordpressPage(title: {eq: "UX/UI Design and Development Services"}) {
-        content
-        id
+    winhub {
+      page(id: "cGFnZTo0OTMw") {
         title
+        slug
+        content
         excerpt
-        date
+        featuredImage {
+          sizes(size: MEDIUM)
+          sourceUrl(size: MEDIUM)
+        }
       }
+    }
     }
     
 `

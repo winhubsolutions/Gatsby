@@ -85,7 +85,7 @@ const IndexPage =({ data }) => (
  <div style={{
 
        textAlign:'justify',
-     }}><div dangerouslySetInnerHTML={{ __html: data.wordpressPage.content }} />
+     }}><div dangerouslySetInnerHTML={{ __html: data.winhub.page.content }} />
 
  </div>
  
@@ -96,9 +96,8 @@ const IndexPage =({ data }) => (
  <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
    
 
-   <Img fluid={data.wordpressPage.acf.featureimage.localFile.childImageSharp.fluid}
-   
-   />
+<img src={data.winhub.page.featuredImage.sourceUrl} alt=""/>
+     
  </div>
  </Col>
 </Row>
@@ -120,22 +119,20 @@ export default IndexPage
 
 export const query = graphql`
   {
-    wordpressPage(title: {eq: "ABOUT"}) {
-      title
-      slug
-      content
-      acf {
-        description
-        featureimage {
-          localFile {
-            childImageSharp {
-              fluid(maxWidth: 300, maxHeight: 300) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+    
+    winhub {
+      page(id: "cGFnZTo0ODQ4") {
+        title
+        slug
+        content
+        excerpt
+        featuredImage {
+          sizes(size: MEDIUM)
+          sourceUrl(size: MEDIUM)
         }
       }
     }
+  
+  
   }
 `

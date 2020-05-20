@@ -1,22 +1,34 @@
-const webpack= require('webpack')
-exports.onCreateWebpackConfig = ({
-    stage,
-    rules,
-    loaders,
-    plugins,
-    actions,
-  }) => {
-    actions.setWebpackConfig({
-      plugins: [
-        new webpack.ProvidePlugin({
-          $: 'jquery',
-          jQuery: 'jquery',
-          'window.jQuery': 'jquery'
-        }),
-      ],
-    })
-  }
+const { createRemoteFileNode } = require(`gatsby-source-filesystem`)
 
+exports.createResolvers = (
+  {
+    actions,
+    cache,
+    createNodeId,
+    createResolvers,
+    store,
+    reporter,
+  },
+) => {
+  const { createNode } = actions
+  createResolvers({
+ Winhub_MediaItem: {
+      imageFile: {
+        type: `File`,
+        resolve(source, args, context, info) {
+          return createRemoteFileNode({
+            url: source.sourceUrl,
+            store,
+            cache,
+            createNode,
+            createNodeId,
+            reporter,
+          })
+        },
+      },
+    },
+  })
+}
 
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)

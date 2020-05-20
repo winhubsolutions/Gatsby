@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql,Link } from "gatsby"
-import Img from "gatsby-image"
+
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -87,16 +88,16 @@ const works = ({ data }) => (
             <div className="p_category_item">
               <p className="f_400 f_size_15 mb-0">Share on</p>
               <div className="social_icon">
-                <a href="#">
+                <Link to="#">
                 <FontAwesomeIcon icon="coffee" mask={['far', 'circle']} />
                      
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="#">
                   <i className="ti-twitter-alt" />
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="#">
                   <i className="ti-google" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -105,10 +106,10 @@ const works = ({ data }) => (
             
               Prev Project
             </Link>
-            <a className="next" href="#">
+            <Link className="next"to="#">
               Next Project
               <i className="ti-arrow-right" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

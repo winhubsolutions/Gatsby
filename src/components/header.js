@@ -1,6 +1,6 @@
 
 import PropTypes from "prop-types"
-import {React ,useState, useEffect }from "react"
+import {React }from "react"
 import logo from "../images/logo.png"
 import {Link} from  "gatsby"
 import sunIcon from "../images/sun-icon.svg"
@@ -11,39 +11,18 @@ import webdevelopment from "../img/navbaricon/web-development.png"
 import ReactLogo from "../img/navbaricon/nodejs.png"
 import digital from "../img/navbaricon/digital.png"
 
+import {Navbar} from "react-bootstrap"
 
-const themeType = {
-  dark: 'dark',
-  light: 'light'
-};
 
-const DarkModeSwitch = () => {
-  const [mode, setMode] = useState(() => {
-    if (typeof window !== 'undefined') {
-      const val = localStorage.getItem('theme');
-      return val ? JSON.parse(val) : themeType.light;
-    }
-    return themeType.light;
-  });
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('theme', JSON.stringify(mode));
-    }
-  }, [mode]);
-
-}
-  
- 
 const Header = ({ siteTitle,theme  }) => (
-<header className="header_area">
 
-  <nav className="navbar navbar-expand-lg menu_one " >
+<Navbar className="menu_one" scrolling="dark" collapseOnSelect expand="lg" bg="#fff"  fixed="top" variant="dark">
+  
  
    
  <div className="container custom_container p0">
      <Link className="navbar-brand" to="/">
-     <img src={logo} width={300} height={90} srcSet="" />
+     <img src={logo} width={300} height={90} srcSet="" alt="Winhub solutions " />
      </Link>
      <button
        className="navbar-toggler collapsed"   
@@ -96,7 +75,7 @@ const Header = ({ siteTitle,theme  }) => (
                  <Link className="nav-link"
                   to="services//Web-design"
                  >
-                   <i><img  src={webdesignlogo} width={30} height={30}/> </i>
+                   <i><img  src={webdesignlogo} width={30} height={30} alt="Winhub solutions "/> </i>
                          
                   Web Design
                  
@@ -141,7 +120,7 @@ const Header = ({ siteTitle,theme  }) => (
                <li className="nav-item">
       
                  <Link className="nav-link"  to="services/Web-development">
-                 <img  src={webdevelopment} width={30} height={30}/> Web Development </Link>
+                 <img  src={webdevelopment} width={30} height={30} alt="Winhub solutions "/> Web Development </Link>
                  <ul className="dropdown-menu">
                  <li className="nav-item">
                  <Link 
@@ -184,7 +163,7 @@ const Header = ({ siteTitle,theme  }) => (
 
                <li className="nav-item">
                  <Link className="nav-link" to="services/node-js-development-company">
-                   <img  src={ReactLogo} width={30} height={30}/> Node Js Development</Link>
+                   <img  src={ReactLogo} width={30} height={30} alt="Winhub solutions"/> Node Js Development</Link>
                    <ul className="dropdown-menu">
                  <li className="nav-item">
               
@@ -202,7 +181,7 @@ const Header = ({ siteTitle,theme  }) => (
                  
                  <br></br>
               
-                 <Link className="nav-link" to="services/digital-marketing-services"><img  src={digital} width={30} height={30}/> Digital Marketing Services</Link>
+                 <Link className="nav-link" to="services/digital-marketing-services"><img  src={digital} width={30} height={30} alt="Winhub solutions "/> Digital Marketing Services</Link>
                  <ul className="dropdown-menu">
                   
                   <Link 
@@ -276,6 +255,7 @@ const Header = ({ siteTitle,theme  }) => (
    
  </ul>
          </li>
+         
          <li className="nav-item dropdown submenu">
           <Link
              className="nav-link dropdown-toggle"
@@ -318,14 +298,13 @@ const Header = ({ siteTitle,theme  }) => (
      
   
    
-   
+  
+  
 
-
-     
    
     </div>
-  </nav>
-</header>
+    </Navbar>
+  
 
 
 )

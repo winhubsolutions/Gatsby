@@ -1,5 +1,5 @@
 import React from "react"
-import { render } from "react-dom"
+
 
 import reactlogo from "../img/Tech/react-brands.svg"
 import nodelogo from "../img/Tech/node-js-brands.svg"
@@ -59,7 +59,7 @@ function Technology(){
         <span className="text">
           <a href="#">
             <img src={reactlogo}
-            alt
+            alt="the best website development company"
             width={100}
             height={100} />
           </a>
@@ -70,14 +70,14 @@ function Technology(){
       <div className="s_promo_info">
         <div className="promo_item item_one scroll_animation">
           <div className="text">
-            <img src={nodelogo} alt
+            <img src={nodelogo} alt="the best website development company"
             width={50}
             height={50} />
           </div>
         </div>
         <div className="promo_item item_two scroll_animation">
           <div className="text">
-          <img src={php} alt
+          <img src={php} alt="the best website development company"
             width={50}
             height={50} />
           </div>
@@ -85,49 +85,49 @@ function Technology(){
         <div className="promo_item item_three scroll_animation">
           <div className="text">
             <img src={Drupal}
-             alt
+             alt="the best website development company"
              width={50}
              height={50} />
           </div>
         </div>
         <div className="promo_item item_four scroll_animation">
           <div className="text">
-            <img src={Html5} alt
+            <img src={Html5} alt="the best website development company"
             width={50}
             height={50} />
           </div>
         </div>
         <div className="promo_item item_five scroll_animation">
           <div className="text">
-            <img src={Wordpress} alt
+            <img src={Wordpress} alt="the best website development company"
             width={50}
             height={50} />
           </div>
         </div>
         <div className="promo_item item_six scroll_animation">
           <div className="text">
-            <img src={Mysql} alt
+            <img src={Mysql} alt="the best website development company"
             width={80}
             height={80} />
           </div>
         </div>
         <div className="promo_item item_seven scroll_animation">
           <div className="text">
-            <img src={magentobrands} alt
+            <img src={magentobrands} alt="the best website development company"
             width={50}
             height={50} />
           </div>
         </div>
         <div className="promo_item item_eight scroll_animation">
           <div className="text">
-            <img src={mssql} alt 
+            <img src={mssql} alt="the best website development company" 
             width={50}
             height={50} />
           </div>
         </div>
         <div className="promo_item item_nine scroll_animation">
           <div className="text">
-            <img src={Django} alt
+            <img src={Django} alt="the best website development company"
             width={50}
             height={50} />
           </div>

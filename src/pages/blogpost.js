@@ -4,6 +4,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 import banner from "../img/new/blog/blog_banner.png"
+import RecentPostsWidget from "../components/RecentPostsWidget"
+import CategoriesWidget from "../components/CategoriesWidget"
+import Image from "../components/Image"
 class Homepage extends Component {
   render() {
     const data = this.props.data
@@ -28,7 +31,7 @@ class Homepage extends Component {
     <li />
   </ul>
  
-    <img className="breadcrumb_shap" src={banner} alt />
+    <img className="breadcrumb_shap" src={banner} alt="the best website development company" />
   <div className="container">
     <div className="breadcrumb_content_two text-center">
       <h2 className="f_p f_700 f_size_50 w_color l_height50 mb_20">
@@ -37,7 +40,7 @@ class Homepage extends Component {
       </h2>
       <ol className="breadcrumb">
         <li>
-          <Link href="https://www.winhubsolutions.in/"> Home </Link>
+          <Link to="https://www.winhubsolutions.in/"> Home </Link>
 > Blog </li>
       </ol>
     </div>
@@ -75,10 +78,7 @@ class Homepage extends Component {
                           <Link to={`/post/${node.slug}`} className="learn_btn_two">
                               Read More <i className="arrow_right" />
                             </Link>
-                            <a className="post-info-comments" href="#">
-                              <i className="icon_comment_alt" aria-hidden="true" />
-                              <span>3 Comments</span>
-                            </a>
+                            
                           </div>
 
                         </div>
@@ -95,14 +95,14 @@ class Homepage extends Component {
             </span>
           </li>
           <li>
-            <a className="page-numbers" href="#">
+            <Link className="page-numbers" to="#">
               2
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="next page-numbers" href="#">
+            <Link className="next page-numbers" to="#">
               ...
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -122,149 +122,27 @@ class Homepage extends Component {
           </div>
           <div className="widget sidebar_widget recent_post_widget_two mt_60">
             <h3 className="widget_title_two">Recent posts</h3>
-            <div className="media post_item">
-              <img src="img/new/blog/post1.jpg" alt />
-              <div className="media-body">
-                <a href="#">
-                  <h3>Fast App development</h3>
-                </a>
-                <a href="#" className="entry_post_info">
-                  March 14, 2019
-                </a>
-              </div>
-            </div>
-            <div className="media post_item">
-              <img src="img/new/blog/post2.jpg" alt />
-              <div className="media-body">
-                <a href="#">
-                  <h3>Proin gravi nibh velit</h3>
-                </a>
-                <a href="#" className="entry_post_info">
-                  March 14, 2019
-                </a>
-              </div>
-            </div>
-            <div className="media post_item">
-              <img src="img/new/blog/post3.jpg" alt />
-              <div className="media-body">
-                <a href="#">
-                  <h3>Massive Integrations</h3>
-                </a>
-                <a href="#" className="entry_post_info">
-                  March 14, 2019
-                </a>
-              </div>
-            </div>
+            <RecentPostsWidget/>
           </div>
           <div className="widget sidebar_widget categorie_widget_two mt_60">
             <h3 className="widget_title_two">Categories</h3>
-            <ul className="list-unstyled">
-              <li>
-                {" "}
-                <a href="#">
-                  <span>Fashion</span>
-                  <em>(54)</em>
-                </a>{" "}
-              </li>
-              <li>
-                {" "}
-                <a href="#">
-                  <span>Food for thought</span>
-                  <em>(83)</em>
-                </a>{" "}
-              </li>
-              <li>
-                {" "}
-                <a href="#">
-                  <span>Gaming</span>
-                  <em>(96)</em>
-                </a>{" "}
-              </li>
-              <li>
-                {" "}
-                <a href="#">
-                  <span>Music</span>
-                  <em>(38)</em>
-                </a>{" "}
-              </li>
-              <li>
-                {" "}
-                <a href="#">
-                  <span>Uncategorized</span>
-                  <em>(44)</em>
-                </a>{" "}
-              </li>
-              <li>
-                {" "}
-                <a href="#">
-                  <span>SaasLand</span>
-                  <em>(44)</em>
-                </a>{" "}
-              </li>
-              <li>
-                {" "}
-                <a href="#">
-                  <span>Project Management</span>
-                  <em>(44)</em>
-                </a>{" "}
-              </li>
-              <li>
-                {" "}
-                <a href="#">
-                  <span>Wireframing</span>
-                  <em>(44)</em>
-                </a>{" "}
-              </li>
-            </ul>
+            <CategoriesWidget/>
           </div>
           <div className="widget sidebar_widget tag_widget_two mt_60">
             <h3 className="widget_title_two">Tags</h3>
             <div className="post-tags">
-              <a href="#">SaasLand</a>
-              <a href="#">Web Design</a>
-              <a href="#">Saas</a>
-              <a href="#">Cooling System</a>
-              <a href="#">Corporate</a>
-              <a href="#">Software</a>
-              <a href="#">Landing</a>
-              <a href="#">Wheels</a>
+              <Link to="/services/react-js-development">React JS</Link>
+              <Link to="/services/gatsby-js-development">Gatsby </Link>
+              <Link to="/services/node-js-development-company">Node Js</Link>
+              <Link to="/services/ui-ux-development-service">UI /UX</Link>
+              <Link to="/services/Web-development">Web Development</Link>
+              <Link to="/services/wordpress-development-services">Wordpress Development</Link>
+              <Link to="#">Landing</Link>
+              <Link to="#">Wheels</Link>
             </div>
           </div>
-          <div className="widget sidebar_widget instagram_widget mt_60">
-            <h3 className="widget_title_two">Instagram</h3>
-            <ul className="list-unstyled">
-              <li>
-                <a href="#">
-                  <img src="img/new/blog/image_01.jpg" alt />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="img/new/blog/image_02.jpg" alt />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="img/new/blog/image_03.jpg" alt />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="img/new/blog/image_04.jpg" alt />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="img/new/blog/image_05.jpg" alt />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="img/new/blog/image_06.jpg" alt />
-                </a>
-              </li>
-            </ul>
-          </div>
+         
+         
         </div>
       </div>
     </div>
@@ -287,7 +165,7 @@ export const pageQuery = graphql`
   query {
   
 
-allWordpressPost {
+allWordpressPost(limit: 100) {
   edges {
     node {
       title
@@ -299,7 +177,7 @@ allWordpressPost {
         featureimage {
           localFile {
             childImageSharp {
-              fluid(maxWidth: 300, maxHeight: 100) {
+              fluid(maxWidth: 300, maxHeight: 200) {
                 ...GatsbyImageSharpFluid
               }
             }

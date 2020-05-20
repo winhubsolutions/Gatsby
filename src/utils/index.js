@@ -1,8 +1,27 @@
-import config from "../../config"
+/**
+ * Parses a menu item object and returns Gatsby-field URI.
+ *
+ * @param {object} menuItem a single menu item
+ * @param wordPressUrl
+ * @param blogURI
+ */
+export const CreateLocalLink = (menuItem, wordPressUrl, blogURI='blog/') => {
+  const { url, connectedObject } = menuItem;
 
-export const createLocalLink = url => {
-  if (`#` === url) {
-    return null
+  if (url === '#') {
+    return null;
   }
-  return url ? url.replace(config.wordPressUrl, ``) : url
-}
+  /**
+   * Always want to pull of our API URL.
+   */
+  let newUri = url.replace(wordPressUrl, '');
+
+  /**
+   * If it's a blog link, respect the users blogURI setting.
+   */
+  if (connectedObject && connectedObject.__typename === 'Winhub_Post') {
+    newUri = blogURI + newUri;
+  }
+
+  return newUri;
+};

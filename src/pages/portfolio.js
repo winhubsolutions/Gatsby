@@ -1,19 +1,19 @@
 import React, { Component } from "react"
-import Img from "gatsby-image"
+
 
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout" 
 import SEO from "../components/seo"
 
-import Loadable from "react-loadable"
-const loader=()=>(<div>Loading...</div>)
+//import Loadable from "react-loadable"
+// const loader=()=>(<div>Loading...</div>)
 
 
 
-const  Portfoliocarousel = Loadable({
-  loader: () => import("../components/portfoliocarousel"),
-  loading: loader,
-})
+// const  Portfoliocarousel = Loadable({
+//   loader: () => import("../components/portfoliocarousel"),
+//   loading: loader,
+// })
 
 class portfolio extends Component {
 
@@ -344,7 +344,7 @@ class portfolio extends Component {
             </ul>
           </div>
           <div  className="reset-ic">
-            <a  href="javascript:void(0);">
+            <a href="">
               <span  aria-hidden="true" className="fa fa-repeat" />
               <p  className="tooltiptext tooltip-top">
                 {" "}

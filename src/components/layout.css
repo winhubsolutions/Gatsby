@@ -6854,12 +6854,22 @@ a.navbar-brand img {
 
 
 
+  .service_promo_area {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    padding: 0;
+    margin-top: -360px;
+}
+@media only screen and (min-width: 1080) {
+.MuiBottomNavigation{
+    display: none;
+}
+}
 
+@media only screen and (min-width: 768px) {
+    .MuiBottomNavigation-root{
+        display: block;
+    }
 
-
-
-
-
-
-
-  
+}

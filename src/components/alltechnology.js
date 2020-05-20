@@ -10,8 +10,6 @@ import {Link} from "gatsby"
 // import Mysql from "../img/Tech/my-sql.svg"
 // import magentobrands from "../img/Tech/magento-brands.svg"
 // import mssql from "../img/Tech/MSSQL.svg"
-
- import Gatsby from "../img/Tech/Gatsby-Logo.svg"
 import {Tab,Tabs}from "react-bootstrap"
 
 function AllTechnology(){
@@ -33,11 +31,11 @@ function AllTechnology(){
   
   <div  className="col-4 col-sm-4 col-md-3 col-lg-2">
     
-    <a
+    <Link
       
       className="icon-block"
       aria-label="winhub-technology-angular-js2x"
-      href=""
+      to=""
     >
       <div  className="icon-box">
         <svg
@@ -71,16 +69,16 @@ function AllTechnology(){
         </svg>
       </div>
       <h5 >Angular .JS</h5>
-    </a>
+   </Link>
     
   </div>
   <div  className="col-4 col-sm-4 col-md-3 col-lg-2">
     
-    <a
+    <Link
       
       className="icon-block"
       aria-label="winhub-technology-react-native2x (1)"
-      href=""
+      to=""
     >
       <div  className="icon-box">
         <svg
@@ -118,16 +116,16 @@ function AllTechnology(){
         </svg>
       </div>
       <h5 >React Js</h5>
-    </a>
+   </Link>
     
   </div>
   <div  className="col-4 col-sm-4 col-md-3 col-lg-2">
     
-    <a
+    <Link
       
       className="icon-block"
       aria-label="winhub-technology-typescript2x-2"
-      href=""
+      to=""
     >
       <div  className="icon-box">
         <svg
@@ -161,16 +159,16 @@ function AllTechnology(){
         </svg>
       </div>
       <h5 >TypeScript</h5>
-    </a>
+   </Link>
     
   </div>
   <div  className="col-4 col-sm-4 col-md-3 col-lg-2">
     
-    <a
+    <Link
       
       className="icon-block"
       aria-label="winhub-technology-vue2x"
-      href=""
+      to=""
     >
       <div  className="icon-box">
         <svg
@@ -204,7 +202,7 @@ function AllTechnology(){
         </svg>
       </div>
       <h5 >Vue</h5>
-    </a>
+   </Link>
     
   </div>
   <div  className="col-4 col-sm-4 col-md-3 col-lg-2">
@@ -251,11 +249,11 @@ function AllTechnology(){
   </div>
   <div  className="col-4 col-sm-4 col-md-3 col-lg-2">
     
-    <a
+    <Link
       
       className="icon-block"
       aria-label="winhub-technology-html52x"
-      href=""
+      to=""
     >
       <div  className="icon-box">
         <svg
@@ -289,7 +287,7 @@ function AllTechnology(){
         </svg>
       </div>
       <h5 >HTML5</h5>
-    </a>
+   </Link>
     
   </div>
 </div>
@@ -300,11 +298,11 @@ function AllTechnology(){
   
   <div  className="col-4 col-sm-4 col-md-3 col-lg-2">
  
-    <a
+    <Link
       
       className="icon-block"
       aria-label="winhub-technology-drupal2x"
-      href=""
+      to=""
     >
       <div  className="icon-box">
         <svg
@@ -338,16 +336,16 @@ function AllTechnology(){
         </svg>
       </div>
       <h5 >Drupal</h5>
-    </a>
+   </Link>
  
   </div>
   <div  className="col-4 col-sm-4 col-md-3 col-lg-2">
  
-    <a
+    <Link
       
       className="icon-block"
       aria-label="winhub-technology-joomla2x"
-      href=""
+      to=""
     >
       <div  className="icon-box">
         <svg
@@ -381,16 +379,16 @@ function AllTechnology(){
         </svg>
       </div>
       <h5 >Joomla</h5>
-    </a>
+   </Link>
  
   </div>
   <div  className="col-4 col-sm-4 col-md-3 col-lg-2">
  
-    <a
+    <Link
       
       className="icon-block"
       aria-label="winhub-technology-wordpress2x"
-      href="/services/web/wordpress-website-development"
+      to="/services/web/wordpress-website-development"
     >
       <div  className="icon-box">
         <svg
@@ -424,16 +422,16 @@ function AllTechnology(){
         </svg>
       </div>
       <h5 >Wordpress</h5>
-    </a>
+   </Link>
  
   </div>
   <div  className="col-4 col-sm-4 col-md-3 col-lg-2">
  
-    <a
+    <Link
       
       className="icon-block"
       aria-label="winhub-technology-magento2x"
-      href=""
+      to=""
     >
       <div  className="icon-box">
         <svg
@@ -467,16 +465,16 @@ function AllTechnology(){
         </svg>
       </div>
       <h5 >Magento</h5>
-    </a>
+   </Link>
  
   </div>
   <div  className="col-4 col-sm-4 col-md-3 col-lg-2">
  
-    <a
+    <Link
       
       className="icon-block"
       aria-label="winhub-technology-shopify-plus2x"
-      href=""
+      to=""
     >
       <div  className="icon-box">
         <svg
@@ -514,7 +512,7 @@ function AllTechnology(){
         </svg>
       </div>
       <h5 >Shopify</h5>
-    </a>
+   </Link>
  
   </div>
 </div>
@@ -525,11 +523,11 @@ function AllTechnology(){
   
   <div className="col-4 col-sm-4 col-md-3 col-lg-2">
     
-    <a
+    <Link
      
       className="icon-block"
       aria-label="winhub-technology-php2x"
-      href=""
+      to=""
     >
       <div className="icon-box">
         <svg
@@ -563,16 +561,16 @@ function AllTechnology(){
         </svg>
       </div>
       <h5>PHP</h5>
-    </a>
+   </Link>
     
   </div>
   <div className="col-4 col-sm-4 col-md-3 col-lg-2">
     
-    <a
+    <Link
      
       className="icon-block"
       aria-label="winhub-technology-java2x"
-      href=""
+      to=""
     >
       <div className="icon-box">
         <svg
@@ -606,16 +604,16 @@ function AllTechnology(){
         </svg>
       </div>
       <h5>Java</h5>
-    </a>
+   </Link>
     
   </div>
   <div className="col-4 col-sm-4 col-md-3 col-lg-2">
     
-    <a
+    <Link
      
       className="icon-block"
       aria-label="winhub-technology-microsoft-dot-net2x"
-      href=""
+      to=""
     >
       <div className="icon-box">
         <svg
@@ -653,16 +651,16 @@ function AllTechnology(){
         </svg>
       </div>
       <h5>.NET</h5>
-    </a>
+   </Link>
     
   </div>
   <div className="col-4 col-sm-4 col-md-3 col-lg-2">
     
-    <a
+    <Link
      
       className="icon-block"
       aria-label="winhub-technology-node-js2x"
-      href="/services/node-js-development-company"
+      to="/services/node-js-development-company"
     >
       <div className="icon-box">
         <svg
@@ -696,17 +694,17 @@ function AllTechnology(){
         </svg>
       </div>
       <h5>Node .JS</h5>
-    </a>
+   </Link>
     
   </div>
  
   <div className="col-4 col-sm-4 col-md-3 col-lg-2">
     
-    <a
+    <Link
      
       className="icon-block"
       aria-label="winhub-technology-phthon2x"
-      href=""
+      to=""
     >
       <div className="icon-box">
         <svg
@@ -740,7 +738,7 @@ function AllTechnology(){
         </svg>
       </div>
       <h5>Python</h5>
-    </a>
+   </Link>
     
   </div>
 </div>
@@ -751,11 +749,11 @@ function AllTechnology(){
  
   <div  className="col-4 col-sm-4 col-md-3 col-lg-2">
    
-    <a
+    <Link
       
       className="icon-block"
       aria-label="winhub-technology-mango-db"
-      href=""
+      to=""
     >
       <div  className="icon-box">
         <svg
@@ -790,16 +788,16 @@ function AllTechnology(){
         </svg>
       </div>
       <h5 >Mongo DB</h5>
-    </a>
+   </Link>
    
   </div>
   <div  className="col-4 col-sm-4 col-md-3 col-lg-2">
    
-    <a
+    <Link
       
       className="icon-block"
       aria-label="winhub-technology-my-sql2x"
-      href=""
+      to=""
     >
       <div  className="icon-box">
         <svg
@@ -833,13 +831,13 @@ function AllTechnology(){
         </svg>
       </div>
       <h5 >MySQL</h5>
-    </a>
+   </Link>
    
   </div>
   <div  className="col-4 col-sm-4 col-md-3 col-lg-2">
    
    
-    <a
+    <Link
       
       className="icon-block"
       aria-label="winhub-technology-ms-sql2x1"
@@ -876,15 +874,15 @@ function AllTechnology(){
         </svg>
       </div>
       <h5 >MsSQL</h5>
-    </a>
+   </Link>
   </div>
   <div  className="col-4 col-sm-4 col-md-3 col-lg-2">
    
-    <a
+    <Link
       
       className="icon-block"
       aria-label="winhub-technology-firebase2x"
-      href=""
+      to=""
     >
       <div  className="icon-box">
         <svg
@@ -918,7 +916,7 @@ function AllTechnology(){
         </svg>
       </div>
       <h5 >Firebase</h5>
-    </a>
+   </Link>
    
   </div>
  
@@ -935,11 +933,11 @@ function AllTechnology(){
 
  <div  className="col-4 col-sm-4 col-md-3 col-lg-2">
  
-   <a
+   <Link
      
      className="icon-block"
      aria-label="winhub-technology-ios2x"
-     href=""
+     to=""
    >
      <div  className="icon-box">
        <svg
@@ -970,16 +968,16 @@ function AllTechnology(){
        </svg>
      </div>
      <h5 >iOS</h5>
-   </a>
+  </Link>
  
  </div>
  <div  className="col-4 col-sm-4 col-md-3 col-lg-2">
  
-   <a
+   <Link
      
      className="icon-block"
      aria-label="winhub-technology-android2x"
-     href=""
+     to=""
    >
      <div  className="icon-box">
        <svg
@@ -1013,16 +1011,16 @@ function AllTechnology(){
        </svg>
      </div>
      <h5 >Android</h5>
-   </a>
+  </Link>
  
  </div>
  <div  className="col-4 col-sm-4 col-md-3 col-lg-2">
  
-   <a
+   <Link
      
      className="icon-block"
      aria-label="winhub-technology-react-native2x"
-     href=""
+     to=""
    >
      <div  className="icon-box">
        <svg
@@ -1060,18 +1058,18 @@ function AllTechnology(){
        </svg>
      </div>
      <h5 >React Native</h5>
-   </a>
+  </Link>
  
  </div>
  
 
  <div  className="col-4 col-sm-4 col-md-3 col-lg-2">
  
-   <a
+   <Link
      
      className="icon-block"
      aria-label="winhub-technology-phone-gap2x"
-     href=""
+     to=""
    >
      <div  className="icon-box">
        <svg
@@ -1105,13 +1103,13 @@ function AllTechnology(){
        </svg>
      </div>
      <h5 >Phone Gap</h5>
-   </a>
+  </Link>
  
  </div>
 
  <div  className="col-4 col-sm-4 col-md-3 col-lg-2">
  
-   <a
+   <Link
      
      className="icon-block"
      aria-label="winhub-technology-xamarin2x"
@@ -1149,7 +1147,7 @@ function AllTechnology(){
        </svg>
      </div>
      <h5 >Xamarin</h5>
-   </a>
+  </Link>
  
  </div>
 </div>

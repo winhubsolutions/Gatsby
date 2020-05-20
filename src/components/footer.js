@@ -49,7 +49,7 @@ const Footer = () => (
                 <Link to="/blogpost">Blog</Link>
               </li>
               <li>
-                <Link to="#">Investor</Link>
+                <Link to="/portfolio">Portfolio</Link>
               </li>
               <li>
                 <Link to="#">Sitemap</Link>
@@ -90,16 +90,16 @@ const Footer = () => (
         </div>
         <div className="col-lg-3 col-md-6 pl_100">
           <div className="f_widget about-widget">
-            <h3 className="f-title f_500 f_size_16 mb-30">Privacy Contact</h3>
+            <h3 className="f-title f_500 f_size_16 mb-30">Products</h3>
             <ul className="list-unstyled f_list">
               <li>
-                <Link to="#">Privacy Policy</Link>
+                <Link to="/products/gym-fitness-club-management">Gym Fitness Club Management</Link>
               </li>
               <li>
-                <Link to="#">Legal Agreement</Link>
+                <Link to="/products/school-management-system">School Management System</Link>
               </li>
               <li>
-                <Link to="#">Feedback</Link>
+                <Link to="/products/restaurantpos">Winhub POS</Link>
               </li>
             </ul>
           </div>

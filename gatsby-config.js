@@ -62,6 +62,20 @@ module.exports = {
       //  ],
       },
     },
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        // Arbitrary name for the remote schema Query type
+        typeName: "Winhub",
+        // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
+        fieldName: "winhub",
+        // Url to query from
+        url: "https://siteapi.winhubsolutions.in/graphql",
+
+        // refetch interval in seconds
+        refetchInterval: 60,
+      },
+    },
     
    
     // this (optional) plugin enables Progressive Web App + Offline functionality

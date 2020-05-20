@@ -35,7 +35,7 @@ Web Development
 Our web developers are developing custom web and mobile application solutions. We're providing a web presence to help you expand your business using the latest web technologies.
 </p>
 <a class=".read-more-btn" href="/contact">Contact US</a>
-<img className="float-right" src={Websitedevelopment} alt />
+<img className="float-right" src={Websitedevelopment} alt="the best website development company" />
 </div>
 </div>
 <div className="" style={{ width: 400, marginRight: 15 }}>
@@ -47,7 +47,7 @@ Digital Marketing
 <p>
 We have experienced team of search engine optimizers & digital marketing experts who can handle any type of business oriented website and target perfect users inorder to improve your online business.
 </p>
-<img className="float-right" src={Digital} alt />
+<img className="float-right" src={Digital} alt="the best website development company" />
 </div>
 </div>
 <div className="float-right" style={{ width: 400, marginRight: 15 }}>
@@ -59,7 +59,7 @@ E-Commerce Development
 <p>
 Winhub Solutions, one of Hyderabad’s leading web design & web development companies, has gained considerable experience in the design & development of e-commerce websites with all the latest features in both B2B and B2C models.
 </p>
-<img className="item" src={ECOM} alt />
+<img className="item" src={ECOM} alt="the best website development company" />
 </div>
 </div>
 <div className="" style={{ width: 400, marginRight: 15 }}>
@@ -72,7 +72,7 @@ Web Design
 <p>
 Winhub solutions is one of the Best Web Designing Company in Hyderabad with specialized web designers,having experienced and expertise team of web designers with latest web skills who can provide you fully Customized website,
 </p>
-<img className="item" src={Websitedesign} alt />
+<img className="item" src={Websitedesign} alt="the best website development company" />
 </div>
 </div>
 <div className="our-services-inner" style={{ width: 400, marginRight: 15 }}>
@@ -85,7 +85,7 @@ UI/UX Design
 <p>
 We make websites, User Interface and identity. We believe that beauty designing makes the work look more Fame for the business.
 </p>
-<img className="item" src={UI} alt />
+<img className="item" src={UI} alt="the best website development company" />
 </div>
 </div>
 <div className="active" style={{ width: 400, marginRight: 15 }}>
@@ -98,7 +98,7 @@ MOBILE APP DEVELOPMENT
 <p>
 Having a mobile app for the business has become a must in today’s world. We build hybrid mobile apps that run across Android, iOS, windows and other platforms
 </p>
-<img className="item" src={Mobileapp} alt />
+<img className="item" src={Mobileapp} alt="the best website development company" />
 </div>
 </div>
 

@@ -20,7 +20,7 @@ function Freeestimate(){
     className="h_leaf one wow fadeInUp"
     data-wow-delay="0.4s"
     src={flower}
-    alt
+   alt="winhub solutions "
     style={{
       visibility: "visible",
       animationDelay: "0.4s",
@@ -31,7 +31,7 @@ function Freeestimate(){
     className="h_leaf two wow fadeInUp"
     data-wow-delay="0.6s"
     src={flowerleft}
-    alt
+   alt="winhub solutions "
     style={{
       visibility: "visible",
       animationDelay: "0.6s",
