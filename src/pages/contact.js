@@ -86,7 +86,7 @@ class Contact extends Component {
               id="contactForm"
               noValidate="novalidate"
               data-netlify="true"
-              data-netlify-honeypot="bot-field" netlify 
+              data-netlify-honeypot="bot-field" 
             >
               <div className="row">
                 <div className="col-lg-6">

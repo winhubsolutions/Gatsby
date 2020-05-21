@@ -20,8 +20,6 @@ const QUERY = graphql`
       }
     }
   }
-
-  
 `
 
 const RecentPostsWidget = () => (

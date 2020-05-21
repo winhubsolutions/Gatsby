@@ -235,11 +235,11 @@ const Layout = ({ children }) => {
       {theme => (
         <ThemedLayout theme={theme}>
           <Header siteTitle={data.site.siteMetadata.title} theme={theme} />
-     
+      
         <main>{children}</main>
         
       <Footer/>
-
+      
 
 
          

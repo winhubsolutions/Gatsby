@@ -28,7 +28,7 @@ const CategoriesWidget = () => (
             {data.winhub.categories.nodes.map(category => {
               return (
                 <li>
-                  <Link to={`/blog/category/${category.slug}`}>{category.name}</Link>
+                  <Link to={`/blog/${category.slug}`}>{category.name}</Link>
                 </li>
               )
             })}

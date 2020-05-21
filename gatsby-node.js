@@ -1,4 +1,16 @@
+
+
+
+const createPages = require("./create/createPages")
+const createPosts = require("./create/createPosts")
 const { createRemoteFileNode } = require(`gatsby-source-filesystem`)
+
+
+exports.createPagesStatefully = async ({ graphql, actions, reporter }, options) => {
+
+  await createPages({ actions, graphql, reporter }, options)
+  await createPosts({ actions, graphql, reporter }, options)
+}
 
 exports.createResolvers = (
   {
@@ -12,7 +24,7 @@ exports.createResolvers = (
 ) => {
   const { createNode } = actions
   createResolvers({
- Winhub_MediaItem: {
+    Winhub_MediaItem: {
       imageFile: {
         type: `File`,
         resolve(source, args, context, info) {
@@ -33,32 +45,15 @@ exports.createResolvers = (
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
-  const BlogPostTemplate = path.resolve("./src/templates/post.js")
-  const PageTemplate = path.resolve("./src/templates/page.js")
+
   const PortfoliosTemplate = path.resolve("./src/templates/works.js")
 
   return graphql(`
     {
-      allWordpressPost {
-        edges {
-          node {
-            slug
-            wordpress_id
-          }
-        }
-      }
-      allWordpressPage {
-        edges {
-          node {
-            slug
-            wordpress_id
-          }
-        }
-      }
-  
-
+      
     allWordpressWpPortfolios {
       edges {
         node {
@@ -74,15 +69,7 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
 
-    const BlogPosts = result.data.allWordpressPost.edges
-    BlogPosts.forEach(post => {
-      createPage({
-        path: `/post/${post.node.slug}`,
-        component: BlogPostTemplate,
-        context: {
-          id: post.node.wordpress_id,
-        },
-      })
+    
 
       const Portfolios = result.data.allWordpressWpPortfolios.edges
       Portfolios.forEach(portfolios => {
@@ -95,23 +82,10 @@ exports.createPages = ({ graphql, actions }) => {
         })
    
 
-       const Pages = result.data.allWordpressPage.edges
-       Pages.forEach(page => {
-        createPage({
-          path: `/Page/${page.node.slug}`,
-          component: PageTemplate,
-          context: {
-            id: page.node.wordpress_id,
-          },
-        })
-
-
-
-       })
-
+      
 
       
-     })
+    
      
     })
   })

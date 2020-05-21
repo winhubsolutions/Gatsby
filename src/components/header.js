@@ -259,7 +259,7 @@ const Header = ({ siteTitle,theme  }) => (
          <li className="nav-item dropdown submenu">
           <Link
              className="nav-link dropdown-toggle"
-             to="/blogpost"
+             to="/blog"
              role="button"
              
            >
