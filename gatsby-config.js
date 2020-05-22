@@ -38,31 +38,8 @@ module.exports = {
     },
     `gatsby-plugin-emotion`,
     // Setup WPGraphQL.com to be the source
-    {
-      resolve: `gatsby-source-wordpress`,
-      options: {
-        /*
-         * The base URL of the WordPress site without the trailingslash and the protocol. This is required.
-         * Example : 'dev-gatbsyjswp.pantheonsite.io' or 'www.example-site.com'
-         */
-        baseUrl: `siteapi.winhubsolutions.in`,
-        protocol: `https`,
-        hostingWPCOM: false,
-        useACF: true,
-         // Set to true to debug endpoints on 'gatsby build'
-         verboseOutput: true,
-      //   includedRoutes: [
-      //         "**/categories",
-      //         "**/posts",
-      //         "**/pages",
-      //         "**/media",
-      //         "**/tags",
-      //         "**/taxonomies",
-      //         "**/portfolio",
-      //         "**/users",
-      //  ],
-      },
-    },
+    
+    
     {
       resolve: "gatsby-source-graphql",
       options: {

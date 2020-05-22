@@ -1,19 +1,19 @@
 import React, { Component } from "react"
-
+import FluidImage from "../components/FluidImage"
 
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout" 
 import SEO from "../components/seo"
 
-//import Loadable from "react-loadable"
-// const loader=()=>(<div>Loading...</div>)
+import Loadable from "react-loadable"
+const loader=()=>(<div>Loading...</div>)
 
 
 
-// const  Portfoliocarousel = Loadable({
-//   loader: () => import("../components/portfoliocarousel"),
-//   loading: loader,
-// })
+const  Portfoliocarousel = Loadable({
+  loader: () => import("../components/portfoliocarousel"),
+  loading: loader,
+})
 
 class portfolio extends Component {
 
@@ -344,7 +344,7 @@ class portfolio extends Component {
             </ul>
           </div>
           <div  className="reset-ic">
-            <a href="">
+            <a  href="javascript:void(0);">
               <span  aria-hidden="true" className="fa fa-repeat" />
               <p  className="tooltiptext tooltip-top">
                 {" "}
@@ -370,7 +370,7 @@ class portfolio extends Component {
 
 
     
-      {data.allWordpressWpPortfolios.edges.map(({ node }) => (
+      {data.winhub.portfolios.edges.map(({ node }) => (
  
        
        
@@ -380,23 +380,20 @@ class portfolio extends Component {
         >
           <div  className="case-listing-col">
             <div  className="cs-listing-img">
-            <Link to={`/portfolios/${node.slug}`}>
+            <Link to={`/portfolio   s/${node.slug}`}>
                 <picture >
                   <source
                     
                     type="image/webp"
-                    srcSet={node.acf.featureimage.sizes.saasland_350x360}
+                    srcSet={node.featureimage}
                   />
                   <source
                     
-                    srcSet={node.acf.featureimage.sizes.saasland_350x360}
+                    srcSet={node.featureimage}
                     type="image/jpg"
                   />
-                  <img
-                    
-                    src={node.acf.featureimage.sizes.saasland_350x360}
-                    alt="Zombie Aftermath"
-                  />
+                  <FluidImage image={node.featuredImage} style={{ marginBottom: "15px" }}/>
+                  
                 </picture>
               </Link>
             </div>
@@ -406,13 +403,14 @@ class portfolio extends Component {
                
               Portfolio {" "}
               </p>
-              <Link to={`/portfolios/${node.slug}`}>
+              <Link to={`/${node.uri}`}>
               {node.title}
               </Link>
-              <div  className="project-bio">
-                Action-packed gaming app built for Android &amp; iOS devices.
-              </div>
-              {data.allWordpressWpPortfolioCategories.edges.map(({ node }) => (
+              <div  className="project-bio"
+             dangerouslySetInnerHTML={{ __html:  node.excerpt }}/>
+
+              
+              {/* {data.portfolios.edges.map(({ node }) => (
               <div  className="cs-technology">
                
               
@@ -421,7 +419,7 @@ class portfolio extends Component {
                 <span>{node.name}</span>
            
               </div>
-              ))}
+              ))} */}
             </div>
           </div>
         </div>
@@ -449,36 +447,38 @@ export default portfolio
 
 export const pageQuery = graphql`
 query {
-  allWordpressWpPortfolios {
-    edges {
-      node {
-        title
-        slug
-        date
-        content
-        portfolio_categories
-        path
-        acf {
-          featureimage {
-            sizes {
-              large
-              thumbnail
-              medium
-              saasland_350x360
+    winhub  {
+        portfolios {
+              edges {
+                node {
+                  id
+                  uri
+                  title
+                  content
+                  excerpt
+                  featuredImage {
+                    sourceUrl
+                    slug
+                  }
+                  portfolioSettings {
+                    layout
+                    fieldGroupName
+                    portfolioAttributes {
+                      fieldGroupName
+                      attributeValue
+                      attributeTitle
+                    }
+                    portfolioImages {
+                      altText
+                      sourceUrl
+                    }
+                  }
+                }
+              }
             }
           }
-        }
       }
-    }
-  }
-  allWordpressWpPortfolioCategories {
-    edges {
-      node {
-        path
-        name
-      }
-    }
-  }
-}
+      
+    
   
 `
