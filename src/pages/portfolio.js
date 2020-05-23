@@ -380,7 +380,7 @@ class portfolio extends Component {
         >
           <div  className="case-listing-col">
             <div  className="cs-listing-img">
-            <Link to={`/portfolio   s/${node.slug}`}>
+            <Link to="">
                 <picture >
                   <source
                     
@@ -407,7 +407,7 @@ class portfolio extends Component {
               {node.title}
               </Link>
               <div  className="project-bio"
-             dangerouslySetInnerHTML={{ __html:  node.excerpt }}/>
+             dangerouslySetInnerHTML={{ __html:  node.content }}/>
 
               
               {/* {data.portfolios.edges.map(({ node }) => (
@@ -447,37 +447,28 @@ export default portfolio
 
 export const pageQuery = graphql`
 query {
-    winhub  {
-        portfolios {
-              edges {
-                node {
-                  id
-                  uri
-                  title
-                  content
-                  excerpt
-                  featuredImage {
-                    sourceUrl
-                    slug
-                  }
-                  portfolioSettings {
-                    layout
-                    fieldGroupName
-                    portfolioAttributes {
-                      fieldGroupName
-                      attributeValue
-                      attributeTitle
-                    }
-                    portfolioImages {
-                      altText
-                      sourceUrl
-                    }
-                  }
-                }
-              }
-            }
-          }
+  winhub {
+    portfolios {
+    edges {
+      node {
+        uri
+        title
+        slug
+        id
+        featuredImage {
+          altText
+          sourceUrl
+        }
+        content
+        date
+        excerpt
       }
+    }
+  }
+  }
+}
+
+
       
     
   

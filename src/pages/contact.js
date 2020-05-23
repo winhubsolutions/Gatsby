@@ -31,9 +31,7 @@ class Contact extends Component {
           Contact Us
         </h1>
         <p className="f_400 w_color f_size_16 l_height26">
-          Why I say old chap that is spiffing off his nut arse pear shaped
-          plastered
-          <br /> Jeffrey bodge barney some dodgy.!!
+        
         </p>
       </div>
     </div>
