@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Image from "./Image"
+import FluidImage from "../components/FluidImage"
 import { blogURI } from "../../globals"
 
 const PostEntry = ({ post }) => {
@@ -21,7 +21,9 @@ const PostEntry = ({ post }) => {
     
   </div>
 
-  <Image className="img-fluid"  image={featuredImage} style={{ margin: 0 }}/>
+
+  <FluidImage className="img-fluid" image={featuredImage} style={{ margin: 0 }}/>
+
 
 
   <div className="blog_content">

@@ -3,7 +3,7 @@ import React from "react"
 import seoimage from "../img/seo/image.png"
 import Layout from "../components/layout"
 import { Link, graphql } from "gatsby"
-import  Img from "gatsby-image"
+
 import SEO from "../components/seo"
 import {Col,Row} from 'react-bootstrap'
 

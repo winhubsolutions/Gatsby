@@ -382,16 +382,7 @@ class portfolio extends Component {
             <div  className="cs-listing-img">
             <Link to="">
                 <picture >
-                  <source
-                    
-                    type="image/webp"
-                    srcSet={node.featureimage}
-                  />
-                  <source
-                    
-                    srcSet={node.featureimage}
-                    type="image/jpg"
-                  />
+                 
                   <FluidImage image={node.featuredImage} style={{ marginBottom: "15px" }}/>
                   
                 </picture>
